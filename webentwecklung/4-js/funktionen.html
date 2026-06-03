@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funktionen</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Funktionen</h1>
+        <h3>Funktionsdeklaration</h3>
+        <script>
+            "use strict";
+            function sagHi() {
+                alert("Hi, alle zusammen!");
+            }
+            
+            // sagHi();
+            // sagHi();
+            // sagHi();
+        </script>
+        <h3>Funktionen und Variablen</h3>
+        <script>
+            "use strict";
+            // Lokale Variablen (innerhalb von Funktionen)
+            function zeigDich() {
+                let nachricht = "Hallo, ich bin JavaScript!";
+                
+                alert(nachricht);
+            }
+            
+            // zeigDich();
+            // alert(nachricht);
+            
+            // Äußeren Variablen ("global")
+            
+            let userName = "John Doe";
+            
+            function welcomeUser() {
+                let nachricht = "Hallo " + userName;
+                
+                alert(nachricht);
+            }
+            
+            // welcomeUser();
+            
+            // Globale Variablen lokal überschreiben
+            
+            let userName2 = "John Doe";
+            
+            function welcomeUser2() {
+                
+                let userName2 = "Mary Smith";
+                
+                let nachricht = "Hallo " + userName2;
+                
+                alert(nachricht);
+            }
+            
+            // welcomeUser2();
+            // alert(userName2);
+            
+        </script>
+        <h3>Funktionen mit Parametern und Standardwerten</h3>
+        <script>
+            "use strict";
+            
+            function zeigNachricht(vonWem="Kein Absender", text="Kein Text eingefügt") {
+                alert(vonWem + ": '" + text + "'");
+            }
+            
+            // zeigNachricht("Anna","Hallo");
+            // zeigNachricht("Peter","Wie geht es dir?")
+            // zeigNachricht();
+        </script>
+        <h3>Werte zurückgeben</h3>
+        <script>
+            "use strict";
+            function sum(a,b){
+                return a + b;
+            }
+            
+            // alert(sum(5,6));
+        </script>
+        <h4>Abschließende Bemerkungen:</h4>
+        <ul>
+            <li>Es ist üblich Funktionen knapp und präzise zu benennen.</li>
+            <li>Gute Namen beschreiben, was die Funktion tut.</li>
+            <li>Wenn möglich sollte eine Funktion nur eine Aufgabe erfüllen.</li>
+            <li>Komplexe Aufgaben können meist in einzelne Funktionen (Schritte) zerlegt werden.</li>
+        </ul>
+    </body>
+</html>

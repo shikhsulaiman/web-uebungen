@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schleifen</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Schleifen</h1>
+        <h3>While Schleife</h3>
+        <script>
+        "use strict"
+        
+        
+        while (Bedingung) {
+            
+        }
+        
+        
+        let i = 0;
+            while (i < 4) {
+                alert(i)
+                i++;
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+        <script>
+            "use strict";
+            /*
+            while (Bedingung) {
+                Code
+                Loop-Body
+            } */
+            /*
+            let i = 0;
+            while (i < 4) {
+                alert(i);
+                i++;
+            }*/
+            /*
+            let i = 3;
+            while (i){
+                alert(i);
+                i--;
+            } */
+            // Do-While Schleife
+            // läuft mindestens einmal durch
+            /*
+            let i = 0;
+            do {
+                alert(i);
+                i++;
+            } while (i < 2); */
+        </script>
+        <h3>For Schleife</h3>
+        <script>
+            "use strict";
+            /*
+            for (Start; Bedingung; Schritt) {
+                // Code / Loop Body
+            } */
+            /*
+            for (let i = 0; i < 3; i++){
+                alert(i);
+            }*/
+        </script>
+        <h3>Weitere Funktionalitäten</h3>
+        <h4>Break</h4>
+        <script>
+            "use strict";
+            /*
+            let sum = 0;
+            while(true) {
+                let wert = +prompt("Was soll addiert werden?", "");
+                
+                if (!wert) break;
+                
+                sum += wert;
+            }
+            alert("Summe ist: " + sum); */
+        </script>
+        <h4>Continue</h4>
+        <script>
+            "use strict";
+            /*
+            // Nur ungerade Zahlen ausgeben
+            for (let i = 0; i < 10; i++) {
+                
+                if (i % 2 == 0) continue;
+                
+                alert(i);
+            } */
+        </script>
+        <h4>Labels</h4>
+        <script>
+            "use strict";
+            
+            außen: for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                    
+                    let wert = prompt(`Welcher Wert liegt bei (${i},${j}) vor?`,"");
+                    
+                    if (!wert) break außen;
+                    
+                }
+            }
+            
+            alert("Wir sind fertig!");
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokument modifizieren</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Internes CSS -->
+        <style>
+            .alert {
+                padding: 15px;
+                border: 1px solid #d6e9c6;
+                border-radius: 4px;
+                color: #3c763d;
+                background-color: #dff0d8;
+            }
+        </style>
+    </head>
+    <body id="seite" type="exp">
+        <h1>Dokument modifizieren</h1>
+        <h3>Was wir erstellen wollen:</h3>
+        <div class="alert">
+            <strong>Hallo!</strong> Du hast eine wichtige Nachricht.
+        </div>
+        <h3>Elemente erstellen</h3>
+        <p>Hier legen wir unser Element an...</p>
+        <script>
+            "use strict";
+            
+            // Element über JS anlegen: createElement
+            
+            let div = document.createElement("div");
+            div.className = "alert";
+            div.innerHTML = "<strong>Hallo!</strong> Du hast eine wichtige Nachricht.";
+            
+        </script>
+        <h3>Elemente einfügen</h3>
+        <p>...und hier fügen wir es ein.</p>
+        <ul id="liste">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <script>
+            "use strict";
+            
+            // Insertion methods
+            // appendChild
+            
+            document.body.appendChild(div);
+            
+            // Weitere insertion methods
+            liste.before("before"); // Direkt auf id "liste" zugreifen
+            liste.after("after");
+            
+            let prepend = document.createElement("li");
+            prepend.innerHTML = "prepend";
+            liste.prepend(prepend);
+            
+            let append = document.createElement("li");
+            append.innerHTML = "append";
+            liste.append(append);
+            
+        </script>
+        <h3>Elemente löschen</h3>
+        <script>
+            "use strict";
+            
+            // remove
+            setTimeout(() => div.remove(), 1000);
+        </script>
+    </body>
+</html>

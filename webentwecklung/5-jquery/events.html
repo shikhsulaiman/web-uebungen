@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Events</h1>
+        <p>jQuery erlaubt es uns auf verschiedene Events zu reagieren:</p>
+        <ul class="styled-list">
+            <li>click</li>
+            <li>hover</li>
+            <li>keypress</li>
+            <li>focus</li>
+            <li>blur</li>
+            <li>u.v.m.</li>
+        </ul>
+        <h3>Beispiel Inhalte</h3>
+        <p>Button:</p>
+        <button type="button">Sieh selbst was passiert!</button>
+        <p>Formular:</p>
+        <input type="text" placeholder="Dein Name">
+        <p>Dein Name hat <span>0</span> Zeichen.</p>
+        <h3>Events auswählen</h3>
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // Click
+                $("button").click(function() {
+                    // Aktionen bzw. Reaktionen auf das Event
+                    $(this).hide();
+                });
+                
+                // Hover
+                $("h3").hover(function() {
+                    $(this).css("color", "red");
+                }, function() {
+                    $(this).css("color", "black");
+                });
+                
+                // Keypress
+                
+                let i = 0;
+                $("input").keypress(function() {
+                    $("span").text(i += 1);
+                });
+                
+                // Focus
+                $("input").focus(function() {
+                   $(this).css("background-color", "lightblue"); 
+                });
+                
+                // Blur
+                $("input").blur(function() {
+                   $(this).css("background-color", "lightgrey"); 
+                });
+            });
+        </script> 
+    </body>
+</html>

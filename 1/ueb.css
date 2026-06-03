@@ -1,0 +1,124 @@
+1-
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+
+2-
+
+:root {
+--primary: #0171F9;
+--accent: #EE626B;
+--light-gray: #EEEEEE;
+}
+
+3-
+
+.headerContainer {
+background-color: --primary;
+}
+
+4-
+
+
+
+5-
+<img src="images/trinding-01.jpg" alt="Assassin's Creed">
+
+6-
+<a href="contactUs.html">Kontakt</a>
+
+
+7-
+<nav><a></a></nav>
+
+
+8-
+<header>
+<nav>
+</nav>
+</header>
+
+9-
+
+<footer class="footerContainer"> </footer>
+
+
+10-
+<h2>Trending Games</h2>
+<h3>Assassin's Creed</h3>
+
+11-
+<section>
+<article>
+<img src="images/trinding-01.jpg" alt="Assassin's Creed">
+<h3>name die spiele</h3>
+</article>
+</section>
+
+
+12-
+.header {
+    max-width:  ;
+}
+
+
+13-
+.landingPage {
+    display:flex;
+    direction: row;
+}
+
+14-
+@media (max-width: 768px) {
+    .landingPage {
+        flex-direction: column;
+    }
+}
+
+15-
+@media (max-width: 768px) {
+    .landingPage {
+    display:flex;
+    direction: row;
+}
+
+16-
+}
+ @media (max-width: 1300px) {
+    .container {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+17-
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+18-
+hart verschiebung, bricht von der layoutfluss aus.card:hover
+
+
+19-
+<button class="btn">Search Now</button>
+
+.btn:hover {
+    cursor: pointer;
+}
+    
+20-
+<!doctype html>
+<html lang="de">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubisoft</title>
+    <link rel="stylesheet" href="ueb.css">
+</header>
+<body>
+</body>
+</html>

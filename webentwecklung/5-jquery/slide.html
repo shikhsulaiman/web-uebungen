@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Panel styling -->
+        <link rel="stylesheet" type="text/css" href="css/panel.css">
+    </head>
+    <body>
+        <h1>Slide</h1>
+        <div class="panel">
+            <h3 class="panel-title">slideToggle auf Panel-Body</h3>
+            <p class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <hr>
+        
+        <button id="slideup" type="button">Slide Up</button>
+        <button id="slidedown" type="button">Slide Down</button>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // SlideUp
+                $("#slideup").click(function() {
+                   $(".panel-body").slideUp(); 
+                });
+                
+                // SlideDown
+                $("#slidedown").click(function() {
+                   $(".panel-body").slideDown(); 
+                });
+                
+                // SlideToggle
+                $(".panel-title").click(function() {
+                    $(".panel-body").slideToggle(3000);
+                });
+            });
+        </script> 
+    </body>
+</html>

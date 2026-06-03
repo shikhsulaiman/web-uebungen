@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links mit Style</title>
+        <style>
+            a.mitstyle:link {
+                color: green;
+                text-decoration: overline;
+            }
+            a.mitstyle:visited {
+                color: red;
+                text-decoration: overline;
+            }
+            a.mitstyle:hover {
+                color: yellow;
+                text-decoration: overline;
+            }
+            a.mitstyle:active {
+                color: blue;
+                text-decoration: overline;
+            }
+            a.button:link, a.button:visited {
+                background-color: blue;
+                color: yellow;
+                padding: 14px 25px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            a.button:hover, a.butten:active {
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Links mit Style</h1>
+        <a href="https://www.google.com" target="_blank">Zu Google</a><br>
+        <a href="https://www.wikipedia.org" target="_blank" class="mitstyle">Zu Wikipedia</a><br>
+        <a href="https://www.wikipedia.org" target="_blank" class="button">Link als Button</a>
+    </body>
+</html>

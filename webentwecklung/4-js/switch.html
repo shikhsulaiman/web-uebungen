@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Anweisung</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Switch Anweisung</h1>
+        <script>
+            "use strict";
+            /*
+            switch (wert) {
+                case "Wert1":
+                    Code...;
+                    break;
+                case "Wert2":
+                    Code... ;
+                    break;
+                default:
+                    Code...;
+                    break;
+            } */
+            
+            // Additions-Check
+            /*
+            let check = +prompt("Was ergibt 2+2?","");
+            
+            switch(check) {
+                case 3:
+                    alert("Zu niedrig!");
+                    break;
+                    
+                case 4:
+                    alert("Super, das ist richtig");
+                    break;
+                
+                case 5:
+                    alert("Zu groß...");
+                    break;
+                    
+                default:
+                    alert("Du bist zu weit vom Ergebnis entfernt!");
+            } */
+            
+            // Warum ist break so wichtig?
+            /*
+            let check = +prompt("Was ergibt 2+2?","");
+            
+            switch(check) {
+                case 3:
+                    alert("Zu niedrig!");
+                    
+                case 4:
+                    alert("Super, das ist richtig");
+                
+                case 5:
+                    alert("Zu groß...");
+                    
+                default:
+                    alert("Du bist zu weit vom Ergebnis entfernt!");
+            }*/
+            
+            // Einzelne Cases gruppieren
+            /*
+            let check = +prompt("Was ergibt 2+2?","");
+            
+            switch(check) {
+                    
+                case 4:
+                    alert("Super, das ist richtig");
+                    break;
+                
+                case 3: // Gruppiert (mit case 5)
+                case 5:
+                    alert("Falsch, aber nah dran!");
+                    break;
+                    
+                default:
+                    alert("Du bist zu weit vom Ergebnis entfernt!");
+            } */
+            
+            // Datentyp entscheidend ist
+            
+            let check = prompt("Was ergibt 2+2?","");
+            
+            switch(check) {
+                case "3":
+                    alert("Zu niedrig!");
+                    break;
+                    
+                case "4":
+                    alert("Super, das ist richtig");
+                    break;
+                
+                case 5: // "5" === 5 -> false
+                    alert("Zu groß...");
+                    break;
+                    
+                default:
+                    alert("Du bist zu weit vom Ergebnis entfernt!");
+            }
+            
+        </script>
+    </body>
+</html>

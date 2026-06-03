@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <title>Forms</title>
+    </head>
+    <body>
+        <div class="container mb-3">
+            <h1>Forms</h1>
+            <hr>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <h3>Login Beispiel</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Email Adresse</label>
+                            <input type="email" class="form-control" placeholder="Email Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label>Passwort</label>
+                            <input type="password" class="form-control" placeholder="Passwort">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label>Angemeldet bleiben?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+            <h3>Styling</h3>
+            <p>Den generellen Bootstrap Look für unsere Formulare erhalten wir durch die <code>form-control</code> Klasse.</p>
+            <h3>Größe</h3>
+            <p>Die Größe der Formular Bestandteile können wir durch hinzufügen von <code>-lg</code> bzw. <code>-sm</code> an die <code>form-control</code> Klasse steuern.</p>
+            <h3>Input Formate</h3>
+            <h4>Range</h4>
+            <form>
+                <div class="form-group">
+                    <label>Beispiel Range Input</label>
+                    <input type="range" class="form-control-range">
+                </div>
+            </form>
+            <h4>Readonly</h4>
+            <form>
+                <div class="form-group">
+                    <label>Dieses Input-Feld lässt sich lediglich lesen.</label>
+                    <input class="form-control" placeholder="Ich lasse mich nur lesen..." readonly>
+                </div>
+            </form>
+            <h4>Checkboxen</h4>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Standard Checkbox</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" disabled>
+                    <label class="form-check-label">Disabled Checkbox</label>
+                </div>
+            </form>
+            <h4>Radio Buttons</h4>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioBeispiel" id="radio1" value="option1" checked>
+                    <label class="form-check-label">Standard Radiobutton</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioBeispiel" id="radio2" value="option2">
+                    <label class="form-check-label">Standard Radiobutton</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioBeispiel" id="radio3" value="option3" disabled>
+                    <label class="form-check-label">Disabled Radiobutton</label>
+                </div>
+            </form>
+            <h3>Formular Layout</h3>
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Vorname">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nachname">
+                </div>
+            </div>
+            <div class="form-row mb-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Vorname">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nachname">
+                </div>
+            </div>
+            <h4>Beispiel komplexes Layout</h4>
+            <form class="mb-3">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Passwort</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Passwort">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Addresse</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Hauptstraße 123">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Addresse 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, Studio, oder Erdgeschoss">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Stadt</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Bundesland</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Auswählen...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">PLZ</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Angemeldet bleiben?
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <h3>Hilfe Text</h3>
+            <form>
+                <div class="form-group">
+                    <label>Passwort</label>
+                    <input type="password" placeholder="Passwort" class="form-control">
+                    <small class="form-text text-muted">
+                        Dein Passwort muss zwischen 8-20 Zeichen haben, mindestens einen Groß- und Kleinbuchstaben sowie mindestens eine Ziffer und ein Sonderzeichen beinhalten.
+                    </small>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Optionalen JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

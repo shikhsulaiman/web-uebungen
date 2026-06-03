@@ -1,0 +1,950 @@
+<html>
+    <head>
+        <title>Farben</title>
+    </head>
+    <body>
+        <h1>Farben</h1>
+        <h3>RGB - Rot, Grün, Blau</h3>
+        <p style="color: rgb(255, 0, 0)">Rot</p>
+        <p style="color: rgb(0, 255, 0)">Grün</p>
+        <p style="color: rgb(0, 0, 255)">Blau</p>
+        <p style="color: rgb(100, 50, 130)">Welche Farbe bin ich?</p>
+        
+        <h3>RGBA - Rot, Grün, Blau, Alpha</h3>
+        <p style="color: rgba(255, 0, 0, 0.5)">Rot</p>
+        <p style="color: rgba(0, 255, 0, 0.5)">Grün</p>
+        <p style="color: rgba(0, 0, 255, 0.5)">Blau</p>
+        <p style="color: rgba(100, 50, 130, 0.5)">Welche Farbe bin ich?</p>
+        
+        <h3>HEX - Hexadezimal</h3>
+        <p style="color: #ff0000">Rot</p>
+        <p style="color: #00ff00">Grün</p>
+        <p style="color: #0000ff">Blau</p>
+        <h3>Weitere Beispiele</h3>
+        <p style="color: #e67e22">Orange HEX</p>
+        <p style="color: rgb(230, 126, 34)">Orange RGB</p>
+        
+        <h3>Graustufen</h3>
+        <p style="color: rgb(0, 0, 0)">Grau</p>
+        <p style="color: rgb(60, 60, 60)">Grau</p>
+        <p style="color: rgb(120, 120, 120)">Grau</p>
+        <p style="color: #000000">Grau</p>
+        <p style="color: #444444">Grau</p>
+        <p style="color: #888888">Grau</p>
+        <h3>HSL Methode</h3>
+        <p style="color: hsl(0, 100%, 50%)">Hue</p>
+        <p style="color: hsl(0, 0, 0)">Saturation</p>
+        <p style="color: hsl(0, 0, 0)">Lightness</p>
+    </body>
+</html>
+....................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hintergründe</title>
+        <style>
+            body{
+                background-image: url(images/gradient.png);
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-attachment: fixed;
+            }
+            h3{
+                background-color: rgba(0,0,255,0.5);
+            }
+            p{
+                background-color: #00ff00;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hintergründe / Backgounds</h1>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h3>Untertitel</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </body>
+</html>
+...............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Borders</title>
+        <style>
+            p.solid {
+                border-style: solid;
+                border-width: 2px;
+                border-color: blue;
+                border-radius: 10px;
+            }
+            p.dotted {
+                border-style: dotted;
+                border-width: thick;
+                border-color: rgb(255,0,0)
+            }
+            p.dashed {
+                border-style: dashed;
+                border-width: 4px;
+            }
+            p.inset {
+                border-style: inset;
+                border-width: thin;
+            }
+            p.outset {
+                border-style: outset;
+                border-width: medium;
+            }
+            p.mix{
+                border-style: dotted solid dotted solid
+            }
+            p.shortcut{
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Borders / Rahmen</h1>
+        <p class="solid">Text</p>
+        <p class="dotted">Text</p>
+        <p class="dashed">Text</p>
+        <p class="inset">Text</p>
+        <p class="outset">Text</p>
+        <p class="mix">Text</p>
+        <p class="shortcut">Text</p>
+        
+    </body>
+</html>
+......................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Margins</title>
+        <style>
+            div{
+                background-color: darkblue;
+                color: white;
+            }
+            p{
+                display: inline-block;
+                border: 2px solid aqua;
+                margin: 10px 20px 5px 15px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Margins</h1>
+        <div>
+            <p>Textinhalt</p>
+        </div>
+    </body>
+</html>
+.....................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Margins</title>
+        <style>
+            div{
+                background-color: darkblue;
+                color: white;
+            }
+            p{
+                display: inline-block;
+                border: 2px solid aqua;
+                margin: 20px;
+                padding: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Margins</h1>
+        <div>
+            <p>Textinhalt</p>
+        </div>
+    </body>
+</html>
+........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Margins</title>
+        <style>
+            div {
+                background-color: darkblue;
+                color: white;
+                display: inline-block;
+            }
+            p.box {
+                display: inline-block;
+                border: 5px solid aqua;
+                margin: 10px;
+                padding: 40px;
+                width: 290px;
+            }
+            h3 {
+               margin-bottom: 0px; 
+            }
+            p {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Margins</h1>
+        <div>
+            <p class="box">Textinhalt</p>
+        </div>
+        <h3>Margin Collapse</h3>
+        <p>Eins</p>
+        <p>Zwei</p>
+        <p>Drei</p>
+    </body>
+</html>
+.......................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Textformatierung</title>
+        <style>
+            .color {
+                color: darkblue;
+            }
+            .left {
+                text-align: left;
+            }
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+            .justified {
+                text-align: justify;
+            }
+            .deco {
+                text-decoration: underline;
+            }
+            .transform {
+                text-transform: uppercase
+            }
+            .indent {
+                text-indent: 10px;
+            }
+            .spacing {
+                letter-spacing: 5px;
+                word-spacing: 10px;
+            }
+            .linheight {
+                line-height: 30px;
+            }
+            .shadow {
+                text-shadow: 1px 1px red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Textformatierung</h1>
+        <hr>
+        <p class="color transform shadow">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="left deco">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="center spacing">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="right linheight">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="justified indent">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </body>
+</html>
+.....................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fonts / Schrigtarten</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                font-size: 100%;
+            }
+            .mitstyle {
+                font-family: Saira Stencil;
+                font-style: normal;
+                font-size: 1em;
+                
+                /*font-weight: bold;*/
+                font-weight: 600;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fonts</h1>
+        <p class="mitstyle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </body>
+</html>
+...........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links mit Style</title>
+        <style>
+            a.mitstyle:link {
+                color: green;
+                text-decoration: overline;
+            }
+            a.mitstyle:visited {
+                color: red;
+                text-decoration: overline;
+            }
+            a.mitstyle:hover {
+                color: yellow;
+                text-decoration: overline;
+            }
+            a.mitstyle:active {
+                color: blue;
+                text-decoration: overline;
+            }
+            a.button:link, a.button:visited {
+                background-color: blue;
+                color: yellow;
+                padding: 14px 25px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            a.button:hover, a.butten:active {
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Links mit Style</h1>
+        <a href="https://www.google.com" target="_blank">Zu Google</a><br>
+        <a href="https://www.wikipedia.org" target="_blank" class="mitstyle">Zu Wikipedia</a><br>
+        <a href="https://www.wikipedia.org" target="_blank" class="button">Link als Button</a>
+    </body>
+</html>
+................................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Listen mit Style</title>
+        <style>
+            ol.roman {
+                list-style-type: upper-roman;
+            }
+            ul.square {
+                list-style-type: square;
+            }
+            ul.farbe{
+                background-color: gray;
+            }
+            ul.farbe li {
+                background-color: lightgray;
+            }
+            ul.image {
+                list-style-image: url(images/item-image.png)
+            }
+            ol.ohnestyle {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            ol.position {
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Listen mit Style</h1>
+        <ol class="roman">
+            <li>Erstens</li>
+            <li>Zweitens</li>
+            <li>Drittens</li>
+        </ol>
+        <ul class="square farbe">
+            <li>Blau</li>
+            <li>Rot</li>
+            <li>Grün</li>
+        </ul>
+        <ul class="image">
+            <li>Blau</li>
+            <li>Rot</li>
+            <li>Grün</li>
+        </ul>
+        <ol class="ohnestyle">
+            <li>Erstens</li>
+            <li>Zweitens</li>
+            <li>Drittens</li>
+        </ol>
+        <ol class="position">
+            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</li>
+        </ol>
+    </body>
+</html>
+...........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabellen mit Style</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            div {
+                overflow-x: auto;
+            }
+            table, th, td {
+                border-collapse: collapse;
+            }
+            table {
+                width: 100%;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            th {
+                height: 50px;
+                text-align: left;
+                background-color: #f39c12;
+                color: white;
+            }
+            th, td {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabellen mit Style</h1>
+        <div>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Planet</th>
+                        <th>Durchmesser</th>
+                        <th>Abstand zur Sonne</th>
+                        <th>Masse</th>
+                        <th>Umlaufzeit</th>
+                        <th>Monde</th>
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Sonne</td>
+                        <td>1.400.000 Kilometer</td> 
+                        <td>-</td>
+                        <td>333.000 Erdmassen</td>
+                        <td>-</td>
+                        <td>0</td>
+                    </tr> 
+                    <tr> 
+                        <td class="planet">Merkur</td>
+                        <td>4879 Kilometer</td>
+                        <td>57,9 Mio. Kilometer</td>
+                        <td>0,055 Erdmassen</td>
+                        <td>88 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Venus</td>
+                        <td>12.105 Kilometer</td>
+                        <td>108,2 Mio. Kilometer</td>
+                        <td>0,815 Erdmassen</td>
+                        <td>225 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Erde</td>
+                        <td>12.756 Kilometer</td>
+                        <td>149,6 Mio. Kilometer</td>
+                        <td>1 Erdmassen</td>
+                        <td>365 Erdentage</td>
+                        <td>1</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Mars</td>
+                        <td>6794 Kilometer</td>
+                        <td>227,9 Kilometer</td>
+                        <td>0,107 Erdmassen</td>
+                        <td>687 Erdentage</td>
+                        <td>2</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Jupiter</td>
+                        <td>142.984 Kilometer</td>
+                        <td>779 Mio. Kilometer</td>
+                        <td>317,8 Erdmassen</td>
+                        <td>11,9 Erdenjahre</td>
+                        <td>min. 63</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Saturn</td>
+                        <td>120.536 Kilometer</td>
+                        <td>1433 Millionen Kilometer</td>
+                        <td>95,2 Erdmassen</td>
+                        <td>29,5 Erdenjahre</td>
+                        <td>min. 61</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Uranus</td>
+                        <td>51.118 Kilometer</td>
+                        <td>2871 Mio. Kilometer</td>
+                        <td>14,5 Erdmassen</td>
+                        <td>83,8 Erdenjahre</td>
+                        <td>27</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Neptun</td>
+                        <td>49.528 Kilometer</td>
+                        <td>4495 Mio. Kilometer</td>
+                        <td>17,1 Erdmassen</td>
+                        <td>163,8 Erdenjahre</td>
+                        <td>13</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+    </body>
+</html>
+...............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+        <style>
+            div {
+                display: block;
+            }
+            span {
+                display: inline;
+            }
+            li.nav {
+                display: inline;
+            }
+            h1.none {
+                display: none;
+            }
+            h1.hidden {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="nav"><a href="">Startseite</a></li>
+            <li class="nav">Produkte</li>
+            <li class="nav">Kontakt</li>
+        </ul>
+        <h1>Display</h1>
+        <h1 class="none">Nimmt keinen sichtbaren Platz ein</h1>
+        <h1 class="hidden">Nimmt trotzdem Platz ein</h1>
+        <h3>Untertitel</h3>
+        <p>Lorem <span>ipsum</span> dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore </p>
+        <div>
+            
+        </div>
+    </body>
+</html>
+.....................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inline-block</title>
+        <style>
+            .floating {
+                display: inline-block;
+                 width: 150px;
+                height: 100px;
+                margin: 10px;
+                border: 3px solid red;
+            }
+            .folgt {
+                border: 3px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Inline-block</h1>
+        <div class="floating">Inhalt 1</div>
+        <div class="floating">Inhalt 2</div>
+        <div class="floating">Inhalt 3 </div>
+        <div class="floating">Inhalt 4</div>
+        <div class="floating">Inhalt 5</div>
+        <div class="floating">Inhalt 6</div>
+        <div class="floating">Inhalt 7</div>
+        <div class="floating">Inhalt 8</div>
+        <div class="floating">Inhalt 9</div>
+        <div class="folgt">Nach dem Grid</div>
+    </body>
+</html>
+..........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Max-width</title>
+        <style>
+            div.festebreite {
+                width: 500px;
+                margin: auto;
+                border: 3px solid red;
+            }
+            div.flexiblebreite {
+                max-width: 500px;
+                margin: auto;
+                border: 3px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Max-width</h1>
+        <div class="festebreite">Die Elementa hat eine feste Bereite</div>
+        <div class="flexiblebreite">Die Elementa hat eine flexible Bereite</div>
+    </body>
+</html>
+.......................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+        <style>
+            .relative {
+                position: relative;
+                left: 50px;
+                border: 3px solid red;
+            }
+            .fixed {
+                position: fixed;
+                right: 0px;
+                top: 0px;
+                border: 3px solid red;
+                padding: 10px;
+            }
+            .rel {
+                position: relative;
+                width: 500px;
+                height: 250px;
+                border: 3px solid red;
+            }
+            .absolute {
+                border: 3px solid red;
+                width: 150px;
+                height: 100px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+            .sticky {
+                position: -wbkit-stcky; /*Safari*/
+                position: sticky;
+                border: 3px solid red;
+                padding: 10px;
+                top: 0px;
+            }
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Position</h1>
+        <h3>Static</h3>
+        <div>Lore ipsum dolor sit amet</div>
+        <h3>Relative</h3>
+        <div class="relative">Lore ipsum dolor sit amet</div>
+        <h3>Fixed</h3>
+        <div class="fixed">Lore ipsum dolor sit amet</div>
+        <p>Fixierte Element hinterlassen keine Lücke.</p>
+        <h3>Absolute</h3>
+        <div class="rel">
+            <div class="absolute">Lore ipsum dolor sit amet</div>
+        </div>
+        <h3>Sticky</h3>
+        <div class="sticky">Lore ipsum dolor sit amet</div>
+        <h3>Überlappung</h3>
+        <div class="rel">
+            <img src="images/gradient.png"/>
+            <p>Lore ipsum dolor sit amet</p>
+         </div>
+        <p style="margin-bottom: 2000px">Ermöglicht uns scrollen</p>
+    </body>
+</html>
+...........................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Overflow</title>
+        <style>
+            div {
+                width: 200px;
+                height: 100px;
+                border: 3px solid red;
+                
+            }
+            .visible {
+                overflow: visible;
+            }
+            .hidden {
+                overflow: hidden;
+            }
+            .scroll {
+                overflow: scroll;
+            }
+            .auto {
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Overflow</h1>
+        <h3>Visible</h3>
+        <div class="visible">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et  </div>
+        <h3>Hidden</h3>
+        <div class="hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et </div>
+        <h3>Hcroll</h3>
+        <div class="scroll">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et </div>
+        <h3>Auto</h3>
+        <div class="auto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et </div>
+    </body>
+</html>
+..............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float und Clear</title>
+        <style>
+            .textimg {
+                width: 600px;
+                height: 300px;
+                border: 3px solid red;
+            }
+            img {
+                max-width: 250px;
+                float: right;
+            }
+            .container {
+                width: 600px;
+                height: 600px;
+                border: 3px solid red;
+            }
+            .sq {
+                width: 50px;
+                height: 50px;
+                border: 1px solid red;
+                margin: 15px;
+            }
+            #sqred {
+                background-color: red;
+                float: left;
+            }
+            #sqblue {
+                background-color: blue;
+                float: left;
+            }
+            #sqgreen {
+                background-color: green;
+                float: left;
+                clear: left;
+            }
+            #sqyellow {
+                background-color: yellow;
+                float: left;
+            }
+            #sqblack {
+                background-color: black;
+                float: left;
+            }
+            #sqgray {
+                background-color: gray;
+                float: none;
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Float und Clear</h1>
+        <h3>Text um Bilder</h3>
+        <div class="textimg">
+            <p><img src="images/erde.jpg"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <h3>Float und Clear Konzept</h3>
+        <div class="container">
+            <div class="sq" id="sqred"></div>
+            <div class="sq" id="sqblue"></div>
+            <div class="sq" id="sqgreen"></div>
+            <div class="sq" id="sqyellow"></div>
+            <div class="sq" id="sqblack"></div>
+            <div class="sq" id="sqgray"></div>
+        </div>
+    </body>
+</html>
+..........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Align - Ausrichtung</title>
+        <style>
+            div {
+                border: 3px solid red;
+            }
+            #divhoricent {
+                width: 400px;
+                margin: auto;
+            }
+            .textcenter {
+                text-align: center;
+            }
+            .erde {
+                width: 400px;
+            }
+            .imgcenter {
+                display: block;
+                margin: auto;
+            }
+            .right {
+                /*
+                position: absolute;
+                right: 0px;
+                */
+                float: right;
+            }
+            #divright {
+                width: 300px;
+                padding: 10px;
+            }
+            .clearright {
+                clear: right;
+            }
+            .clearfix {
+                overflow: auto;
+            }
+            #verttext {
+                padding: 80px 0px;
+                
+            }
+            .lineheight {
+                line-height: 200px;
+            }
+            .lineheight p {
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align - Ausrichtung</h1>
+        <h3>Block-Elemente horizontal zentrieren</h3>
+        <div id="divhoricent" class="textcenter">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <h3>Bilder horizontal zentrieren</h3>
+        <img class="erde imgcenter" src="images/erde.jpg">
+        <h3>Elemente links/rechts ausrichten</h3>
+        <div class="right" id="divright">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <h3 class="clearright">Überstehende float-Element</h3>
+        <div class="clearfix">
+            <img class="erde right" src="images/erde.jpg">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <h3>Vertikale Ausrichtung (mit padding)</h3>
+        <div class="textcenter">
+            <p id="verttext">Lorem ipsum dolor sit amet</p>
+        </div>
+        <h3>Vertikale Ausrichtung (mit Line-height)</h3>
+        <div class="lineheight">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </body>
+</html>
+...........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>Mein Photo Portfolio</h1>
+    </body>
+</html>
+.......................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

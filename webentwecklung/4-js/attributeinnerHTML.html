@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attribute und innerHTML</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body id="seite" type="exp">
+        <h1>Attribute und innerHTML</h1>
+        <h3>Beispiel Inhalte</h3>
+        <p id="p1">Alter Paragraph</p>
+        <img id="bild" src="img/photo.jpeg" alt="Beispielbild">
+        <h3>DOM und Attribute</h3>
+        <script>
+            "use strict";
+            
+            // Attribute abrufen
+            // alert(document.body.id);
+            
+            // TagName abrufen
+            // alert(document.body.tagName);
+            
+            // Achtung: Standard-Attribute
+            // alert(document.body.type);
+            // Nur Standard-Attribute werden automatisch umgewandelt
+            
+        </script>
+        <h3>HTML ändern</h3>
+        <script>
+            "use strict";
+            
+            // innerHTML
+            // Inhalte von HTML-Elementen ändern
+            let paragraph = document.getElementById("p1");
+            
+            paragraph.innerHTML = "Neuer Paragraph!";
+            
+            // Attribute ändern
+            let image = document.getElementById("bild");
+            
+            image.src = "img/phone.jpeg";
+            
+            
+            let par = document.getElementsByName("body ~ h3");
+            par.innerHTML = " Halllllllo";
+        </script>
+    </body>
+</html>

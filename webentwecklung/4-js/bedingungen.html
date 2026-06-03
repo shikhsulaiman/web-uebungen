@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bedingungen</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Bedingungen</h1>
+        <h3>if Anweisung</h3>
+        <script>
+            "use strict";
+            // Syntax: if (bedingung == true) aktion
+            /*
+            let jahr = prompt("In welchem Jahr wurde das ECMAScript-2015 spezifiziert?", "");
+            
+            if (jahr == 2015) {
+                alert("Du hast recht!");
+                alert("Du bist schlau!");
+            }
+            */
+        </script>
+        <h3>else Bedingung</h3>
+        <script>
+            "use strict";
+            /*
+            let jahr = prompt("In welchem Jahr wurde das ECMAScript-2015 spezifiziert?","");
+            
+            if (jahr == 2015) {
+                alert("Du hast recht!");
+                alert("Du bist schlau!");
+            } else {
+                alert("Das geht besser!");
+            }
+            */
+        </script>
+        <h3>Mehrere Bedingungen: else if</h3>
+        <script>
+            "use strict";
+            /*
+            let jahr = prompt("In welchem Jahr wurde das ECMAScript-2015 spezifiziert?","");
+            
+            if (jahr < 2015) {
+                alert("Zu früh...");
+            } else if (jahr > 2015) {
+                alert("Zu spät..");
+            } else {
+                alert("Du hast recht!");
+            }
+            */
+        </script>
+        <h3>Dreifacher Operator: ?</h3>
+        <script>
+            "use strict";
+            // let ergebnis = bedingung ? wert1 : wert2
+            
+            let istMensch = confirm("Bist du ein Mensch?");
+            
+            let nachricht = (istMensch == true) ? "Cool, ich auch!" : "Schade, ich schon!";
+            
+            alert(nachricht);
+        </script>
+        <h4>Hinweis zu "?"</h4>
+        <p>Rein praktisch ist es möglich den <i>?</i> Operator zu nutzen, um if-elseif-else Strukturen nachzubauen und Aktionen auszuführen. <b>Dazu ist der <i>dreifache Operator</i> nicht gedacht</b> und unter Rücksicht auf die Leserlichkeit unseres Codes sollten wir dies nicht tun.</p>
+    </body>
+</html>

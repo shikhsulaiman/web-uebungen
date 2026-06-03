@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+  background-color: #33353b;
+  padding: 10px;
+}  
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-container h1 {
+    color: white;
+    font-size: 24px;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+.nav ul li {
+    margin-left: 20px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover, .footer-bottom a:hover {
+    color: #ff6347;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  
+  gap: 30px;
+  margin: 20px;
+}
+
+.content {
+  border: 2px solid rgb(218, 216, 216);
+  padding: 20px;
+}
+
+.text-header {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text {
+  line-height: 1.6;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+
+.footer {
+  background-color: #24262b;
+  padding: 50px 0;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  width: 30%;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-col p {
+  margin: 0 0 10px 0;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #3e3e3e;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsiv für Handys */
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+  }
+}
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .footer-col h4 {
+    margin: 0 30px;
+  }
+  .footer-col {
+    text-align: left;
+  }
+  h4 {
+    text-align: right;
+  }
+}

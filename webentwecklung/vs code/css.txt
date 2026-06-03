@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+The position property specifies the positioning type for an element.
+
+static 		 - This is default. Element is positioned according to the normal document flow
+relative 	 - Element is positioned relative to its normal position in the document flow
+fixed   	 - Element is positioned relative to the viewport
+absolute	 - Element is positioned relative to the nearest positioned ancestor
+sticky 		 - Element toggles between a relative and fixed position, depending on the scroll position
+Elements are then positioned to their final location with the top, bottom, left, and right properties.
+
+
+The overflow property has the following values:
+
+visible	 - Default. The overflow is not clipped. The content renders outside the element's box
+hidden	 - The overflow is clipped, and the rest of the content is hidden
+scroll 	 - Scrollbars are added. User must scroll to see all content
+auto 	 - Similar to scroll, but adds scrollbars only when necessary
+
+
+The float property can have one of the following values:
+
+left 	- The element floats to the left of its container
+right 	- The element floats to the right of its container
+none 	- Default. The element does not float and is displayed just where it occurs in the text
+inherit - The element inherits the float value of its parent
+
+
+
+position: absolute;
+position: static;
+list-style-type: none;
+z-index: -1;
+
+display: inline-block;
+display: inline;
+display: flex;
+display: block;
+
+
+
+
+
+
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

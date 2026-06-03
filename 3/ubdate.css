@@ -1,0 +1,162 @@
+
+
+
+
+
+
+
+.trendingCard, .mostCards, .categoryCards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .trendingCard, .mostCards, .categoryCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trendingCard .card, .mostCards .card, .categoryCards .card {
+        margin-bottom: 30px;
+    }
+    img {
+        width: 120%;
+    }
+}
+
+
+
+
+.trendingCard, .mostCards, .categoryCards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .trendingCard, .mostCards, .categoryCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trendingCard .card, .mostCards .card, .categoryCards .card {
+        margin-bottom: 80px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.trendingCard .card {
+    position: relative;
+}
+
+
+
+
+/* ============================================================================================
+   Utility Classes
+   ============================================================================================ */
+
+ <script>
+        // JavaScript für das Hamburger-Menü
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+
+/**/
+
+
+/* Grid Systeme */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+
+/* Kontakt & Footer */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.col-8 {
+  flex: 2;
+  min-width: 300px;
+}
+.col-4 {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+/*============================================================================================
+   Grid Systeme 
+   ============================================================================================ */
+   /* END LANDING PAGE  */
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+col-4 {
+    flex: 2;
+    min-width: 250px;
+}
+.col-8 {
+    flex: 3;
+    min-width: 300px;
+}
+
+
+
+
+grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+/* END GRID SYSTEME  */
+
+
+
+
+
+
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+
+
+
+
+
+
+
+

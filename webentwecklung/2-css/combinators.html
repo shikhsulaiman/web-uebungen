@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combinators</title>
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="combinators.css">
+    </head>
+    <body>
+        <h1>Combinators</h1>
+        <div class="parent" id="higher-parent">
+            <p class="1st-child">Dieser Paragraph ist der erste innerhalb des Divs.</p>
+            <p class="2nd-child">Das ist ein zweiter Paragraph, der sich auch innerhalb des Divs befindet.</p>
+            <div class="parent" id="lower-parent">
+                <p class="1st-child">Dieser dritte Paragraph befindet sich in einem eigenen Div.</p>
+            </div>
+        </div>
+        <p class="adjacent-sibling">Wir befinden uns mit diesem Paragraphen nun wieder außerhalb des Divs.<br> Es ist der erste Paragraph danach.</p>
+        <p class="general-sibling">Und wir haben auch noch einen zweiten Paragraphen, der dem Div folgt.</p>
+    </body>
+</html>

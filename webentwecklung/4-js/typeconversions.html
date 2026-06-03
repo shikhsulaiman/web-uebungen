@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type Conversions</title>
+        <!-- Meta Tags -->
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Type Conversions</h1>
+        <p>Die drei häufigsten <i>Type Conversons</i></p>
+        <h3>Zu Strings</h3>
+        <script>
+            "use strict";
+            let wert = true;
+            typeof wert; //boolean Wert
+            
+            wert = String(wert); // Ergebnis: "true"
+            typeof wert; // string
+        </script>
+        <h3>Zu Zahl</h3>
+        <script>
+            "use strict";
+            //alert("6"/"2");
+            
+            let str = "123";
+            typeof str; // string
+            
+            let num = Number(str); // Ergebnis:123
+            alert(typeof num); // Number
+            Number(null); // 0
+            Number(false); // 0
+            Number(true); // 1
+        </script>
+        <h3>Zu Boolean</h3>
+        <script>
+            "use strict";
+            
+            // null, 0, undefind, NaN, false
+            Boolean(null) // false
+            
+            Boolean(1) // true
+            Boolean(0) // false
+            
+            Boolean("inhalt") // true
+            Boolean("") // false
+            Boolean("0") // true
+        </script>
+    </body>
+</html>

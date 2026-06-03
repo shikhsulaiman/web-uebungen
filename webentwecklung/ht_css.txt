@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Meine webseite</title>
+    </head>
+    <body>
+        Hallo Wellt!
+    </body>
+</html>
+....................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Meine webseite</title>
+    </head>
+    <body>
+        Meine erste Webseite!
+    </body>
+</html>
+...................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Heading</title>
+    </head>
+    <body>
+       <h1>Das ist h1</h1>
+        <h2>Das ist h2</h2>
+        <hr>
+        <h3>Das ist h3</h3>
+        <h4>Das ist h4</h4>
+        <hr>
+        <h5>Das ist h5</h5>
+        <h6>Das ist h6</h6>
+    </body>
+</html>
+........................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Paragraphs</title>
+    </head>
+    <body>
+       <h1>Paragraphs</h1>
+        <p>Der Paragraph trägt im HTMLdie Textinhalte. <br> Das steht hinter....</p>
+          <p>  und f gvgg    gdgdg ...
+    </body>
+</html>
+..................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Text Formatierung</title>
+    </head>
+    <body>
+       <h1>Text Formatierung</h1>
+        <p>chnelles Bearbeiten, Live-Vorschau und zahlreiche
+         werden. Zudem ist Brackets in JavaScript, HTML<br>
+        und CSS geschrieben. Das heißt, dass die meisten Brackets-Nutzer dazu in der Lage sind, den Editor selbst</p>
+        <hr>
+        <p>Dies ist <b>fetter</b> Text.</p>
+        <p>Dies ist <i>kursiver</i> Text.</p>
+        <p>Dies ist <mark>markierter</mark> Text.</p>
+        <p>Dies ist <small>kleiner</small> Text.</p>
+        <p>Dies ist <del>durchgestrichener</del> Text.</p>
+        <p>Dies ist <ins>unterstrichener</ins> Text.</p>
+        <p>Dies ist <sup>hochgestellter</sup> Text.</p>
+        <p>Dies ist <sub>tiefgestellter</sub> Text.</p>
+        <hr>
+        <p>Dies ist <strung>wichtiger</strung> Text.</p>
+        <p>Dies ist <em>betonter</em> Text.</p>
+        <hr>
+        <p>Diese Text beinhaltet <i><b>zwei</b></i> Formatierung</p>
+    </body>
+</html>
+...............................................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Style</title>
+    </head>
+    <body style="background-color: aqua">
+       <h1>HTML Style</h1>
+        <p>Wie können wie HTML Elemente indevidull gestallten?</p>
+        <p>Wir verändern ihr Aussehen durch Vervendung der <i>style</i> Eigenschaft.</p>
+        <hr>
+        <p style="color:red">Textfarbe</p>
+        <p style="font-family:verdana">Schriftart</p>
+        <p style="font-size:150%">Schriftgröß</p>
+        <p style="font-size:30px">Schriftgröß</p>
+        <p style="text-align: center">Ausrichtung</p>
+    </body>
+</html>
+.........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Links</title>
+    </head>
+    <body>
+       <h1 id="anfang">Links</h1>
+        <p><b>Links</b> verknupfen (a) Webseiten, (b) HTML-Dateien oder (c) innerhalb von Webseiten.</p>
+        <hr>
+        <h3>Links zu Webseiten</h3>
+        <a href="http://www.google.com">google</a>
+        <a href="http://www.wikipedia.org"target="_blank">wikipedia</a>
+        <h3>Links zu Dateien</h3>
+        <a href="hallowelt.html">Hello welt</a>
+        <h3>Links innerhalb von Webseiten</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <a href="#anfang">Zurück zum Anfang</a>
+    </body>
+</html>
+.....................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Listen</title>
+    </head>
+    <body>
+       <h1>Listen</h1>
+        <p><b>Listen</b> sind entweder ungeordnet oder geordnet.</p>
+        <hr>
+        <h3>Ungeornete Liste</h3>
+        <ul style="list-style-type: square">
+            <li>Name</li>
+            <li>Geburtsdatum</li>
+            <li>Adresse
+                <ul>
+                    <li>Straße</li>
+                    <li>Hausnummer</li>
+                    <li>Stadt</li>
+                </ul>
+            </li>
+            <li>Beruf</li>
+        </ul>
+        <h3>Geordente Liste</h3>
+        <ol reversed type="A">
+            <li>Hadings</li>
+            <li>Paragraphs</li>
+            <li>Text Formatierung</li>
+            <li>Style</li>
+            <li>Links</li>
+            <li>Listen</li>
+        </ol>
+    </body>
+</html>
+...............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Images</title>
+    </head>
+    <body>
+       <h1>Images</h1>
+        <p><b>Bilder</b> können (a) aus lokalen Ornern oder (b) von anderen Servern geladen werden. <br> Außerdem ist seit der einführung von HTML5 auch die Einbindung gifsmöglich.</p>
+        <hr>
+        <h3>Von lokalen Dateien</h3>
+        <img src="erde.jpg" alt="Erde" style="width:300px; height:300px">
+        <h3>Von externen Servern</h3>
+        <img src="https://plus.unsplash.com/premium_photo-1712039658659-7019cfe912e1?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ait="Erde bei Nacht" style="width:300px">
+        <h3>Gifs dank HTML5</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/250px-Rotating_earth_%28large%29.gif" alt="R Erde">
+    </body>
+</html>
+..............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Tabellen</title>
+    </head>
+    <body>
+       <h1>Tabellen</h1>
+        <p><b>Tabellen</b> stellen Informationenb in Spalten und Zeilen dar.</p>
+        <hr>
+        <table>
+            <thead>
+                <caption>Kontakte</caption>
+                <tr>
+                    <th>Geschlecht</th>
+                    <th>Vornam</th>
+                    <th>Nachname</th>
+                    <th colspan="2">Adresse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Mann</td>
+                    <td>Peter</td>
+                    <td>Müller</td>
+                    <td>Hauptstraße</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>dder</td>
+                    <td>Mdsfsdfller</td>
+                    <td>rtgreg</td>
+                    <td>5</td>
+                </tr> 
+                <tr>
+                    <td rowspan="2">frau</td>
+                    <td>laura</td>
+                    <td>ghller</td>
+                    <td>uptstraße</td>
+                    <td>8</td>
+                </tr> 
+                <tr>
+                    <td>sdfs</td>
+                    <td>sfsd</td>
+                    <td>rwereg</td>
+                    <td>4</td>
+                </tr> 
+            </tbody>
+        </table>
+    </body>
+</html>
+..............................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Zitate</title>
+    </head>
+    <body>
+       <h1>Zitate</h1>
+        <p><b>Zitate</b> geben an, was andere geschrieben oder gesagt haben.</p>
+        <hr>
+        <p> die <abbr title="Uneited Nations">Un</abbr> wurde am 26. Juni 1945 gegründet.</p>
+        <p>Artikel 1 der Charta der vereinten Nationen nennt als erstes Hauptziel <q>dieWahrung des Seltfriedens und der international Sicherheit</q></p>
+        <blockquote cite="https://de.wikipedia.org/wiki/Vereinte_Nationen">Die wichtigsten Aufgaben der Organisation sind gemäß ihrer Charta die Sicherung des Weltfriedens, die Einhaltung des Völkerrechts, der Schutz der Menschenrechte und die Förderung der internationalen Zusammenarbeit. Im Vordergrund stehen außerdem Unterstützung im wirtschaftlichen, sozialen, humanitären und ökologischen Gebiet (siehe auch die Millennium-Entwicklungsziele der UNO).</blockquote>
+        <address>
+        Claudia <br>
+        Beck <br>
+        Gartenstraße <br>
+        8a</address>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/330px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg">
+        <p><cite>Der Schrei</cite> von Edvard Much</p>
+    </body>
+</html>
+...............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Block und Inline Elemente</title>
+    </head>
+    <body>
+       <h1>Block und Inline Elemente</h1>
+        <h3>Block Level Elemente</h3>
+        <div style="background-color:aqua; color:red" class="">
+            <p>Text</p>
+            <p>Text</p>
+        </div>
+        <h3>Inline Elemente</h3>
+        <p>Das ist ein <span style="color: red">beispielhafter</span> Text</p>
+    </body>
+</html>
+.......................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Klassen</title>
+    </head>
+    <body>
+       <h1>Klassen</h1>
+        <hr>
+        <h3>Onleine-Shop</h3>
+        <div class="beschreibung">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <a href="angebot">Zum Sonderangebot</a>
+        </div>
+        <div class="topseller fokus">
+            <div class="produckt">
+                <h4>Productname</h4>
+                <p>Beschreibung</p>
+                <p>Pries</p>
+            </div>
+            <div class="produckt">
+                <h4>Productname</h4>
+                <p>Beschreibung</p>
+                <p>Pries</p>
+            </div>
+            <div class="produckt">
+                <h4>Productname</h4>
+                <p>Beschreibung</p>
+                <p>Pries</p>
+            </div>
+            <div class="produckt">
+                <h4>Productname</h4>
+                <p>Beschreibung</p>
+                <p>Pries</p>
+            </div>
+        </div>
+    </body>
+</html>
+.............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>iFrames</title>
+    </head>
+    <body>
+       <h1>iFrames</h1>
+        <h3>Wikipedia-Artikel</h3>
+        <iframe width="400px" height="300px" style="border: none" src="https://de.wikipedia.org/wiki/Inlineframe"></iframe>
+        
+        <iframe width="400px" height="300px" name="iframeA"></iframe>
+        <p><a href="https://de.wikipedia.org/wiki/Inlineframe" target="iframeA">Wikpedia</a> </p>
+        
+        <h3>Youtube-Videos einbetten</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FE1CqL7Fbsg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://web.de/magazine/panorama/videos/lastwagen-a3-flamme-fahrer-retten-42096838" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Vimeo pro account required -->
+        <iframe src="https://player.vimeo.com/video/131188216?api=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </body>
+</html>
+.........................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Das Sonnensystem</title>
+    </head>
+    <body style="background-color: black; color: white">
+        <div>
+            <!-- Überschrift-->
+            <h1 style="font-size: 60px;">Unser Sonnensystem</h1>
+            <!-- Titelbild -->
+            <img width="600px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Solar_system_scale_2_wide.jpg/1600px-Solar_system_scale_2_wide.jpg" />
+            <!--Einleitung-->
+            <p>Unser Sonnensystem besteht aus der Sonne, ihren acht Planeten und deren Monden, den Zwerplanetetn und Millionen von Kleinkörpern wie beispielsweise Asteroiden und Kometen. Sie alle kreisen um die Sonne.<br>Die Planeten unseres Sonnensystems: manche sind stürmische Gasbälle, manche kochend heiß und ander so kalt, dass Luft auf ihnen gefrieren würde.</p>
+            <!-- Video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bHM-PSA8SMc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <div>
+            <!-- Planeten -->
+            <h3>Die Planeten</h3>
+            <p>Acht Planeten ziehen in unserem Sonnensystem ihre Bahn um die Sonne.</p>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Planet</th>
+                        <th>Durchmesser</th>
+                        <th>Abstand zur Sonne</th>
+                        <th>Masse</th>
+                        <th>Umlaufzeit</th>
+                        <th>Monde</th>
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <th>Sonne</th>
+                        <td>1.400.000 Kilometer</td> 
+                        <td>-</td>
+                        <td>333.000 Erdmassen</td>
+                        <td>-</td>
+                        <td>0</td>
+                    </tr> 
+                    <tr> 
+                        <th class="planet">Merkur</th>
+                        <td>4879 Kilometer</td>
+                        <td>57,9 Mio. Kilometer</td>
+                        <td>0,055 Erdmassen</td>
+                        <td>88 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Venus</th>
+                        <td>12.105 Kilometer</td>
+                        <td>108,2 Mio. Kilometer</td>
+                        <td>0,815 Erdmassen</td>
+                        <td>225 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Erde</th>
+                        <td>12.756 Kilometer</td>
+                        <td>149,6 Mio. Kilometer</td>
+                        <td>1 Erdmassen</td>
+                        <td>365 Erdentage</td>
+                        <td>1</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Mars</th>
+                        <td>6794 Kilometer</td>
+                        <td>227,9 Kilometer</td>
+                        <td>0,107 Erdmassen</td>
+                        <td>687 Erdentage</td>
+                        <td>2</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Jupiter</th>
+                        <td>142.984 Kilometer</td>
+                        <td>779 Mio. Kilometer</td>
+                        <td>317,8 Erdmassen</td>
+                        <td>11,9 Erdenjahre</td>
+                        <td>min. 63</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Saturn</th>
+                        <td>120.536 Kilometer</td>
+                        <td>1433 Millionen Kilometer</td>
+                        <td>95,2 Erdmassen</td>
+                        <td>29,5 Erdenjahre</td>
+                        <td>min. 61</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Uranus</th>
+                        <td>51.118 Kilometer</td>
+                        <td>2871 Mio. Kilometer</td>
+                        <td>14,5 Erdmassen</td>
+                        <td>83,8 Erdenjahre</td>
+                        <td>27</td>
+                    </tr>
+                    <tr> 
+                        <th class="planet">Neptun</th>
+                        <td>49.528 Kilometer</td>
+                        <td>4495 Mio. Kilometer</td>
+                        <td>17,1 Erdmassen</td>
+                        <td>163,8 Erdenjahre</td>
+                        <td>13</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        <hr>
+        <div>
+            <h3>Merkspruch</h3>
+            <p>Um sich die Namen der Planeten merken zu können gibt es einen Merkspruch:</p>
+            <ul>
+                <li><b>M</b>ein</li>
+                <li><b>V</b>ater</li>
+                <li><b>e</b>rklärt</li>
+                <li><b>m</b>ir</li>
+                <li><b>j</b>eden</li>
+                <li><b>S</b>onntag</li>
+                <li><b>u</b>nseren</li>
+                <li><b>N</b>achthimmel</li>
+            </ul>
+            <p>Das ergibt folgende Planeten in der Reihenfolge von geringsten zum größten Abstand zur Sonne:</p>
+            <ol>
+                <li>Merkur</li>
+                <li>Venus</li>
+                <li>Erde</li>
+                <li>Mars</li>
+                <li>Jupiter</li>
+                <li>Saturn</li>
+                <li>Uranus</li>
+                <li>Neptun</li>
+            </ol>
+        </div>
+        <hr>
+        <div>
+            <h3>Raumfahrt</h3>
+            <p>Neil Armstrong: <blockquote>"Ein kleiner Schritt für einen Menschen, aber ein großer Sprung für die Menschheit."</blockquote></p>
+        </div>
+        <hr>
+        <div>
+            <!-- Inhaltsquellen -->
+            <h3>Quellen</h3>
+            <p><a href="https://www.geo.de/geolino/forschung-und-technik/4917-rtkl-weltraum-unser-sonnensystem" target="_blank">www.geo.de</a></p>
+            <p><a href="https://de.wikipedia.org/wiki/Sonnensystem" target="_blank">Wikipedia</a></p>
+        </div>    
+    </body>
+</html> 
+...............................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Das Sonnensystem</title>
+    </head>
+    <body>
+        <h1>Unser Sonnensystem</h1>
+        <img src="erde.jpg" width="300" height="200">Erde
+        <p>Unser Sonnensystem besteht aus der Sonne, ihren acht Planeten und deren Monden, den Zwerplanetetn und Millionen von Kleinkörpern wie beispielsweise Asteroiden und Kometen. Sie alle kreisen um die Sonne.<br>
+        Die Planeten unseres Sonnensystems: manche sind stürmische Gasbälle, manche kochend heiß und ander so kalt, dass Luft auf ihnen gefrieren würde.</p>
+        
+        <iframe width="500" height="400"
+        src="https://www.youtube.com/embed/-8xe4BNSr60?si=dn_eFv_1qQYPzvon"
+                ></iframe>
+        <hr>
+        <div>
+            <h3>Die Planeten</h3>
+            <p>Acht Planeten ziehen in unserem Sonnensystem ihre Bahn um die Sonne.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planet              </th>
+                        <th>Durchmesser         </th>
+                        <th>Abstand zur Sonne   </th>
+                        <th>Masse               </th>
+                        <th>Umlaufzeit          </th>
+                        <th>Monde               </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sonne               </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Merkur              </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>57,9 Mio. Kilometer </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Venus               </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>108,2 Mio. Kilometer</td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Erde               </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Mars                </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Jupiter             </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Saturn              </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Uranus              </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>-                   </td>
+                        <td>0                   </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Neptun              </td>
+                        <td>1.400.000 Kilometer </td>
+                        <td>-                   </td>
+                        <td>333.000 Erdmassen   </td>
+                        <td>163,8 Erdenjahre    </td>
+                        <td>13                  </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <h3>Merkspruch</h3>
+            <p>Um sich die Namen der Planeten merken zu können gibt es einen Merkspruch:</p>
+            <ul>
+                <li>Mein        </li>
+                <li>Vater       </li>
+                <li>erklärt     </li>
+                <li>mir         </li>
+                <li>jeden       </li>
+                <li>Sonntag     </li>
+                <li>unseren     </li>
+                <li>Nachthimmel </li>
+            </ul>
+            <p>Das ergibt folgende Planeten in der Reihenfolge von geringsten zum größten Abstand zur Sonne:</p>
+            <ol>
+                <li>Merkur      </li>
+                <li>Venus       </li>
+                <li>Erde        </li>
+                <li>Mars        </li>
+                <li>Jupiter     </li>
+                <li>Saturn      </li>
+                <li>Uranus      </li>
+                <li>Neptun      </li>
+            </ol>
+        </div>
+        <hr>
+        <div>
+            <h3>Raumfahrt</h3>
+            <p>Neil Armstrong:</p>
+
+        </div>    
+        <hr>
+            <!-- Inhaltsquellen -->
+            <h3>Quellen</h3>
+            <p><a href="https://www.geo.de/geolino/forschung-und-technik/4917-rtkl-weltraum-unser-sonnensystem" target="_blank">www.geo.de</a></p>
+            <p><a href="https://de.wikipedia.org/wiki/Sonnensystem" target="_blank">Wikipedia</a></p>
+        </div>    
+    </body>
+</html>
+............................................................
+<!DOTYPE html>
+<html>
+    <head>
+        <title>Das Sonnensystem</title>
+    </head>
+    <!-- Kommentar -->
+    <body style="background-color: black; color:white">
+        <h1 style="font-size: 60">Unser Sonnensystem</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Solar_system_scale.jpg/960px-Solar_system_scale.jpg?_=20091101181704" alt="Sonnen System" style="width: 600px" height="130">
+        <p>Unser Sonnensystem besteht aus der Sonne, ihren acht Planeten und deren Monden, den Zwerplanetetn und Millionen von Kleinkörpern wie beispielsweise Asteroiden und Kometen. Sie alle kreisen um die Sonne.<br>Die Planeten unseres Sonnensystems: manche sind stürmische Gasbälle, manche kochend heiß und ander so kalt, dass Luft auf ihnen gefrieren würde.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bHM-PSA8SMc?si=pgfG-O-zfyYklwqf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <h3>Die Planeten</h3>
+        <p>Acht Planeten ziehen in unserem Sonnensystem ihre Bahn um die Sonne.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>Planet</b></th>
+                    <th>Durchmesser</th>
+                    <th>Abstand zur Sonne</th>
+                    <th>Masse</th>
+                    <th>Umlaufzeit</th>
+                    <th>Monde</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Sonne</b></td>
+                    <td>1.400.000 Kilometer</td>
+                    <td>-</td>
+                    <td>333.000 Erdmassen</td>
+                    <td>-</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+                <tr>
+                    <td><b>0000</b></td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Merkspruch</h3>
+        <p>Um sich die Namen der Planeten merken zu können gibt es einen Merkspruch:</p>
+        <ul>
+            <li><b>M</b>ein</li>
+            <li><b>V</b>ater</li>
+            <li><b>e</b>rklärt</li>
+            <li><b>m</b>ir</li>
+            <li><b>j</b>eden</li>
+            <li><b>S</b>onntag</li>
+            <li><b>u</b>nseren</li>
+            <li><b>N</b>achthimmel</li>
+        </ul>
+        <p>Das ergibt folgende Planeten in der Reihenfolge von geringsten zum größten Abstand zur Sonne:</p>
+        <ol>
+            <li>Merkur</li>
+            <li>Venus</li>
+            <li>Erde</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptun</li>
+        </ol>
+        <hr>
+        <h3>Raumfahrt</h3>
+        <p>Neil Armstrong:</p>
+        <blockquote>"Ein kleiner Schritt für einen Menschen, aber ein großer Sprung für die Menschheit."</blockquote>
+        <hr>
+        <h3>Quellen</h3>
+        <p><a href="https://www.geo.de/geolino/forschung-und-technik/4917-rtkl-weltraum-unser-sonnensystem">www.geo.de</a></p>
+        <p><a href="https://de.wikipedia.org/wiki/Sonnensystem">Wikipedia</a></p>
+    </body>
+</html>
+.............................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms - Formulare</title>
+    </head>
+    <body>
+        <h1>Forms - Formulare</h1>
+        <form>
+            <p>Vorname: <input type="text" placeholder="Dein Vorname"></p>
+            <p>Name: <input type="text" placeholder="Dein Nachname"></p>
+            <p>Geschlecht:</p>
+            <p><input type ="radio" name="geschlecht" nalue="mann">Mann</p>
+            <p><input type ="radio" name="geschlecht" nalue="frau">Frau</p>
+            <p><input type="submit" value="Absenden"></p>
+        </form>
+    </body>
+</html>
+.................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charset</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Charset</h1>
+        <ul>
+            <li>ASCII - 128 Zeichen</li>
+            <li>ANSI - 256 Zeichen</li>
+            <li>UTF-8 - Alle Zeichen Welt</li>
+        </ul>
+    </body>
+</html>
+.....................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entities</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>HTML-Entities</h1>
+        <p>Kleiner als: &lt;</p>
+        <p>Gröser als: &gt;</p>
+        <p>Gröser Kleiner: &gl;</p>
+        <p>Und-Zeichen; &amp;</p>
+        <p>Und-Zeichen; &#38;</p>
+        <p>Doppelten Anfürungzeichen: &quot;&#34;</p>
+        <p>Einfach Anfürungzeichen: &apos;</p>
+    </body>
+</html>
+.......................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Symbole</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Symbole</h1>
+        <h3>Mathematische Symbole</h3>
+        <p>Für alle: &#8704; &forall;</p>
+        <p>Element von: &#8712; &isin;</p>
+        <p>Summenzeichen: &#8721; &sum;</p>
+        <h3>Griechische Buchstapen</h3>
+        <p>Gamma: &#915; &Gamma;</p>
+        <p>Delta: &#916; &Delta;</p>
+        <h3>Weitere Beispiele</h3>
+        <p>Copyright: &#169; &copy;</p>
+        <p>Pfeil nach oben: &#8593; &uarr;</p>
+    </body>
+</html>
+...................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dateipfade</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Dateipfade</h1>
+        <h3>Absoluten Dateipfade</h3>
+        <p><a href="file:///C:/Users/chess/OneDrive/Desktop/webentwicklung/1-html/dateipfade.html">Webseite über Dateipfade</a></p>
+        <h3>Relative Dateipfade</h3>
+        <p>Bild im selben Verzichnis</p>
+        <img src="erde.jpg" style="width: 300px">
+        <p>Bild-Ordner im selben Verzichnis</p>
+        <img src="images/erde.jpg" style="width: 300px">
+        <p>Bild-Ordner im höheren</p>
+        <img src="../images/erde.jpg" style="width: 300px">
+        <p>Bild-Ordner im höheren Verzichnis</p>
+        <img src="../erde.jpg" style="width: 300px">
+    </body>
+</html>
+..................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Picture</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Picture</h1>
+        <picture>
+            <source media="(min-width:640px)" srcset="images/blau.jpg">
+            <source media="(min-width:420px)" srcset="images/rot.jpg">
+            <img src="images/gruen.jpg" alt="Farben" style="width: auto">
+        </picture>
+    </body>
+</html>
+........................................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scalable Vector Graphics</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Scalable Vector Graphics</h1>
+        <h3>Kreise</h3>
+        <svg width="100px" heigh="100px">
+            <circle cx="50px" cy="50px" r="40px" stroke="blue" stroke-width="4px" fill="aqua"></circle>
+        </svg>
+        <h3>Rechtecke</h3>
+        <svg width="400px" hight="100px">
+            <rect width="380px" height="80px" style="fill:aqua; stroke:blue; stroke-width:1px;"></rect>
+        </svg>
+        <h3>Abgerundete Rechtecke</h3>
+        <svg width="400px" hight="100px">
+            <rect rx="10px" ry="10px" width="380px" height="80px" style="fill:aqua; stroke:blue; stroke-width:1px;"></rect>
+        </svg>
+        <h3>Logos</h3>
+        <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4534">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="0"
+         id="stop4530" />
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="1"
+         id="stop4532" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4526">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="0"
+         id="stop4522" />
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="1"
+         id="stop4524" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4526"
+       id="linearGradient4528"
+       x1="3.8364574"
+       y1="284.00705"
+       x2="22.905356"
+       y2="284.00705"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4534"
+       id="linearGradient4536"
+       x1="3.8364574"
+       y1="284.00705"
+       x2="22.905356"
+       y2="284.00705"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4534"
+       id="linearGradient4540"
+       gradientUnits="userSpaceOnUse"
+       x1="3.8364574"
+       y1="284.00705"
+       x2="22.905356"
+       y2="284.00705"
+       gradientTransform="matrix(0.87012987,0,0,0.87012987,-25.005332,36.884044)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4526"
+       id="linearGradient4542"
+       gradientUnits="userSpaceOnUse"
+       x1="3.8364574"
+       y1="284.00705"
+       x2="22.905356"
+       y2="284.00705"
+       gradientTransform="matrix(0.87012987,0,0,0.87012987,-25.005332,36.884044)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="80.089279"
+     inkscape:cy="58.207908"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="797"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54165)">
+    <ellipse
+       id="path3699"
+       cx="13.370907"
+       cy="284.00705"
+       rx="9.4021578"
+       ry="4.9609375"
+       style="stroke-width:0.26458332;stroke:url(#linearGradient4528);stroke-opacity:1;fill-opacity:1;fill:url(#linearGradient4536)" />
+    <ellipse
+       style="fill:url(#linearGradient4540);fill-opacity:1;stroke:url(#linearGradient4542);stroke-width:0.23022185;stroke-opacity:1"
+       ry="4.3166599"
+       rx="8.181098"
+       cy="284.00705"
+       cx="-13.370907"
+       id="ellipse4538"
+       transform="scale(-1,1)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.1506758"
+       y="285.77472"
+       id="text4546"><tspan
+         sodipodi:role="line"
+         id="tspan4544"
+         x="6.1506758"
+         y="285.77472"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:Arial;-inkscape-font-specification:'Arial Italic';fill:#ffffff;stroke-width:0.26458332">LOGO</tspan></text>
+  </g>
+</svg>
+
+    </body>
+</html>
+..................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Audio</h1>
+        <audio controls>
+            <source src="audio/keys.mp3" type="audio/mpeg">
+            <source src="audio/keys.wav" type="audio/wav">
+            Dein Browser unterstützt Audio-Element nicht.
+        </audio>
+    </body>
+</html>
+...................................................
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Video</h1>
+        <video width="640px" height="360px" controls>
+            <source src="videos/swimming.mp4" type="video/mp4"> Dein Browser unterstützt das Video-Element nicht.
+        </video>
+    </body>
+</html>
+......................................................................
+https://pixabay.com/de/videos/
+.............................................
+https://flatuicolors.com/
+
+color picker
+..........................
+
+
+https://loremipsum.de/
+.............................
+
+Inhalt
+padding
+bourder
+margen
+.................
+
+https://fonts.google.com/
+
+...................
+
+https://unsplash.com
+..................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <style>
+            body {
+                font-family: sans-serif
+            }
+            h1 {
+                text-align: center
+            }
+            .gallery {
+                width: 524px;
+                margin: auto;
+            }
+            .photoitem {
+                border: 1px solid#2c3e50;
+                margin: 5px;
+                width: 250px;
+                float: left;
+                background-color: #ecf0f1;
+            }
+            .photoitem:hover {
+                border: 1px solid #95a5a6;
+                background-color: white;
+            }
+            .photoitem img {
+                width: 250px;
+            }
+            .photoitem p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mein Photo Portfolio</h1>
+        <div class="gallery">
+            <div class="photoitem">
+                <img src="images/architecture.jpeg">
+                <p class="desc">Ein modernes Gebäude</p>
+            </div>
+            <div class="photoitem">
+                <img src="images/flower.jpeg">
+                <p class="desc">Nahaufnahme</p>
+            </div>
+            <div class="photoitem">
+                <img src="images/house.jpeg">
+                <p class="desc">Vogelperspektive auf ein Haus</p>
+            </div>
+            <div class="photoitem">
+                <img src="images/ice.jpeg">
+                <p class="desc">Winterlandschaft bei Sone</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Klassen</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--- Custom CSS -->
+        <style>
+            p {
+                font-size: 20px;
+                color: #555;
+            }
+            .wichtig {
+                font-size: 36px;
+                color: darkblue; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Klassen</h1>
+        <p>Hi, ich bin John Doe!</p>
+        <h3>Was tut John?</h3>
+        <button id="btn-wichtig" type="button">Sich wichtig machen</button>
+        <button id="btn-normal" type="button">Auf dem Boden bleiben</button>
+        <button id="btn-schwankung" type="button">Stimmungsschwankung</button>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                
+                // addClass
+                $("#btn-wichtig").click(function() {
+                   $("p").addClass("wichtig");
+                });
+                
+                // removeClass
+                $("#btn-normal").click(function() {
+                   $("p").removeClass("wichtig");
+                });
+                
+                // toggleClass
+                $("#btn-schwankung").click(function() {
+                   $("p").toggleClass("wichtig");
+                });
+            });
+        </script> 
+    </body>
+</html>

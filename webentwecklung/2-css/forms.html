@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulare</title>
+        <style>
+            body {
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 300;
+            }
+            .container {
+                width: 402px;
+                margin: auto;
+                text-align: center;
+                margin-top: 30px;
+            }
+            .tile {
+                background-color: #bdc3c7;
+                border-radius: 10px;
+                border: 1px solid #2c3e50;
+            }
+            h3 {
+                padding-top: 10px;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            form {
+                margin-bottom: 10px;
+            }
+            input[type=email], input[type=password], input[type=submit], input[type=text] {
+                font-size: 16px;
+                padding: 10px;
+                border: 1px solid #2c3e50;
+                border-radius: 5px;
+                margin: 5px 10px;
+                width: 380px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                background-color: #2c3e50;
+                color: white;
+            }
+            .half input[type=text] {
+                width: 180px;
+                float: left;
+            }
+            input:focus {
+                border: 1px solid #8e44ad;
+                background-color: #ecf0f1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tile" id="login">
+                <h3>Login</h3>
+                <p>Bitte geben Sie Ihre Daten an, um sich bei uns anzumelden</p>
+                <form>
+                    <input type="email"
+                           placeholder="E-Mail Adresse">
+                    <input type="password"
+                           placeholder="Passwort">
+                    <input type="submit"
+                           value="Anmelden">
+                </form>
+            </div>
+            <p>oder</p>
+            <div class="tile" id="register">
+                <h3>Registrieren</h3>
+                <p>Bitte geben Sie Ihre Daten an, um sich bei uns registrieren</p>
+                <form>
+                    <div class="half">
+                        <input type="text"
+                               placeholder="Vorname">
+                        <input type="text"
+                               placeholder="Nachname">
+                    </div>
+                    <input type="email"
+                           placeholder="E-Mail Adresse">
+                    <input type="password"
+                           placeholderr="Passwort">
+                    <input type="submit"
+                           value="Registrieren">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

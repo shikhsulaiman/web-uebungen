@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selektoren</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Custom CSS -->
+        <style>
+            .styled-list {
+                list-style: circle;
+            }
+        </style>
+    </head>
+    <body id="seite">
+        <h1>Selektoren</h1>
+        <p>jQuery erlaubt es uns mit verschiedene Selektoren zu arbeiten:</p>
+        <ul class="styled-list">
+            <li>Alles</li>
+            <li>Elemente</li>
+            <li>IDs</li>
+            <li>Klassen</li>
+            <li>...</li>
+        </ul>
+        <p>Also im Endeffekt alle CSS-Selektoren!</p>
+        <h3>Einige Beispiele</h3>
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // Alles
+                $("*")
+                
+                // Elemente
+                $("h1")
+                $("p")
+                
+                // ID
+                $("#seite")
+                
+                // Klassen
+                $(".styled-list")
+                
+                // Beispiel: 1. li unserer ul
+                $("ul li:first")
+            });
+        </script> 
+    </body>
+</html>

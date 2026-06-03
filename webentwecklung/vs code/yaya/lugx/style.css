@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    height: 50px;
+    background-color: #a5a4a4;
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    display: block;
+}
+
+
+.header a { 
+    align-items: center;
+}
+.navbar a  {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    width: 20px;
+}
+.navbar li {
+    list-style: none;
+    display: inline-block;
+}

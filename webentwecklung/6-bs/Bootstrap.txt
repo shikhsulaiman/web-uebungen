@@ -1,0 +1,32 @@
+
+
+
+.........................................................
+.  https://getbootstrap.com/docs/5.3/components		.
+.........................................................
+
+
+
+Overview, Container
+https://getbootstrap.com/docs/4.1/layout/overview/
+
+Grid
+https://getbootstrap.com/docs/4.1/layout/grid/
+
+Typography
+https://getbootstrap.com/docs/4.1/content/typography/
+
+Code
+https://getbootstrap.com/docs/4.1/content/code/
+
+Images
+https://getbootstrap.com/docs/4.1/content/images/
+
+Tables
+https://getbootstrap.com/docs/4.1/content/tables/
+
+Alerts
+https://getbootstrap.com/docs/4.1/components/alerts/
+
+Badge
+https://getbootstrap.com/docs/4.1/components/badge/

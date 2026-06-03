@@ -1,0 +1,5 @@
+{
+    "editor.inlineSuggest.edits.showCollapsed": false,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+    "editor.suggestOnTriggerCharacters": true
+}

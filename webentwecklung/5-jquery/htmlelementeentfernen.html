@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Elemente</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>HTML Elemente entfernen</h1>
+        <h3>Elemente entfernen</h3>
+        <p id="intro">Wir nutzen zum Entfernen von Elementen zwei Methoden:</p>
+        <ul>
+            <li>remove</li>
+            <li>empty</li>
+        </ul>
+        <h3>Filter anwenden</h3>
+        <p class="p-filter">Wir können auch Filter anwenden.</p>
+        <p class="p-filter">So werden nur bestimmte Elemente entfernt.</p>
+        
+        <h3>Buttons</h3>
+        <button id="btn-remove" type="button">Remove > Intro</button>
+        <button id="btn-empty" type="button">Empty > Liste</button>
+        <button id="btn-filter" type="button">Remove (Filter) > P</button>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // Remove
+                $("#btn-remove").click(function() {
+                    $("#intro").remove();
+                });
+                
+                // Empty
+                $("#btn-empty").click(function() {
+                    $("ul").empty();
+                });
+                
+                // Remove mit Filter
+                $("#btn-filter").click(function() {
+                    $("p").remove(".p-filter");
+                });
+            });
+        </script> 
+    </body>
+</html>

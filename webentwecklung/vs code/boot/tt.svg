@@ -1,0 +1,11 @@
+<svg class="navbar-toggler-search-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="27"
+    viewBox="0 0 40 27" fill="none">
+    <!-- Icon von Vorname Nachname (https://beispielseite.de)
+    Lizenziert unter CC-BY 4.0 (creativecommons.org) -->
+    <path d="M38.25 20.9375L33.0625 15.7501" stroke="#ffffff" stroke-width="2"
+        stroke-linecap="round"></path>
+    <path d="M14.25 5L1.25 5" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+    <path d="M27.25 25L1.25 25" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+    <path d="M13.25 15L1.25 15" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+    <circle cx="27.25" cy="9" r="7.75" stroke="#ffffff" stroke-width="2"></circle>
+</svg>

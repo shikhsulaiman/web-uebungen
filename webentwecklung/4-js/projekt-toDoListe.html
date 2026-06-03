@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ToDo-Liste mit JavaScript</title>
+        <meta name="description" content="JavaScript ToDo-Liste">
+        <meta name="author" content="David">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/Style.css">
+        
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=edit" />
+        
+    </head>
+    <bod>
+        <div class="intro">
+            <h1>TODO-LISTE</h1>
+        </div>
+        <div class="hilfeText">
+            <p>Gib Text im Eingabefeld ein, um Aufgaben zur Liste hinzuzufügen.</p>
+            <p>Klicke auf eine Aufgabe, um sie als erledigt zu markieren.</p>
+            <p>Klicke auf "X", um eine Aufgabe aus der Liste zu entfernen.</p>
+        </div>
+        <div id="Nutzereingabe">
+            <input id="userInput" type="text" placeholder="Neue Aufgabe..." maxlength="27">
+            <button id="enter"><i><span class="material-symbols-outlined">
+            edit
+            </span></i></button>
+        </div>
+        
+        <!-- Leere Liste -->
+        <div class="listItems">
+            <ul class="list">
+            </ul>
+        </div>
+        <!-- Scripts -->
+        <script src="js/Code.js"></script>
+    </bod>
+</html>

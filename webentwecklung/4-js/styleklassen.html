@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokument modifizieren</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Internes CSS -->
+        <style>
+            .alert {
+                padding: 15px;
+                border: 1px solid grey;
+                border-radius: 4px;
+            }
+            .alert-success {
+                color: #3c763d;
+                border: 1px solid #d6e9c6;
+                background-color: #dff0d8;
+            }
+            .alert-warning {
+                color: #856404;
+                border-color: #ffeeba;
+                background-color: #fff3cd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Style und Klassen</h1>
+        <h3 id="changeStyle">Style beeinflussen</h3>
+        <script>
+            "use strict";
+            changeStyle.style.color = "lightgrey";
+            changeStyle.style.backgroundColor = "grey"; // Nicht background-color; bitte beachten!
+        </script>
+        <h3>Betrachtungsgegenstand</h3>
+        <div id="meldung" class="alert">
+            <strong>Hallo!</strong> Du hast eine wichtige Nachricht.
+        </div>
+        <h3 id="changeClass">Klasse beeinflussen</h3>
+        <script>
+            "use strict";
+            
+            // className
+            meldung.className = "alert-warning";
+            
+            // Um alle Klasse zu behalten, die bereits existenten noch einmal aufführen
+            
+            meldung.className = "alert alert-warning";
+            
+            // Einmal zurücksetzen:
+            meldung.className = "alert";
+            
+            // classList
+            // add/remove
+            
+            meldung.classList.add("alert-success");
+            
+            meldung.classList.remove("alert-success");
+            
+            // toggle
+            // Wechselt zwischen Ein-/Ausschalten einer Klasse
+            meldung.classList.toggle("alert-warning");
+            
+            // contains
+            let check1 = meldung.classList.contains("alert-warning"); // true
+            let check2 = meldung.classList.contains("alert-success"); // false
+            
+        </script>
+    </body>
+</html>

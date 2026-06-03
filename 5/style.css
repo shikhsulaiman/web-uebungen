@@ -1,0 +1,30 @@
+/*
+nav ul {
+  list-style: none;   /* Punkte weg *//*
+  padding: 0;
+  display: flex;      /* Einträge nebeneinander *//*
+  gap: 25px;
+}
+*/
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+/*
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+*//*
+a {
+    text-decoration: none;
+    color: black;
+}
+*/
+.navList a {
+    text-decoration: none;
+    color: black;
+}

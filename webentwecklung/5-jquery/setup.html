@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Setup</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>jQuery Setup</h1>
+        <h3>Einbindung von jQuery</h3>
+        <a href="https://jquery.com/">jQuery Webseite</a>
+        <h3>Beispielinhalte</h3>
+        <p>Das ist ein einfacher Paragraph.</p>
+        <button type="button">Paragraph verstecken?</button>
+        <h3>Document-ready-Funktion</h3>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("p").hide();
+                });
+            });
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabellen mit Style</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            div {
+                overflow-x: auto;
+            }
+            table, th, td {
+                border-collapse: collapse;
+            }
+            table {
+                width: 100%;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            th {
+                height: 50px;
+                text-align: left;
+                background-color: #f39c12;
+                color: white;
+            }
+            th, td {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabellen mit Style</h1>
+        <div>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Planet</th>
+                        <th>Durchmesser</th>
+                        <th>Abstand zur Sonne</th>
+                        <th>Masse</th>
+                        <th>Umlaufzeit</th>
+                        <th>Monde</th>
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Sonne</td>
+                        <td>1.400.000 Kilometer</td> 
+                        <td>-</td>
+                        <td>333.000 Erdmassen</td>
+                        <td>-</td>
+                        <td>0</td>
+                    </tr> 
+                    <tr> 
+                        <td class="planet">Merkur</td>
+                        <td>4879 Kilometer</td>
+                        <td>57,9 Mio. Kilometer</td>
+                        <td>0,055 Erdmassen</td>
+                        <td>88 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Venus</td>
+                        <td>12.105 Kilometer</td>
+                        <td>108,2 Mio. Kilometer</td>
+                        <td>0,815 Erdmassen</td>
+                        <td>225 Erdentage</td>
+                        <td>0</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Erde</td>
+                        <td>12.756 Kilometer</td>
+                        <td>149,6 Mio. Kilometer</td>
+                        <td>1 Erdmassen</td>
+                        <td>365 Erdentage</td>
+                        <td>1</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Mars</td>
+                        <td>6794 Kilometer</td>
+                        <td>227,9 Kilometer</td>
+                        <td>0,107 Erdmassen</td>
+                        <td>687 Erdentage</td>
+                        <td>2</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Jupiter</td>
+                        <td>142.984 Kilometer</td>
+                        <td>779 Mio. Kilometer</td>
+                        <td>317,8 Erdmassen</td>
+                        <td>11,9 Erdenjahre</td>
+                        <td>min. 63</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Saturn</td>
+                        <td>120.536 Kilometer</td>
+                        <td>1433 Millionen Kilometer</td>
+                        <td>95,2 Erdmassen</td>
+                        <td>29,5 Erdenjahre</td>
+                        <td>min. 61</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Uranus</td>
+                        <td>51.118 Kilometer</td>
+                        <td>2871 Mio. Kilometer</td>
+                        <td>14,5 Erdmassen</td>
+                        <td>83,8 Erdenjahre</td>
+                        <td>27</td>
+                    </tr>
+                    <tr> 
+                        <td class="planet">Neptun</td>
+                        <td>49.528 Kilometer</td>
+                        <td>4495 Mio. Kilometer</td>
+                        <td>17,1 Erdmassen</td>
+                        <td>163,8 Erdenjahre</td>
+                        <td>13</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+    </body>
+</html>

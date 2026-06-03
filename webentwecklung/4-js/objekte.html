@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objekte</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Objekte</h1>
+        <h2>Teil 1:</h2>
+        <h3>Objekte Grundlagen</h3>
+        <script>
+            "use strict";
+            
+            // Objekte erstellen
+            let obj1 = new Object(); // Object constructor
+            let obj2 = {}; // Object literal
+            
+            // Eigenschaften
+            let obj3 = {
+                key: "value"
+            };
+                        
+        </script>
+        <h3>Literals und Eigenschaften</h3>
+        <script>
+            "use strict";
+            
+            // Eigenschaften verleihen
+            let firstUser = {
+                name: "Peter",
+                alter: 34
+            };
+            
+            firstUser.isAdmin = true; // object.key
+            
+            // Eigenschaften abrufen
+            
+            // alert(firstUser.alter); // object.key
+            // alert(firstUser.name); // object.key
+            // alert(firstUser.isAdmin); // object.key
+            
+            
+            // Eigenschaften löschen
+            
+            delete firstUser.alter; // delete-Keyword zum Löschen
+            
+            // alert(firstUser.alter); // object.key
+            
+            // Achtung: Keys aus mehreren Wörtern
+            let secondUser = {
+                name: "John",
+                alter: 25,
+                "mag tiere": true // Keys aus mehreren Wörtern müssen in "" geschrieben werden
+            };
+            
+            // alert(secondUser.mag tiere); // Kein Ergebnis, da Key nicht erkannt wird
+            
+        </script>
+        <h3>[] Notation</h3>
+        <script>
+            "use strict";
+            
+            // Keys aus mehreren Wörtern abrufen
+            // alert(secondUser["mag tiere"]);
+            
+            // Berechnete Eigenschaften
+            /*
+            let obst = prompt("Welches Obst soll gekauft werden", "Apfel");
+            
+            let korb = {
+                [obst]: 5
+            };
+            
+            alert(korb.Apfel); */
+            
+        </script>
+        <h3>Property-Value Kurzschreibweise</h3>
+        <script>
+            "use strict";
+            function makeUser(name, alter) {
+                return {
+                    name, // entspricht name: name,
+                    alter // entspricht alter: alter
+                }
+            }
+            
+            let newUser = makeUser("Susanne", 24);
+            
+            // alert(newUser.name);
+        </script>
+        <h2>Teil 2:</h2>
+        <h3>Existenz Check</h3>
+        <script>
+            "use strict";
+            let thridUser = {
+                // kein key-value pair vorhanden
+            };
+            
+            // alert(thridUser.undefinierterKey === undefined);
+            
+            // alert("andererKey" in thridUser); // false
+            
+            // alert("alter" in secondUser); // true
+        </script>
+        <h3>Die "for ... in" Schleife</h3>
+        <script>
+            "use strict";
+            /* 
+            for (let key in object) {
+                // Loop body
+            } */
+            
+            let fourthUser = {
+                name: "Maria",
+                alter: 54,
+                "mag tiere": false
+            }
+            
+            for (let key in fourthUser) {
+                // Keys
+                // alert(key);
+                // Values
+                // alert(fourthUser[key]);
+            }
+        </script>
+        <h3>Ordung innerhalb von Objekten</h3>
+        <script>
+            "use strict";
+            /* 
+            let codes = {
+                "49": "Deutschland",
+                "41": "Schweiz",
+                "44": "Großbritannien",
+                // ...
+                "1": "USA"
+            };
+            
+            for (let code in codes) {
+                alert(code); // 1, 41, 44, 49
+            } */
+            
+            /*
+            let codes = {
+                "+49": "Deutschland",
+                "+41": "Schweiz",
+                "+44": "Großbritannien",
+                // ...
+                "+1": "USA"
+            };
+            
+            for (let code in codes) {
+                alert(code); // +49, +41, +44, +1
+            } */
+        </script>
+        <h3>Objekte kopieren und referenzieren</h3>
+        <script>
+            "use strict";
+            
+            let nachricht = "Hallo";
+            let nachricht2 = nachricht;
+            
+            nachricht2 = "Hi";
+            
+            // alert(nachricht);
+            
+            let fifthUser = {
+                name: "John",
+                alter: 70
+            };
+            
+            let sixthUser = fifthUser;
+            
+            sixthUser.name = "Peter";
+            
+            // alert(fifthUser.name);
+            
+            let kopie = {};
+            
+            // fithUser.name = "Peter";
+            
+            for (let key in fifthUser) {
+                kopie[key] = fifthUser[key];
+            }
+            
+            kopie.name = "Sarah";
+                
+            alert(fifthUser.name);
+            
+        </script>
+    </body>
+</html>

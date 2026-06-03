@@ -1,0 +1,19 @@
+* {
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+div p {
+    color: blue;
+}
+
+#higher-parent > p {
+    text-transform: uppercase;
+}
+
+div + p {
+    color: red;
+}
+
+div ~ p {
+    text-decoration: underline;
+}

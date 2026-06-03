@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logische Operatoren</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Logische Operatoren</h1>
+        <h3>Oder: || (OR)</h3>
+        <script>
+            "use strict";
+            // ergebnis = a || b
+            let oder1 = true || true; // true
+            let oder2 = false || true; // true
+            let oder3 = true || false; // true
+            let oder4 = false || false; // false
+            /*
+            if (1 || 0) {
+                alert("Das Ergebnis ist true!");
+            }
+            */
+            /*
+            let uhrzeit = 19;
+            
+            if (uhrzeit < 9 || uhrzeit > 18){
+                alert("Das Büro ist geschlossen!");
+            }
+            */
+            
+            let exp1 = (1 || 0); // 1
+            let exp2 = (null || "Peter" || 0); // Peter
+            let exp3 = (null || "Peter" || 1); // Peter
+        </script>
+        <h3>Und: &amp;&amp; (AND)</h3>
+        <script>
+            "use strict";
+            let und1 = true && true; // true
+            let und2 = true && false; // false
+            let und3 = false && true; // false
+            let und4 = false && false; // false
+            /*
+            let vorname = "Peter";
+            let nachname = "Schloss";
+            
+            if (vorname == "Peter" && nachname == "Schloss") {
+                alert("Hallo Peter Schloss");
+            }
+            */
+            
+            let exp4 = (1 && 5); // 5
+            let exp5 = (null && 3); // null
+        </script>
+        <h3>Nicht: ! (NOT)</h3>
+        <script>
+            "use strict";
+            let nicht1 = !true; // false
+            let nicht1 = !0; // true
+            
+            let exp6 = !!"String"; // true
+            let exp7 = Boolean("String"); // true
+        </script>
+    </body>
+</html>

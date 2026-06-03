@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Der "moderne" Modus</title>
+        <!-- Meta Tags -->
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Variablen</h1>
+        <h3>Variblen erstellen</h3>
+        <script>
+            "use strict";
+            /* Der nachvolgende Code funktioniert im "modernen" Modus */
+            
+            // var in älteren Version
+            
+            let nachricht = "Wellkommen";
+            let name = "John";
+            
+            alert(nachricht);
+            
+            name = "Maria";
+            alert(name);
+             
+        </script>
+        <h3>Variablen benennen</h3>
+        <p>Es gibt zwei Regeln für die Namensgebung von Variablen:</p>
+        <ol>
+            <li>Der Name darf nur aus <i>Buchstaben</i>, <i>Zahlen</i> und den Symbolen.</li>
+            <li>Das erste Zeichen darf keine Zahl sein <i>$</i> und <io>_</io> bestehen.</li>
+        </ol>
+        <p>Es gibt außerdem einige weite Punkte zu beachten</p>
+        <ul>
+            <li>Groß- und kleinschreibng spielt eine Rolle</li>
+            <li>Nicht-lateinischee Buchstaben sind erlaubt, können aber zu Problem führen</li>
+            <li>Einige Namen sind bereits reseriviert, da sie von JS verwendet werden:</li>
+        <ul>
+            <li>let</li>
+            <li>class</li>
+            <li>return</li>
+            <li>function</li>
+        </ul>
+        </ul>
+        <h3>Konstant erstellen</h3>
+        <script>
+            "use strict"
+            
+            const geburtstag = "13.04.1988"
+            
+            const FARBE_ROT = "#F00"
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Syntax und Kommentare</title>
+        <!-- Meta Tags -->
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Syntax und Kommentare</h1>
+        <h3>Anweisung</h3>
+        <p>Wir arbeiten im Wesentlichen mit einzeln Anweisungen (en.<i>statements</i>). Diese folgen einer standardisirten Syntax.</p>
+        <script>
+            alert("Hello");
+            alert("Welt");
+        </script>
+        <h3>Strichpunkt</h3>
+        <p>Wir beenden eine Anweisung mit einem Strichpunkt";".</p>
+        <p>In manchen Fällen funktioniert eine Anweisung auch ohne Strichpunkt.</p>
+        <script>
+            alert("Ohne Strichpunkt");
+            alert(3 +
+                  3 +
+                  1);
+        </script>
+        <script>
+            [1, 2].forEach(alert);
+        </script>
+        <h3>Kommentare</h3>
+        <p>In Javascript können wir mit "//" einzeilige Kommentare und "/* ... ./" mehrzeilige Kommentare hinterlassen.</p>
+        <script>
+            // Einzeiliger Kommentar
+            alert("Kommentare")
+            /* 
+            Mehrerer
+            Zeilen im
+            Kommentar
+            */
+        </script>
+    </body>
+</html>

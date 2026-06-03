@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    /* Allgemein */
+    background-color: #ccc;
+    width: 100%;
+    height: 700px;
+    
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+.item {
+    /* Allgemein */
+    border: 1px solid darkorange;
+    padding: 20px;
+    text-align: center;
+    
+    /* Flex */
+    order: 2;
+    
+    flex: 0 0 250px;
+}
+.item4 {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}

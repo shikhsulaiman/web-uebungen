@@ -1,0 +1,233 @@
+https://flatuicolors.com/
+
+color picker
+..........................
+
+
+https://loremipsum.de/
+.............................
+
+Inhalt
+padding
+bourder
+margen
+.................
+
+https://fonts.google.com/
+
+...................
+
+https://unsplash.com
+..................................
+
+Icons
+https://fontawesome.com/
+
+ CDN 'Content Delivery Network'
+ SVG 'Scalable Vector Graphics'
+ RWD 'Responsive Web Design'
+
+https://developers.google.com/fonts/docs/material_symbols?hl=de
+
+https://phosphoricons.com/
+
+https://tabler.io/icons
+
+https://remixicon.com/
+
+https://www.freepik.com/icons
+
+workflow
+wrap.
+layout.
+zeilen.
+spalten.
+Google Material Symbols: Die modernste Version von Googles Icons. Sie bietet über 2.500 Symbole als variable Font an.
+CDN-Link (in den <head> kopieren):
+html
+<link rel="stylesheet" href="https://googleapis.com" />
+
+
+Bootstrap Icons: Eine offizielle Open-Source-Bibliothek mit über 2.000 hochwertigen Icons.
+CDN-Link:
+html
+<link rel="stylesheet" href="https://jsdelivr.net">
+
+
+Font Awesome 6 (Free): Der Klassiker unter den Icon-Fonts mit über 2.000 kostenlosen Icons.
+CDN-Link (via cdnjs):
+html
+<link rel="stylesheet" href="https://cloudflare.com">
+
+https://cloud.google.com/cdn?hl=de
+https://accounts.cloud.google.com/signup/email?continueUrl=https://console.cloud.google.com/freetrial?redirectPath%3D/products/solutions/details/dynamic-web-app-with-javascript%26hl%3Dde%26facet_utm_source%3Ddevelopers.google.com%26facet_utm_campaign%3D(referral)%26facet_utm_medium%3Dreferral%26facet_url%3Dhttps://cloud.google.com/cdn%26cof%3D2&hl=de
+
+
+http://127.0.0.1:56003/
+
+
+https://getbootstrap.com/
+
+mobile first
+
+.....................................................................
+J.S
+
+statement
+
+
+https://google.github.io/styleguide/jsguide.html
+
+
+jQuery 
+
+
+https://de.wikipedia.org/wiki/Document_Object_Model
+https://de.wikipedia.org/wiki/Browser_Object_Model
+https://html.spec.whatwg.org/
+https://dom.spec.whatwg.org/
+
+
+window.innerHeight
+document.body.style....
+loation.href
+
+
+
+https://de.wikipedia.org/wiki/Browser_Object_Model
+https://de.wikipedia.org/wiki/Document_Object_Model
+https://html.spec.whatwg.org/
+https://dom.spec.whatwg.org/#dom-node-document_position_contained_by
+
+
+
+
+
+https://www.udemy.com/course/draft/1402414/learn/lecture/10692330#reviews
+
+
+https://getbootstrap.com/docs/5.3/examples/
+......................
+ 
+https://poki.com/
+
+jQuery
+http://127.0.0.1:57142/test.html
+jquery.com
+
+opposite of
+
+			hide&show, fade, slide
+show, hide, Toggle
+focus, blur
+fade,		Reveal
+fadeOut, fadeIn, fadeToggle
+
+slideUp, slideDown, slideToggle
+
+
+..........
+position
+fix
+absolute
+relative
+
+opacity
+
+append
+prepend
+after
+before
+
+https://code.jquery.com/jquery-4.0.0.js
+
+/////////////////////////////////////////////////////////////////////////
+Bootstrap 
+
+https://getbootstrap.com/
+https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip
+
+
+https://jquery.com/download/
+https://code.jquery.com/jquery-4.0.0.slim.min.js
+
+https://popper.js.org
+https://unpkg.com/popper.js
+https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js
+
+
+https://getbootstrap.com/docs/4.1/getting-started/introduction/
+https://getbootstrap.com/docs/5.3/getting-started/rtl/#starter-template
+
+
+
+
+
+
+
+.........................................................
+.  https://getbootstrap.com/docs/5.3/components		.
+.........................................................
+
+Overview, Container
+https://getbootstrap.com/docs/4.1/layout/overview/
+
+Grid
+https://getbootstrap.com/docs/4.1/layout/grid/
+
+Typography
+https://getbootstrap.com/docs/4.1/content/typography/
+
+Code
+https://getbootstrap.com/docs/4.1/content/code/
+
+Images
+https://getbootstrap.com/docs/4.1/content/images/
+
+Tables
+https://getbootstrap.com/docs/4.1/content/tables/
+
+Alerts
+https://getbootstrap.com/docs/4.1/components/alerts/
+
+Badge
+https://getbootstrap.com/docs/4.1/components/badge/
+
+
+
+
+Brackets-2.2.1
+FigmaSetup
+VSCodeUserSetup-x64-1.121.0
+Git-2.54.0-64-bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

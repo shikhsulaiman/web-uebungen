@@ -1,0 +1,11 @@
+ID,Vorname,Nachname,Strasse,Hausnummer,PLZ,Ort,E-Mail,Telefon
+1,Max,Mustermann,Musterstraße,42,12345,Musterstadt,max.mustermann@example.com,+49 151 1234567
+2,Erika,Gabler,Hauptstraße,7,10115,Berlin,erika.gabler@example.org,+49 30 9876543
+3,John,Doe,Lindenweg,12,20095,Hamburg,john.doe@example.net,+49 40 5556677
+4,Anna,Schmidt,Am Kurpark,3,80331,München,anna.schmidt@example.com,+49 172 9988776
+5,Tom,Tailor,Bahnhofstraße,11a,50667,Köln,tom.tailor@example.org,+49 221 4433221
+6,Laura,Meier,Goethestraße,5,70173,Stuttgart,laura.meier@example.com,+49 711 5556677
+7,Peter,Pan,Seestraße,8,28195,Bremen,peter.pan@example.org,+49 421 5556677
+8,Sarah,Connor,Schillerstraße,15,04109,Leipzig,sarah.connor@example.com,+49 341 5556677
+9,Michael,Brown,Marktstraße,20,01067,Dresden,michael.brown@example.com,+49 351 5556677
+10,Emily,Clark,Schlossstraße,9,80333,München,emily.clark@example.com,+49 89 5556677

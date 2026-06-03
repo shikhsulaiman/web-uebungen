@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Symbole</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Symbole</h1>
+        <h3>Symbole Grundlagen</h3>
+        <script>
+            "use strict";
+            // Neues Symbol
+            let firstID = Symbol("id"); // In Klammern können wir Beschreibungen festhalten
+            
+            // Symbole mit gleicher Beschreibung
+            
+            let id1 = Symbol("id");
+            let id2 = Symbol("id");
+            
+            // alert(id1 === id2);
+            
+            // Symbole nicht direkt als String ausgeben können
+            
+            // alert(id1); // Type Error
+            
+            // alert(id1.toString()); // Erfolgreiche Ausgabe
+            
+        </script>
+        <h3>"Versteckte" Eigenschaften</h3>
+        <script>
+            "use strict";
+            
+            let user = {
+                name: "John Doe",
+                alter: 35,
+                istMann: true
+            };
+            
+            let id = Symbol("id");
+            
+            user[id] = "Nutzer ID";
+            
+            alert(user[id]); // Zugriff auf "Nutzer ID"
+            
+            for (let key in user) {
+                alert(key);
+            }
+        </script>
+    </body>
+</html>

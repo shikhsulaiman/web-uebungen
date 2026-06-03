@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operatoren</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Operatoren</h1>
+        <h3>Operatoren Einführung</h3>
+        <script>
+            "use strict";
+            let addition = 3 + 4; // 7
+            let multiplikation = 12 * 3; // 36
+            let subtraktion = 45 - 11; // 34
+            let division = 48 / 8; // 6
+        </script>
+        <h3>Begrifflichkeiten</h3>
+        <ul>
+            <li>Operand: Der "Gegenstand" auf den ein Operator angewendet wird. Es wird auch von <i>Argumenten</i> gesprochen. Zum Beispiel: Die Rechnung <i>2 + 1</i> hat 2 Operanden/Argumente.</li>
+            <li>Unary: Ein Operator ist <i>unary</i>, wenn er einen einzigen Operanden hat.</li>
+            <li>Binary: Ein Operator ist <i>binary</i>, wenn er zwei Operanden hat.</li>
+        </ul>
+        <h3>Binary +</h3>
+        <script>
+            "use strict";
+            let str = "mein" + "String"; // meinString
+            
+            2 + "1"; // "2" + 1
+            2 + 5 + "3"; // 73
+        </script>
+        <h3>Unary +</h3>
+        <script>
+            "use strict";
+            let a = 1;
+            +a; // 1
+            
+            +true; // 1
+            +""; // 0
+            
+            let shirts = "3";
+            let hosen = "2";
+            
+            +shirts + +hosen; // 5
+        </script>
+        <h3>Operatoren Vorrang/Priorität</h3>
+        <p>Verwenden wir mehrere Operatoren, dann werden diese in einer bestimmten Reihenfolge verarbeitet. Diese Reihenfolge hängt von dem Vorrang (en. precedence) des Operatoren ab.</p>
+        <p>So wird zum Beispiel die Multiplikation/Division vor der Addition/Subtraktion durchgeführt (wie wir es aus der Mathematik kennen).</p>
+        <h3>Variablenzuweisung, =</h3>
+        <script>
+            "use strict";
+            // Verkettung
+            let a, b, c;
+            a = b = c = 2; // a = 2, b = 2, c = 2
+            a = b = c = 2 * 10; // a = 20, b = 20, c = 20
+            // Eingebettete Zuweisung
+            let m = 1;
+            let n = 2;
+            
+            let o = 4 - (m = n * 2);
+            
+            m; // 4
+            o; // 0
+        </script>
+        <h3>Rest, %</h3>
+        <script>
+            "use strict";
+            let rest1 = 5 % 2;// 1 ist der Rest von 5 geteilt durch 2
+            let rest2 = 6 % 3;// 0 ist der Rest von 6 geteilt durch 3
+        </script>
+        <h3>Exponent, **</h3>
+        <script>
+            "use strict";
+            let exp1 = 2**2;// 4 oder (2*2)
+            let exp2 = 2**3;// 8 oder (2*2*2)
+            let exp3 = 2**4;// 16 oder (2*2*2*2)
+        </script>
+        <h3>Increment/Decrement</h3>
+        <script>
+            "use strict";
+            let counter = 0;
+            counter++; // 1
+            
+            let counter2 = 28;
+            counter2--;
+            alert(counter2);
+        </script>
+        <h3>In-place Modifikation</h3>
+        <script>
+            "use strict";
+            let x = 2; // x = 2
+            x = x + 2; // x = 4
+            x = x * 4; // x = 16
+            
+            let y = 2; // y = 2
+            y += 2;// y = 4
+            y *= 4;// y = 16
+        </script>
+        <h3>Weitere Operatoren</h3>
+        <p>Es gibt noch weitere Operatoren, die wir im Verlauf des Kurses betrachten werden, sobald wir sie benötigen.</p>
+        <ul>
+            <li>Bitwise Operatoren</li>
+            <li>Komma</li>
+        </ul>
+    </body>
+</html>

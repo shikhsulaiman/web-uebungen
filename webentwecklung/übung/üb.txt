@@ -1,0 +1,27 @@
+1-
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+
+2-
+
+:root {
+--primary: #0171F9;
+--accent: #EE626B;
+--light-gray: #EEEEEE;
+}
+
+3-
+
+.headerContainer {
+background-color: --primary;
+}
+
+4-
+
+.formContainer {form input, textarea  }
+
+
+

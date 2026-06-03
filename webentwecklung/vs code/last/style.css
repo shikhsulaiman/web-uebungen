@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.headerContainer {
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  gap: 2vw;
+  background-color: rgb(253, 189, 152);
+  height: 3vmax;
+}
+.logo {
+  display: flex;
+  color: aliceblue;
+  text-decoration: none;
+}
+.logo img {
+  width: px;
+}
+.headerLinks {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.headerLinks a {
+  color: aliceblue;
+  text-decoration: none;
+}

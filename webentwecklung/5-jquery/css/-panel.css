@@ -1,0 +1,17 @@
+.panel {
+    margin: auto;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+}
+
+.panel-title {
+    background-color: #2980b9;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.panel-body {
+    padding: 15px;
+}

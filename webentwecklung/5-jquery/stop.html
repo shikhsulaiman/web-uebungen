@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stop</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Box Styling -->
+        <style>
+            #box {
+                width: 100px;
+                height: 100px;
+                background-color: #c0392b;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Stop</h1>
+        <button id="reset" type="button"><a href="">Reset</a></button>
+        <button id="stop" type="button">Stop</button>
+        <button id="animation1" type="button">Animation 1</button>
+        <button id="animation2" type="button">Animation 2</button>
+        <button id="animation3" type="button">Animation 3</button>
+        <hr>
+        <div id="box"></div>
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                
+                // Stop: Effekt anhalten
+                
+                $("#stop").click(function() {
+                    // stop(stopAll, goToEnd)
+                    $("#box").stop(stopAll=true);
+                });
+                
+                // Eine Eigenschaft animiert
+                $("#animation1").click(function() {
+                    // animate({eigenschaft: wert,...}, geschwindigkeit)
+                    $("#box").animate({left: "250px"}, 2000);
+                });
+                
+                // Mehrere Eigenschaften animieren
+                
+                $("#animation2").click(function() {
+                    // Mehrere Eigenschaften übergeben
+                    $("#box").animate({left: "250px", height: "150px", width: "200px", opacity: "0.75"}, 1000);
+                });
+                
+                // Mehrere Animationen durchführen
+                $("#animation3").click(function() {
+                    let box = $("#box");
+                    box.animate({height: "200px", opacity: "0.5"}, "slow");
+                    box.animate({width: "200px", opacity: "0.75"}, "slow");
+                    box.animate({height: "100px", opacity: "0.5"}, "slow");
+                    box.animate({width: "100px", opacity: "1"}, "slow");
+                }); 
+            });
+        </script> 
+    </body>
+</html>

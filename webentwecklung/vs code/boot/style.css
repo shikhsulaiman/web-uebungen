@@ -1,0 +1,298 @@
+/* Grundkonfiguration */
+:root {
+  --primary: #007bff;
+  --dark: #343a40;
+  --light: #f8f9fa;
+  --grey: #6c757d;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+.bg-light {
+  background-color: var(--light);
+}
+.bg-dark {
+  background-color: var(--dark);
+  color: white;
+}
+.bg-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.shadow {
+  box-shadow: var(--shadow);
+}
+
+/* Navigation */
+.navbar {
+  background: var(--dark);
+  padding: 0.3rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 0 8px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.search-form ~ {
+  display: flex;
+  gap: 5px;
+}
+.search-form input {
+  width: 110px;
+  padding: 5px 10px;
+  border: none;
+}
+.search-form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: var(--dark);
+  border: none;
+  padding: 5px 15px;
+  margin: 0 20px;
+  border-radius: 4px;
+  border: 0.7px solid var(--grey);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: var(--grey);
+  margin: 3px 1px;
+  transition: 0.3s;
+}
+
+/* Hero / Header */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: #eee;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+/* Sektionen */
+.section {
+  padding: 80px 0;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  margin-bottom: 3rem;
+  color: var(--grey);
+}
+
+/* Grid Systeme */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Karten */
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.card-body {
+  padding: 30px;
+  flex: 1;
+}
+.card-body ul {
+  list-style: none;
+  margin: 20px 0;
+}
+.card-footer {
+  padding: 15px;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-dark {
+  background: var(--dark);
+  color: white;
+}
+.btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Kontakt & Footer */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.col-8 {
+  flex: 2;
+  min-width: 300px;
+}
+.col-4 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.footer {
+  padding: 50px 0;
+}
+.list-unstyled {
+  list-style: none;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* MOBILE LOGIK (Das Problem in deinem Screenshot) */
+@media (max-width: 660px) {
+  .navbar {
+    padding: 0.3rem 0; /* Weniger Padding auf Handy */
+  }
+  .menu-toggle {
+    display: flex; /* Button auf Handy anzeigen */
+  }
+
+  .nav-links,
+  .search-form {
+    display: none; /* Menü standardmäßig verstecken */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: #242527;
+    position: absolute;
+    top: 60px; /* Höhe der Navbar */
+    left: 0;
+  }
+
+  /* Diese Klasse wird per JS hinzugefügt */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-direction: row; /* Hält Logo und Button in einer Zeile */
+  }
+}

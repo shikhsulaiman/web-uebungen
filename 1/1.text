@@ -1,0 +1,26 @@
+
+    <div class="headerContainer">
+        <h1>Ubisoft</h1>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending Games</a>
+        <a href="contactUs.html">Kontakt</a>
+    </nav>
+    <section class="landingPage">
+        <article class="card">
+            <img src="images/trinding-01.jpg" alt="Assassin's Creed">
+            <h3>Assassin's Creed</h3>
+        </article>
+        <article class="card">
+            <img src="images/trinding-02.jpg" alt="Far Cry 6">
+            <h3>Far Cry 6</h3>
+        </article>
+        <article class="card">
+            <img src="images/trinding-03.jpg" alt="Rainbow Six Siege">
+            <h3>Rainbow Six Siege</h3>
+        </article>
+    </section>
+    <footer class="footerContainer">
+        &copy; 2024 Ubisoft. Alle Rechte vorbehalten.
+    </footer>

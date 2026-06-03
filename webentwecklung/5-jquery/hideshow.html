@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide &amp; Show</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Panel styling -->
+        <link rel="stylesheet" type="text/css" href="css/panel.css">
+    </head>
+    <body>
+        <h1>Hide &amp; Show</h1>
+        <div class="panel">
+            <h3 class="panel-title">Toggle auf Panel-Body</h3>
+            <p class="panel-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <hr>
+        
+        <button id="hide" type="button">Hide</button>
+        <button id="show" type="button">Show</button>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // Hide 
+                $("#hide").click(function() {
+                    $(".panel-body").hide(250);
+                    // hide(geschwindigkeit, callback-Funktion)
+                });
+                
+                // Show
+                $("#show").click(function() {
+                    $(".panel-body").show();
+                });
+                
+                // Toggle
+                $(".panel-title").click(function() {
+                    $(".panel-body").toggle();
+                });
+                
+                
+                /*
+                $("#hide").click(function(){
+                    $(".panel-body").hide(1000);
+                    $("#hide").hide();
+                    $("#show").show();
+                    $("#show").click(function(){
+                    $(".panel-body").show(2000);
+                    $("#hide").show();
+                    $("#show").hide();
+                });
+                });
+                */
+                
+                
+                
+            });
+        </script> 
+    </body>
+</html>

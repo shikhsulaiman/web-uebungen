@@ -1,0 +1,15 @@
+<div style={{ width: '1080px', height: '1080px', position: 'relative' }}>
+  <Ribbons
+    colors={["#FC8EAC"]}
+    baseSpring={0.03}
+    baseFriction={0.9}
+    baseThickness={30}
+    offsetFactor={0.05}
+    maxAge={500}
+    pointCount={50}
+    speedMultiplier={0.43}
+    enableFade={false}
+    enableShaderEffect={false}
+    effectAmplitude={2}
+  />
+</div>

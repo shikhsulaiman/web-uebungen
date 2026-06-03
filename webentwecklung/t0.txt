@@ -1,0 +1,32 @@
+
+
+'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-	xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+https://github.com/brackets-cont/brackets/releases
+
+https://floating-ui.com/?utm_source=popper.js.org
+
+
+
+https://blog.davidmika.de/2018/07/05/webhosting-von-privat-bis-professionell/
+https://filezilla-project.org/
+https://www.apachefriends.org/de/download.html
+http://test.davidmika.de/
+
+
+
+

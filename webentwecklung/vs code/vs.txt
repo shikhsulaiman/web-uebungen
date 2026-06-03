@@ -1,0 +1,251 @@
+visual studio code
+
+live server
+Prettier - Code formatter
+
+
+
+letzens frei img
+pixabay.com
+
+logo
+logomakr.com
+
+fonts
+fonts.google.com
+
+RGB picker
+colorhexa.com
+
+
+
+
+
+
+
+
+The Largest Library of Open-Source UI
+uiverse.io
+https://www.youtube.com/watch?v=54MGGkmA9v8
+reactbits.dev
+
+flutter flow
+
+
+
+Icon
+https://fontawesome.com/search?q=mail&ic=free-collection
+https://lucide.dev/icons/
+https://icons.getbootstrap.com/
+
+https://typo3.org
+
+https://demo.typo3.org/
+https://demo.typo3.org/typo3/module/dashboard
+https://malzers.de/click-collect
+https://crossconcept.group/
+https://botschaft.digital/
+
+
+https://www.w3schools.com/css/default.asp
+
+
+website erstellen
+https://www.youtube.com/watch?v=v_z2kgJwPEU
+https://www.youtube.com/watch?v=0VDmmgFRP-k
+https://www.youtube.com/watch?v=ZdlqR0NU2wI
+
+
+
+
+
+      .container {
+        position: absolute;
+        top: 16px;
+        right: 32px;
+        left: 32px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+
+
+
+
+
+
+
+
+
+img.logo {
+  /* Beispielwerte für ein kräftiges Blau */
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(190deg) brightness(119%) contrast(119%);
+}
+
+
+img.logo {
+  /* Setzt das Logo erst auf Schwarz (0) und invertiert es dann zu Weiß (1) */
+  filter: brightness(0) invert(1);
+}
+
+
+.logo-colored {
+  /* Macht das Logo erst grau/dunkel, damit hue-rotate greift */
+  filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+border
+outline   input
+
+
+
+
+
+
+
+
+
+
+
+php
+jquery
+
+angeler
+react js/ts
+vio
+
+
+
+api
+
+
+nodejs
+Java Springboot
+.NET Apps
+C#
+NEXT.js
+
+
+spaghetti code
+
+php  response 
+laravel, symfony                  - mvc architecture, design patterns, SOLID, OOP. abstracts structure
+native - smarty 
+
+
+compiled language
+Scripting language
+
+
+خارطه محممد ابو هدهود
+
+
+
+
+
+https://vercel.com/
+https://v0.app/
+
+cursor
+replit
+
+
+
+library
+framework
+
+
+
+
+
+frontend framework
+NEXT.js
+react
+
+
+Go
+rust
+
+Backend framework
+Express js
+end point - api    application programming interface      
+
+
+
+
+
+
+https://flexboxfroggy.com/
+
+
+Viewport-Einheiten
+vh			Height
+vmin			Minimum
+vmax			Maximum
+dvw / dvd		Dynamic
+
+
+rem
+em
+ch / ex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

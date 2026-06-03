@@ -1,0 +1,440 @@
+/* ==========================================================================
+   RESET & GLOBAL STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reusable Button Component */
+.btn {
+    border-radius: 50px;
+    height: 52px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 25px;
+    background-color: #EE626B;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #9E4147;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.headerContainer {
+    background-color: #0171F9;
+}
+
+.header {
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    width: auto; /* Removed rigid 50% width */
+}
+
+.headerLinks a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.headerLinks a:hover {
+    background-color: #1A7FF9;
+}
+
+/* ==========================================================================
+   LANDING PAGE (HERO SECTION)
+   ========================================================================== */
+.landingPageContainer {
+    background-color: #0171F9;
+    border-radius: 0 0 100px 100px;
+    padding: 0 20px;
+}
+
+.landingPage {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 80px 0 120px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.leftSide {
+    flex: 1;
+}
+
+.landingPage .welcome {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.landingPage .slogan {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.landingPage .description {
+    color: #f0f0f0; /* Softened text tone against blue background */
+    width: 90%;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Fixed Relational Search Bar Container */
+.searchBar {
+    position: relative;
+    max-width: 450px; /* Constrains input stretch on desktop width layouts */
+    display: flex;
+    align-items: center;
+}
+
+.searchBar input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    padding: 0 160px 0 25px; /* Right padding keeps text safely away from button stack */
+}
+
+.searchBar .searchBtn {
+    position: absolute;
+    right: 0; /* Snaps safely right regardless of screen size width changes */
+}
+
+.imageContainer {
+    flex: 1;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   SECTIONS SHARED STRUCTURE
+   ========================================================================== */
+.trendingContainer, 
+.categoryContainer {
+    max-width: 1300px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.trendingHeader, 
+.mostHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.trendingContainer span, 
+.mostContainer span, 
+.categoryHeader span {
+    text-transform: uppercase;
+    color: #EE626B;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Master Modern CSS Grid Config */
+.trendingCard, 
+.mostCards, 
+.categoryCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ==========================================================================
+   TRENDING GAMES CARD DESIGN
+   ========================================================================== */
+.trendingCard .card {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    overflow: hidden; /* Clips elements safely within border boundaries */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.trendingCard .card:hover {
+    transform: translateY(-5px);
+}
+
+.trendingCard .card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.trendingCard .card .cardInfo {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.trendingCard .cardName h3 {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+
+.trendingCard .cardName p {
+    color: gray;
+}
+
+.trendingCard .cardInfo .icon img {
+    width: 45px;
+    transition: transform 0.3s;
+}
+
+.trendingCard .cardInfo .icon img:hover {
+    transform: scale(1.15);
+}
+
+/* ==========================================================================
+   MOST PLAYED SECTION
+   ========================================================================== */
+.mostContainer {
+    background-color: #EEEEEE;
+    margin-top: 100px;
+    padding: 80px 20px;
+    border-radius: 100px;
+}
+
+.mostContainer .mostPlayed {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.mostCards .card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.mostCards .cardInfo {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mostCards .cardInfo .genre {
+    color: gray;
+    font-size: 14px;
+}
+
+.mostCards .cardInfo h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   CATEGORIES SECTION
+   ========================================================================== */
+.category .categoryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.categoryCards .card {
+    background-color: #0171F9;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse; /* Puts image below the text block smoothly */
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.categoryCards .card:hover {
+    transform: scale(1.05);
+}
+
+.categoryCards .cardImg {
+    padding: 0 20px;
+
+}
+
+.categoryCards .cardImg img {
+    border-radius: 15px;
+    width: 100%;
+}
+.mostCards .cardImg img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.categoryCards .genre {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footerContainer {
+    background-color: #0171F9;
+    padding: 40px 20px;
+    border-radius: 100px 100px 0 0;
+    margin-top: 100px;
+}
+
+.footer {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+   FORM COMPONENT
+   ========================================================================== */
+.formContainer {
+    display: flex;
+    padding: 80px 20px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+.formContainer form {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.formContainer form input, 
+.formContainer form textarea {
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.formContainer textarea {
+    border-radius: 20px;
+    resize: none;
+    height: 150px;
+}
+
+/* ==========================================================================
+   GLOBAL MEDIA QUERIES (RESPONSIVENESS)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .landingPage {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .landingPage .description {
+        width: 100%;
+    }
+    .searchBar {
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .headerLinks {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .landingPage .slogan {
+        font-size: 36px;
+    }
+
+    .trendingHeader, .mostHeader {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .landingPageContainer, .mostContainer, .footerContainer {
+        border-radius: 0; /* Smooth square alignment on mobile views */
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images &amp; Videos</title>
+        <!-- Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Internal Style -->
+        <style>
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <picture>
+            <source srcset="images/sunrise-sm.jpg" media="(max-width: 600px)">
+            <source srcset="images/sunrise-lg.jpg">
+            <img src="images/sunrise-lg.jpg" alt="Sunrise">
+        </picture>
+    </body>
+</html>

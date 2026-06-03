@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elementgröße</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Internes CSS -->
+        <style>
+            #beispiel {
+                width: 300px;
+                height: 400px;
+                border: 25px solid #f8b49f;
+                padding: 25px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="beispiel">
+            <h3>Elementgröße</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <br>
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br></p>
+        </div>
+        <script>
+            "use strict";
+            // Geometrie
+            
+            // offsetLeft, offsetTop
+            // Obere linke Ecke unseres Elements
+            // inkl. der Border bis hin zum 
+            // nächsten "Vorfahren"-Element
+            // hier: unser Element zum body
+            
+            // alert(beispiel.offsetLeft); // 8
+            // alert(beispiel.offsetTop); // 8
+            
+            
+            // offsetWidth, offsetHeight
+            // Breite und Höhe unseres Elements
+            // inkl. der Border
+            
+            // alert(beispiel.offsetWidth); // 400
+            // alert(beispiel.offsetHeight); // 500
+            
+            // clientTop, clientLeft
+            // Positionierung des Inhaltes
+            // innerhalb des Elements
+            // hier: weiße Fläche innerhalb der
+            // Border
+            
+            // alert(beispiel.clientTop); // 25
+            // alert(beispiel.clientLeft); // 25
+            
+            // clientWidth, clientHeight
+            // Breite und Höhe des Inhaltes
+            // unseres Elements innerhalb der
+            // Border (hier: weiße Fläche)
+            
+            // alert(beispiel.clientWidth); // 350
+            // alert(beispiel.clientHeight); // 450
+            
+            // scrollWidth, scrollHeight
+            // Höhe und Breite des Inhaltes
+            // unter Berücksichtigung des nicht-
+            // sichtbaren (da scroll!) Inhaltes
+            
+            // alert(beispiel.scrollWidth); // 350
+            // alert(beispiel.scrollHeight); // 1025
+            
+            // scrollLeft, scrollTop
+            // Position des Inhaltes unter
+            // Berücksichtigung des Scrolls
+            
+            // alert(beispiel.scrollLeft); // 0
+            // alert(beispiel.scrollTop); // 0
+            
+            // beispiel.scrollLeft = 0;
+            // beispiel.scrollTop = 50;
+            
+        </script>
+    </body>
+</html>

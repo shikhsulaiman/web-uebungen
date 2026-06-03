@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+genre
+
+
+cardInfo
+
+
+
+ However, there are a few architectural conflicts and rigid layout issues
+ that will break your design on different screen sizes or cause elements to overlap awkwardly.
+
+Here is the breakdown of the hidden bugs in your current CSS and how to fix them to achieve a completely bulletproof, responsive layout.
+
+3 Critical Layout Bugs Fixed
+1. The Overlapping Trending Cards (position: absolute)
+The Problem: You gave .trendingCard .card .cardInfo a position: absolute with a hardcoded top: 200px. If a user's browser resizes or the game image scales down, the text box will completely detach from the image and float awkwardly over other elements.
+The Fix: Use a standard CSS Flexbox column flow inside the card instead. This forces the info text area to naturally lock to the bottom of the image, no matter its height.
+
+2. Broken Mobile Grid Media Queries
+The Problem: You defined .trendingCard, .mostCards, .categoryCards as CSS Grid elements. Inside your media query, you wrote flex-direction: column. flex-direction has no effect on a CSS Grid container.
+The Fix: Control your responsive design beautifully without media queries by adjusting your grid to: grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));.
+
+3. Rigid Broken Elements (left: 300px)
+The Problem: In the search bar, your .searchBtn uses position: absolute; left: 300px;. If the user has a small laptop or a smartphone, the button will fly completely out of the search input box.
+The Fix: Change left: 300px; to right: 0; to anchor it perfectly to the inside right lip of the input bar.
+
+
+
+
+
+
+2
+
+
+.mostCards .cardImg img {
+  width: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.categoryCards .cardImg img {
+  border-radius: 25px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+style
+
+
+
+.categoryCards .cardImg {
+    padding: 0 20px;
+}
+
+.categoryCards .cardImg img {
+    border-radius: 15px;
+    width: 100%;
+}
+

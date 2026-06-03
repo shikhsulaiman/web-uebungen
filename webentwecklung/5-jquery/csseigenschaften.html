@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Eigenschaften</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                margin-bottom: 10px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Eigenschaften</h1>
+        <div id="div-1"></div>
+        <div id="div-2"></div>
+        
+        <button id="btn-check" type="button">Aktuelle Hintergrundfarbe?</button>
+        <button id="btn-bg-blue" type="button">Hintergrund: blau</button>
+        <button id="btn-bg-red" type="button">Hintergrund: rot</button>
+        <button id="btn-multi-css" type="button">Überraschung</button>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                
+                // CSS Eigenschaft auslesen
+                $("#btn-check").click(function() {
+                   alert("Hintergrundfarbe: " + $("div").css("background-color"));
+                });
+                
+                // CSS Eigenschaften ändern
+                $("#btn-bg-blue").click(function() {
+                   $("#div-1").css("background-color","blue");
+                });
+                
+                $("#btn-bg-red").click(function() {
+                   $("#div-1").css("background-color","red");
+                });
+                
+                // Mehrere Eigeschaften beeinflussen
+                // Für mehrere Objekte
+                $("#btn-multi-css").click(function() {
+                   $("#div-1").css("background-color","yellow");
+                    //Mehrere Eigenschaften übergeben
+                    $("#div-2").css({"background-color": "orange", "left": "250px"});
+                });
+            });
+        </script> 
+    </body>
+</html>

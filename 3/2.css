@@ -1,0 +1,426 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Reusable Button Style */
+.btn {
+  background-color: #ee626b;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Section Main Titles/Spans */
+span {
+  color: #ee626b;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   HEADER & NAVIGATION
+   ========================================================================== */
+.headerContainer {
+  background-color: #171717;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  max-width: 1200px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 45px;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.headerLinks a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.headerLinks a:hover, 
+.headerLinks a.active {
+  color: #ee626b;
+}
+
+/* ==========================================================================
+   LANDING PAGE (HERO SECTION)
+   ========================================================================== */
+.landingPageContainer {
+  background: linear-gradient(135px, #212529 0%, #111 100%);
+  padding: 80px 20px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.landingPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.leftSide {
+  flex: 1;
+}
+
+.leftSide .welcome {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ee626b;
+  margin-bottom: 5px;
+}
+
+.leftSide .slogan {
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.leftSide .description {
+  color: #aaaaaa;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+/* Search Bar */
+.searchBar {
+  position: relative;
+  max-width: 450px;
+  display: flex;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 15px 150px 150px 25px; /* Large right padding to prevent text overlap with button */
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  color: #333333;
+  outline: none;
+  font-size: 15px;
+}
+
+.searchBar .searchBtn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 10px 25px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer img {
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ==========================================================================
+   TRENDING GAMES SECTION
+   ========================================================================== */
+.trendingContainer {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.trendingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.trendingCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.trendingCard .card {
+  background-color: #27292a;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.trendingCard .card:hover {
+  transform: translateY(-10px);
+}
+
+.trendingCard .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.trendingCard .cardInfo {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trendingCard .cardName p {
+  color: #ee626b;
+  font-size: 14px;
+}
+
+.trendingCard .cardName h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.trendingCard .icon {
+  background-color: #ee626b;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trendingCard .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==========================================================================
+   MOST PLAYED SECTION
+   ========================================================================== */
+.mostContainer {
+  background-color: #27292a;
+  padding: 80px 20px;
+}
+
+.mostPlayed {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mostHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mostCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.mostCards .card {
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.mostCards .cardImg img {
+  width: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mostCards .cardInfo {
+  padding: 15px;
+}
+
+.mostCards .genre {
+  color: #aaaaaa;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.mostCards .cardName {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.mostCards .btn {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   TOP CATEGORIES SECTION
+   ========================================================================== */
+.categoryContainer {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.categoryHeader {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.categoryCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.categoryCards .card {
+  background-color: #654ce5; /* Vibrant foundational color for categories */
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Alternate background colors for category variety */
+.categoryCards .card:nth-child(2n) { background-color: #007bff; }
+.categoryCards .card:nth-child(3n) { background-color: #ee626b; }
+.categoryCards .card:nth-child(4n) { background-color: #3fca89; }
+
+.categoryCards .card:hover {
+  transform: scale(1.05);
+}
+
+.categoryCards .genre {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.categoryCards .cardImg img {
+  border-radius: 25px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footerContainer {
+  background-color: #171717;
+  padding: 30px 20px;
+  text-align: center;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.footer {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 992px) {
+  .landingPage {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .searchBar {
+    margin: 0 auto;
+  }
+
+  .leftSide .slogan {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+    .headerLinks {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+
+  .landingPageContainer, .footerContainer {
+    border-radius: 0;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  .trendingHeader, .mostHeader {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>getElement</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Internal CSS -->
+        <style>
+            .unstyled {
+               list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Suchen: getElement* &amp; querySelector*</h1>
+        <p id="intro">Wir haben uns zuvor innerhalb des DOM Baums bewegt. Dabei haben wir implizit die Annahme getroffen, wir würden wissen wo sich unsere Objekte befinden.</p>
+        <p id="lektion">Da dies allerdings nicht immer der Fall ist, haben wir die Möglichkeit Elemente anhand bestimmter Eigenschaften zu suchen und zu finden.</p>
+        <h4>Suche-Möglichkeiten:</h4>
+        <ul class="unstyled">
+            <li>getElementById</li>
+            <li>getElementsByTagName</li>
+            <li>getElementsByClassName</li>
+        </ul>
+        <p>Und außerdem gibt es:</p>
+        <ul class="unstyled">
+            <li>querySelectorAll</li>
+        </ul>
+        <script>
+            "use strict";
+            
+            // Elemente nach Id finden
+            let meinIntro = document.getElementById("intro");
+            
+            // Elemente nach Tag Namen finden
+            let meineParagraphen = document.getElementsByTagName("p");
+            
+            // Elemente nach Klasse auswählen
+            let unstyledListen = document.getElementsByClassName("unstyled");
+            
+            // Elemente mit CSS-Selektor finden
+            let firstLIs = document.querySelectorAll("ul > li:first-child");
+            
+            // Beispiel der Bearbeitung
+            meinIntro.innerHTML = "Haha, ich wurde ersetzt!";
+        </script>
+    </body>
+</html>

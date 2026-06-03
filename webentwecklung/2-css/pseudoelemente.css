@@ -1,0 +1,16 @@
+* {
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+h1::before {
+    content: "VORNE - ";
+}
+h1::after {
+    content: " - HINTEN";
+}
+p::first-letter {
+    font-size: 24px;
+    padding: 0px 2px;
+}
+p::first-line {
+    font-style: italic;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daten Typen</title>
+        <!-- Meta Tags -->
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Daten Typen</h1>
+        <h3>Zahlen (en. numbers)</h3>
+        <script>
+           "use strict"
+            let n = 3;// Ganze zahlen (integer)
+            let m = 2.12;// Kommazahlen (float)
+            let inf = Infinity;// Unendlich
+            let keinWert = NaN;// Keinwert
+        </script>
+        <h3>Strings</h3>
+        <script>
+            let str = "String Nummer 1";// Doppelte Anführungszeichen
+            let str2 = 'String Nummer 2';// Einfache Anführungszeichen
+            let str3 = `String Nummer 3`;// Backticks
+            
+            // Spezielle Funktion von Backticks
+            let name = "Peter";
+            alert(`Hallo ${name}`);
+        </script>
+        <h3>Boolean (Logische Operatoren)</h3>
+        <script>
+            "use strict"
+            let nameCheck = true;// Wahr
+            let altercheck = false;// Falsch
+            
+            let grals = 4 > 1; // true
+        </script>
+        <h3>Null</h3>
+        <script>
+            "use strict"
+            let leererWert = null; // Null Wert
+        </script>
+        <h3>Undefined</h3>
+        <script>
+            "use strict"
+            let nichtVergeben = undefined; // Undefind Wert
+            let x;
+            alert(x);
+        </script>
+        <h3>Opjekte und Symbole</h3>
+        <p>Das sind spezielle Datentypen, die wir später im Abschnet im Aetail betrachten werden.</p>
+        <h3>Datentyp überprüfen: typeog</h3>
+        <script>
+            "use strict"
+            typeof undefined;// "undefined"
+            typeof 17; // "number"
+            typeof true;// "boolean"
+            typeof "String";// "string"
+            typeof Symbol("ID");// "symbol"
+            typeof Math;// "object"
+            typeof null;// "object"
+            typeof alert;// "function"
+        </script>
+    </body>
+</html>

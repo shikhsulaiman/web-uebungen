@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Dimensionen</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Dimensions -->
+        <link rel="stylesheet" type="text/css" href="css/dimensionen.css">
+    </head>
+    <body>
+        <h1>CSS Dimensionen</h1>
+        <div id="div-outside">
+            <div id="div-inside">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+        </div>
+        
+        <h3>Buttons</h3>
+        <button id="btn-outerwidth-true" type="button">outerWidth(true)</button>
+        <button id="btn-outerwidth" type="button">outerWidth()</button>
+        <button id="btn-innerwidth" type="button">innerWidth()</button>
+        <button id="btn-width" type="button">width()</button>
+        
+        <hr>
+        <p>Für die <em>Height</em> funktioniert das entsprechend mit *Height().</p>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                
+                // Betrachtungsgegenstand
+                let div = $("#div-inside");
+                
+                // Breite inkl. Margin
+                $("#btn-outerwidth-true").click(function() {
+                    alert("outerWidth(true): " + div.outerWidth(true));
+                });
+                
+                // Breite exkl. Margin inkl. Border
+                $("#btn-outerwidth").click(function() {
+                    alert("outerWidth(): " + div.outerWidth());
+                });
+                
+                // Breite exkl. Border inkl. Padding
+                $("#btn-innerwidth").click(function() {
+                    alert("innerWidth(): " + div.innerWidth());
+                });
+                
+                // Breite exkl. Padding
+                $("#btn-width").click(function() {
+                    alert("width(): " + div.width());
+                });
+            });
+        </script> 
+    </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photseh - Die Foto App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome für die Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a class="logo" href="#header">Photseh</a>
+
+            <!-- Der Hamburger-Button -->
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Preise</a></li>
+                <li><a href="#testimonials">Kundenstimmen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="search" placeholder="Suche nach...">
+                <button type="submit">Suchen</button>
+            </form>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript für das Hamburger-Menü
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+
+    <!-- Header -->
+    <header id="header" class="hero">
+        <div class="container">
+            <h1>Photseh</h1>
+            <p>Die Photo App des 21. Jahrhunderts</p>
+            <a class="btn btn-primary" href="#pricing">Jetzt testen</a>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="section bg-light">
+        <div class="container text-center">
+            <h2>Unendliche Möglichkeiten</h2>
+            <p class="subtitle">Dank unserer eingebauten Features. Verfügbar in allen Versionen.</p>
+            
+            <div class="grid-4">
+                <div class="feature-card">
+                    <img src="img/photo.jpeg" alt="Aufnehmen">
+                    <h4>Aufnehmen</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    <a href="#" class="btn btn-outline">Zum Artikel</a>
+                </div>
+                <div class="feature-card">
+                    <img src="img/edit.jpeg" alt="Bearbeiten">
+                    <h4>Bearbeiten</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    <a href="#" class="btn btn-outline">Zum Artikel</a>
+                </div>
+                <div class="feature-card">
+                    <img src="img/cloud.jpeg" alt="Speichern">
+                    <h4>Speichern</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    <a href="#" class="btn btn-outline">Zum Artikel</a>
+                </div>
+                <div class="feature-card">
+                    <img src="img/share.jpeg" alt="Teilen">
+                    <h4>Teilen</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                    <a href="#" class="btn btn-outline">Zum Artikel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+        <div class="container text-center">
+            <h2>Unsere Versionen</h2>
+            <div class="grid-3">
+                <!-- Free -->
+                <div class="card shadow">
+                    <div class="card-header"><h4>Free</h4></div>
+                    <div class="card-body">
+                        <h3>0€ <span>/ Monat</span></h3>
+                        <ul>
+                            <li>Alle Filter</li>
+                            <li>2 GB Cloud-Speicher</li>
+                            <li>1 Social Media Account</li>
+                            <li>E-Mail Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Kostenlos anmelden</a>
+                    </div>
+                    <div class="card-footer">Kostenlos. Für immer!</div>
+                </div>
+                <!-- Basic -->
+                <div class="card shadow border-primary">
+                    <div class="card-header bg-primary"><h4>Basic</h4></div>
+                    <div class="card-body">
+                        <h3>4,99€ <span>/ Monat</span></h3>
+                        <ul>
+                            <li>Alle Filter & Farben</li>
+                            <li>10 GB Cloud-Speicher</li>
+                            <li>3 Social Media Accounts</li>
+                            <li>Bevorzugter E-Mail Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Jetzt starten</a>
+                    </div>
+                    <div class="card-footer">Alles, um durchzustarten!</div>
+                </div>
+                <!-- Premium -->
+                <div class="card shadow border-dark">
+                    <div class="card-header bg-dark"><h4>Premium</h4></div>
+                    <div class="card-body">
+                        <h3>19,99€ <span>/ Monat</span></h3>
+                        <ul>
+                            <li>Alle Filter & Farben</li>
+                            <li>Unbegrenzter Cloud-Speicher</li>
+                            <li>10 Social Media Accounts</li>
+                            <li>Telefon & E-Mail Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-dark">Angebot erhalten</a>
+                    </div>
+                    <div class="card-footer">Volle Power für echte Profis!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Vereinfacht ohne JS-Carousel) -->
+    <section id="testimonials" class="section bg-light">
+        <div class="container text-center">
+            <h2>Unsere Nutzer sagen</h2>
+            <div class="testimonial">
+                <img src="img/testimonial-1.jpeg" class="avatar shadow" alt="John Doe">
+                <p class="lead"><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...</p>
+                <h4>John Doe</h4>
+                <h6>Selbstständiger Photograph</h6>
+                <div class="stars">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontaktiere uns</h2>
+            <div class="row">
+                <div class="col-8">
+                    <p>Fülle einfach dieses kurze Formular aus!</p>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Vorname">
+                            <input type="text" placeholder="Nachname">
+                        </div>
+                        <input type="email" placeholder="Email Adresse">
+                        <textarea placeholder="Deine Nachricht..." rows="5"></textarea>
+                        <button type="submit" class="btn btn-outline">Absenden</button>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <h3>Standorte</h3>
+                    <address>
+                        <strong>Photastic GmbH</strong><br>
+                        Hauptstraße 38, 87654 Stadt
+                    </address>
+                    <address>
+                        <strong>Photastic Inc.</strong><br>
+                        795 E Dragram, Seattle WA 98102
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="container grid-4">
+            <div>
+                <h4>Navigation</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Preise</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Über uns</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <p><i class="fa fa-envelope"></i> mail@photastic.com</p>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

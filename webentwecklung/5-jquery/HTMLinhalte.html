@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Inhalte</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>HTML Inhalte beeinflussen</h1>
+        <h2>Inhalte auslesen</h2>
+        <h3>Grundlagen: html, text</h3>
+        <p id="p-test">Das ist ein Paragraph mit <b>fettem</b> und <i>kursivem</i> Text.</p>
+        <button id="get-p-text" type="button">P Text</button>
+        <button id="get-p-html" type="button">P HTML</button>
+        
+        <h3>Input: val</h3>
+        <input type="text" id="input-name" value="Dein Name">
+        <button id="get-input-value" type="button">Input Value</button>
+        
+        <h3>Attribute: attr</h3>
+        <a href="https://www.wikipedia.org/" id="a-test">Wikipedia</a>
+        <button id="get-a-href" type="button">A href</button>
+        
+        <h2>Inhalte ändern</h2>
+        <button id="set-p-text" type="button">P Text</button>
+        <button id="set-p-html" type="button">P HTML</button>
+        <button id="set-input-value" type="button">Input Value</button>
+        <button id="set-a-href" type="button">A href</button>
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                // Inhalte auslesen
+                
+                // text auslesen
+                $("#get-p-text").click(function(){
+                    alert("Text: " + $("#p-test").text());
+                });
+                
+                // html auslesen
+                $("#get-p-html").click(function(){
+                    alert("HTML: " + $("#p-test").html());
+                });
+                
+                // input values auslesen
+                $("#get-input-value").click(function() {
+                   alert("Value: " + $("#input-name").val()); 
+                });
+                
+                // Atttributte auslesen
+                $("#get-a-href").click(function() {
+                   alert("href: " + $("#a-test").attr("href")); 
+                });
+                
+                // Inhalte ändern
+                
+                // text ändern
+                $("#set-p-text").click(function(){
+                    $("#p-test").text("Das ist ein neuer Text!");
+                });
+                
+                // html auslesen
+                $("#set-p-html").click(function(){
+                    $("#p-test").html("Das ist ein <b>neuer</b> Text!");
+                });
+                
+                // input values auslesen
+                $("#set-input-value").click(function() {
+                   $("#input-name").val("Mein Name"); 
+                });
+                
+                // Atttributte auslesen
+                $("#set-a-href").click(function() {
+                   $("#a-test").attr("href", "http://www.google.com")
+                    .text("Hier geht es zu Google"); 
+                });
+            });
+        </script> 
+    </body>
+</html>

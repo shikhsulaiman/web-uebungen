@@ -1,0 +1,4 @@
+https://www.php.net/manual/de/language.oop5.magic.php
+
+
+https://stackoverflow.com/questions/134099/are-pdo-prepared-statements-sufficient-to-prevent-sql-injection/12202218#12202218

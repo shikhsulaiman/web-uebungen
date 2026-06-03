@@ -1,0 +1,143 @@
+
+
+
+
+
+git init                          # Macht aus einem Ordner ein Git-Repo
+git status                        # Zeigt: was hat sich geändert?
+git add .                         # Markiert alle Änderungen für den nächsten Commit
+git commit -m "Beschreibung"     # Macht einen Speicherpunkt mit Kommentar
+git push                          # Lädt Commits zu GitHub hoch
+git pull                          # Holt Änderungen von GitHub
+git clone <URL>                   # Lädt ein Repo erstmals herunter
+
+
+Repository („Repo") – Ein Projekt. Ein Ordner mit Code, der von Git überwacht wird.
+
+Branch („Zweig") – Eine parallele Arbeitslinie. Du kannst eine neue Funktion in einem
+eigenen Branch entwickeln, ohne den Hauptcode zu beeinflussen.
+
+https://github.com/shikhsulaiman/erste-seite.git
+
+
+README – Eine Datei in jedem Repo, die das Projekt erklärt.
+
+Markdown (.md)
+v
+
+
+
+
+
+
+git bash
+
+
+bianca@DESKTOP-5CB5725 MINGW64 ~
+$ git config --global user.name "shikhsulaiman"
+
+bianca@DESKTOP-5CB5725 MINGW64 ~
+$ git config --global user.email "shikslemn@gmail.com"
+
+bianca@DESKTOP-5CB5725 MINGW64 ~
+$ git config --list
+
+git clone https://github.com/dein-name/erste-seite.git
+
+
+git add .
+git commit -m "Erste HTML-Datei hinzugefügt"
+git push
+
+pwd
+
+ls
+
+===================================================================
+
+
+git add .
+
+git commit -m "#########"
+
+git push
+
+
+===========================================
+
+clone → cp → add → commit → push
+
+===================
+
+git pull
+
+
+
+##############################################
+
+git config --global --unset credential.helper
+
+git config --global credential.helper manager
+
+git config --global credential.helper
+
+manager
+################################
+
+
+
+
+
+
+///////////////////////////////////////////////////////////
+neuen lokalen Ordner, den du auf GitHub bringen willst
+
+git init
+git branch -M main
+git remote add origin https://github.com/shikhsulaiman/00.git
+git add .
+git commit -m "Initialer Commit"
+git push -u origin main
+
+
+
+
+
+
+
+
+
+.gitignore 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

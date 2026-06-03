@@ -1,0 +1,82 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 5px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/*1-*/
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*2-*/
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*3-*/
+.container {
+  justify-content: center;
+  width: 1300px;
+}
+
+/*4-*/
+@media (max-width: 768px) {
+  .landingPage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*5-*/
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/*6-*/
+@media (max-width: 768px) {
+  .cardRow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+trendingCard {
+  background-color: #f0f0f0;
+}
+mostCards {
+  background-color: #e0e0e0;
+}
+categoryCard {
+  background-color: #d0d0d0;
+}

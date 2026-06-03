@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantisches HTML Muster</title>
+    <link rel="stylesheet" href="semantic.css">
+</head>
+<body>
+
+    <!-- Kopfbereich der gesamten Website -->
+    <header class="main-header">
+        <div class="main-header__brand">
+            <span class="logo">MeinLogo</span>
+        </div>
+        
+        <!-- Hauptnavigation -->
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#home" class="main-nav__link main-nav__link--active">Home</a></li>
+                <li class="main-nav__item"><a href="#blog" class="main-nav__link">Blog</a></li>
+                <li class="main-nav__item"><a href="#contact" class="main-nav__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Der Hauptinhalt der Seite (darf nur EINMAL pro Seite vorkommen) -->
+    <main class="content-area">
+        
+        <!-- Hero- oder Einleitungsbereich -->
+        <section class="hero-section">
+            <h1 class="hero-section__title">Willkommen auf unserer semantischen Webseite</h1>
+            <p class="hero-section__lead">Hier lernen Sie, wie man sauberen Code schreibt.</p>
+            <button class="btn btn--primary">Jetzt starten</button>
+        </section>
+
+        <!-- Bereich für Blog-Beiträge -->
+        <section class="blog-overview" id="blog">
+            <h2 class="blog-overview__title">Aktuelle Beiträge</h2>
+
+            <!-- Ein eigenständiger, in sich geschlossener Artikel -->
+            <article class="card-article">
+                <header class="card-article__header">
+                    <h3 class="card-article__title">HTML5 Semantik verstehen</h3>
+                    <p class="card-article__meta">Veröffentlicht am <time datetime="2026-05-27">27. Mai 2026</time> von Admin</p>
+                </header>
+                <div class="card-article__body">
+                    <p>Semantische Tags helfen Suchmaschinen beim Indexieren der Inhalte.</p>
+                </div>
+                <footer class="card-article__footer">
+                    <a href="#read-more" class="card-article__link">Weiterlesen...</a>
+                </footer>
+            </article>
+
+            <!-- Ein weiterer Artikel -->
+            <article class="card-article">
+                <header class="card-article__header">
+                    <h3 class="card-article__title">CSS Klassen richtig benennen</h3>
+                    <p class="card-article__meta">Veröffentlicht am <time datetime="2026-05-20">20. Mai 2026</time> von Coder</p>
+                </header>
+                <div class="card-article__body">
+                    <p>Nutzen Sie logische Namen statt rein visueller Beschreibungen wie "roter-text".</p>
+                </div>
+                <footer class="card-article__footer">
+                    <a href="#read-more" class="card-article__link">Weiterlesen...</a>
+                </footer>
+            </article>
+
+        </section>
+
+        <!-- Seitenleiste mit Zusatzinformationen (indirekter Bezug zum Hauptinhalt) -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h4 class="widget__title">Kategorien</h4>
+                <ul class="widget__list">
+                    <li><a href="#">Webentwicklung</a></li>
+                    <li><a href="#">SEO Tipps</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Fußzeile der Website -->
+    <footer class="main-footer">
+        <p class="main-footer__copy">&copy; 2026 Meine Webseite. Alle Rechte vorbehalten.</p>
+        <nav class="main-footer__nav">
+            <a href="#impressum">Impressum</a> | 
+            <a href="#datenschutz">Datenschutz</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

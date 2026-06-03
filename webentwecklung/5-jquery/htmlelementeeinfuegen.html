@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Elemente</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>HTML Elemente einfügen</h1>
+        <p>Denkt zurück an JavaScript...</p>
+        <ul>
+            <li>append</li>
+            <li>prepend</li>
+            <li>after</li>
+            <li>before</li>
+        </ul>
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- Custom scripts -->
+        <script>
+            $(document).ready(function() {
+                let ul = $("ul");
+                ul.append("<li>Element mit append</li>");
+                ul.prepend("<li>Element mit prepend</li>");
+                ul.after("<p>Neuer Paragraph mit after.</p>");
+                ul.before("<p>Neuer Paragraph mit before.</p>");
+            });
+        </script> 
+    </body>
+</html>
