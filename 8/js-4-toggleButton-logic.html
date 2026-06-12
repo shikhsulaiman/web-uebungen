@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Klick Zähler</title>
+  </head>
+  <body>
+    <h1 id="anzeige">Status: <span id="anAus">AUS</span></h1>
+    <button id="toggleButton">Klick mich</button>
+
+
+    <script>
+      const anzeige = document.querySelector("#anAus");
+      const toggleButton = document.querySelector("#toggleButton");
+      let istAn = false;
+
+      function status() {
+        istAn = !istAn;
+        if (istAn) {
+          anzeige.textContent = "AN";
+        } else {
+          anzeige.textContent = "AUS";
+        }
+      }
+
+      toggleButton.addEventListener("click", status);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+
+
+
+Ein gutes Beispiel-Set wäre z. B.:
+
+web-uebungen 		(deine Übungen)
+erste-seite 		(dein erstes Projekt)
+portfolio-website 	(später deine echte Visitenkarte)
+wetter-app 		(wenn du mal ein JavaScript-Projekt baust)
+taschenrechner 		(Mini-Projekt)
+
+
+
+
+
+
+
+
+
+
+geschafft hast:
+🏆 Komplettes HTML/CSS-Fundament gelegt
+🏆 Semantisches HTML, Flexbox, Grid, responsives Design verstanden
+🏆 Git installiert und konfiguriert
+🏆 Zwei GitHub-Repos angelegt
+🏆 Deinen ersten echten clone → add → commit → push-Workflow durchgespielt
+🏆 Sogar Fehler diagnostiziert und behoben (das not a git repository-Problem)
+
+
+
+
+
+
+
+GitHub Pages aktivieren – damit deine erste-seite als echte Webseite live geht (kostenlos, dauert 2 Minuten)
+
+
+
+Repos sauber benennen – 00 ist kein guter Name, das ändern wir
+
+JavaScript-Einstieg – Variablen, Funktionen, der erste klickbare Button
+
+JavaScript-Grundlagen (Variablen, Funktionen, Buttons klickbar machen)
+Mehr Repos auf GitHub (jedes kleine Projekt = ein Repo)
+Ein README für deine Seite schreiben (in Markdown)
+Später: ein Framework wie React oder Vue
+
+
+
+gelernt:
+HTML, CSS, Grid, Flexbox,
+Responsive Design,
+Git, GitHub, GitHub Pages,
+Branches,
+Repo-Verwaltung. 
+
+
+
+
+HTML = die Struktur der Seite („was ist da?")
+CSS = das Aussehen der Seite („wie sieht es aus?")
+JavaScript = das Verhalten der Seite („was passiert, wenn...?")
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

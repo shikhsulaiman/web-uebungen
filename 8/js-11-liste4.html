@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Namen-Liste</title>
+    <style>
+      li { margin: 5px 0; }
+      li button { margin-left: 10px; }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="eingabe" placeholder="Name eingeben" />
+    <button id="hinzuButton">Hinzufügen</button>
+    <button id="alleLoeschen">Alle löschen</button>
+    <ul id="liste"></ul>
+
+    <script>
+      const eingabe = document.querySelector("#eingabe");
+      const hinzuButton = document.querySelector("#hinzuButton");
+      const alleLoeschen = document.querySelector("#alleLoeschen");
+      const liste = document.querySelector("#liste");
+
+      let namen = JSON.parse(localStorage.getItem("namen")) || [];
+
+      function speichern() {
+        localStorage.setItem("namen", JSON.stringify(namen));
+      }
+
+      function anzeigen() {
+        liste.innerHTML = "";
+        namen.forEach(function (name, index) {
+          const li = document.createElement("li");
+          li.textContent = name;
+
+          const xButton = document.createElement("button");
+          xButton.textContent = "❌";
+          xButton.addEventListener("click", function () {
+            namen.splice(index, 1);   // ← Eintrag entfernen
+            speichern();
+            anzeigen();
+          });
+
+          li.appendChild(xButton);
+          liste.appendChild(li);
+        });
+      }
+
+      function hinzufuegen() {
+        const name = eingabe.value;
+        if (name === "") return;
+        namen.push(name);
+        speichern();
+        eingabe.value = "";
+        anzeigen();
+      }
+
+      hinzuButton.addEventListener("click", hinzufuegen);
+      eingabe.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") hinzufuegen();
+      });
+
+      alleLoeschen.addEventListener("click", function () {
+        namen = [];
+        speichern();
+        anzeigen();
+      });
+
+      anzeigen();
+    </script>
+  </body>
+</html>

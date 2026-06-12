@@ -1,32 +1,25 @@
 
-
-
-
-
-git init                          # Macht aus einem Ordner ein Git-Repo
-git status                        # Zeigt: was hat sich geändert?
-git add .                         # Markiert alle Änderungen für den nächsten Commit
-git commit -m "Beschreibung"     # Macht einen Speicherpunkt mit Kommentar
-git push                          # Lädt Commits zu GitHub hoch
-git pull                          # Holt Änderungen von GitHub
-git clone <URL>                   # Lädt ein Repo erstmals herunter
-
-
 Repository („Repo") – Ein Projekt. Ein Ordner mit Code, der von Git überwacht wird.
 
 Branch („Zweig") – Eine parallele Arbeitslinie. Du kannst eine neue Funktion in einem
 eigenen Branch entwickeln, ohne den Hauptcode zu beeinflussen.
 
+README – Eine Datei in jedem Repo, die das Projekt erklärt.in Markdown (.md)
+
+
+
+
+git init                # Macht aus einem Ordner ein Git-Repo
+git status              # Zeigt: was hat sich geändert?
+git add .               # Markiert alle Änderungen für den nächsten Commit
+git commit -m "Beschreibung"   # Macht einen Speicherpunkt mit Kommentar
+git push                # Lädt Commits zu GitHub hoch
+git pull                # Holt Änderungen von GitHub
+git clone <URL>         # Lädt ein Repo erstmals herunter (Kopie auf den eigenen Rechner machen)
+
+
+
 https://github.com/shikhsulaiman/erste-seite.git
-
-
-README – Eine Datei in jedem Repo, die das Projekt erklärt.
-
-Markdown (.md)
-v
-
-
-
 
 
 
@@ -100,6 +93,12 @@ git commit -m "Initialer Commit"
 git push -u origin main
 
 
+git remote -v
+
+pwd
+
+ls
+
 
 
 
@@ -112,6 +111,7 @@ git push -u origin main
 
 
 
+https://shikhsulaiman.github.io/erste-seite/
 
 
 
@@ -126,8 +126,109 @@ git push -u origin main
 
 
 
+1. Repo erstellen
+cd ~/Desktop
+mkdir mein-projekt
+cd mein-projekt
+git init
+
+2. Dateien versionieren
+git add notiz.txt
+git commit -m "Erste Notiz"
+
+git add notiz.txt
+git commit -m "Notiz erweitert"
+
+3. Die Geschichte anschauen
+git log
+
+4. Zurück in die Vergangenheit – die „Zeitreise"
+git log --oneline
+
+git checkout 1234567
+
+wieder in die Gegenwart
+git checkout main
+
+5. Was hat sich geändert?
+git diff
+
+6. Branches – parallele Welten
+git branch experiment
+git checkout experiment
+
+Wenn das Experiment klappt,zur Hauptlinie hinzufügen.
+git merge experiment
 
 
+
+Mini-Übung
+cd ~/Desktop
+mkdir git-test
+cd git-test
+git init
+
+Datei erstellen, Dann:
+git add .
+git commit -m "Erster Tag"
+
+Ändere die Datei, Dann:
+git add .
+git commit -m "Zweiter Tag"
+
+git log
+
+
+
+				Branch löschen
+git branch
+siehst Liste
+* main
+  experiment
+  test-feature
+
+git branch -d experiment
+
+musst vorher woandershin wechseln
+git checkout main
+git branch -d experiment
+
+Arbeit wegwerfen
+git branch -D experiment
+
+
+Branch auf GitHub löschen 
+git push origin --delete experiment
+
+
+
+wichtigsten Branch-Befehle 
+
+git branch                          # Liste aller lokalen Branches
+git branch -a                       # Liste inkl. GitHub-Branches
+git branch neuer-name               # Neuen Branch erstellen
+git checkout neuer-name             # Zu einem Branch wechseln
+git checkout -b neuer-name          # Erstellen UND wechseln in einem
+git branch -d alter-name            # Lokal löschen (sicher)
+git branch -D alter-name            # Lokal löschen (mit Force)
+git push origin --delete alter-name # Auf GitHub löschen
+git merge anderer-branch            # Anderen Branch in den aktuellen einbauen
+
+
+
+git branch
+git checkout -b test-branch
+git branch
+git checkout main
+git branch -d test-branch
+
+
+
+
+benennung ein Repo um
+git remote set-url origin https://github.com/shikhsulaiman/web-uebungen.git
+git remote -v
+git status
 
 
 

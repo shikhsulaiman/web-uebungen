@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Liste</title>
+    </head>
+    <body>
+        <ul id="liste"></ul>
+
+        <script>
+            const namen = ["Mehmet", "Bia", "Anna"];
+            const Liste = document.querySelector("#liste");
+
+            namen.forEach(function(name) {
+                const li = document.createElement("li");
+                li.textContent = name;
+                Liste.appendChild(li);
+            });
+        </script>
+    </body>
+</html>

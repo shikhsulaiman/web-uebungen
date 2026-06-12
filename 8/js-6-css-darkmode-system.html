@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drk Mode</title>
+    <style>
+      body {
+        background: white;
+        color: black;
+        transition: 0.3s;
+      }
+      body.dark {
+        background: #222;
+        color: white;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #222;
+          color: white;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hallo!</h1>
+    <button id="toggleButton">Dark Mode</button>
+
+    <script>
+    </script>
+  </body>
+</html>

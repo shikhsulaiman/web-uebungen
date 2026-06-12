@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" >
+        <title>Klick Zähler</title>
+    </head>
+    <body>
+        <h1 id="anzeige">Du hast <span id="zahl">0</span> mal geklickt</h1>
+        <button id="klickButton">Klick mich</button>
+        <button id="resetButton">Reset</button>
+
+        <script>
+            const anzeige = document.querySelector("#zahl");
+            const klickButton = document.querySelector("#klickButton");
+            const resetButton = document.querySelector("#resetButton");
+            let zaehler = 0;
+
+            function aktualisiereAnzeige() {
+                anzeige.textContent = zaehler;
+            }
+            function hochzahlen() {
+                zaehler++;
+                aktualisiereAnzeige();
+            }
+            function reset() {
+                zaehler = 0;
+                aktualisiereAnzeige();
+            }
+
+            klickButton.addEventListener("click", hochzahlen);
+            resetButton.addEventListener("click", reset);
+        </script>
+
+    </body>
+</html>

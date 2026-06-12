@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+  <head><meta charset="UTF-8" /><title>Namen-Liste</title></head>
+  <body>
+    <input type="text" id="eingabe" placeholder="Name eingeben" />
+    <button id="hinzuButton">Hinzufügen</button>
+    <ul id="liste"></ul>
+
+    <script>
+      const eingabe = document.querySelector("#eingabe");
+      const hinzuButton = document.querySelector("#hinzuButton");
+      const liste = document.querySelector("#liste");
+
+      // Array – holt gespeicherte Namen, oder leeres Array
+      let namen = JSON.parse(localStorage.getItem("namen")) || [];
+
+      function anzeigen() {
+        liste.innerHTML = "";   // Liste leeren
+        namen.forEach(function (name) {
+          const li = document.createElement("li");
+          li.textContent = name;
+          liste.appendChild(li);
+        });
+      }
+
+      function hinzufuegen() {
+        const name = eingabe.value;
+        if (name === "") return;   // leere Eingabe ignorieren
+        
+        namen.push(name);   // ins Array
+        localStorage.setItem("namen", JSON.stringify(namen));   // speichern
+        eingabe.value = "";
+        anzeigen();
+      }
+
+      hinzuButton.addEventListener("click", hinzufuegen);
+      eingabe.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          hinzufuegen();
+        }
+      });
+
+      anzeigen();   // beim Laden: gespeicherte Namen anzeigen
+    </script>
+  </body>
+</html>

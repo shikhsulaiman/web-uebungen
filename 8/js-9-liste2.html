@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Liste</title>
+  </head>
+  <body>
+    <input type="text" id="eingabe" placeholder="Name eingeben" />
+    <button id="hinzuButton">Hinzufügen</button>
+    <ul id="liste"></ul>
+
+    <script>
+      const eingabe = document.querySelector("#eingabe");
+      const hinzuButton = document.querySelector("#hinzuButton");
+      const liste = document.querySelector("#liste");
+
+      function hinzufuegen() {
+        const name = eingabe.value;
+
+        const li = document.createElement("li");
+        li.textContent = name;
+        liste.appendChild(li);
+
+        eingabe.value = "";
+      }
+
+      hinzuButton.addEventListener("click", hinzufuegen);
+
+      eingabe.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          hinzufuegen();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+WOFF (Web Open Font Format)
+Bedeutung:
+Es steht für Web Open Font Format
+Funktion:
+Es ist ein komprimiertes Containerformat.
+Es verpackt klassische Schriftarten (wie TTF oder OTF) in eine kleinere Datei
+Kompression:
+Nutzt ein älteres Verfahren (z.B. Deflate)
+Vorteil:
+Kürzere Ladezeiten von Webseiten im Vergleich zu unkomprimierten Schriften.

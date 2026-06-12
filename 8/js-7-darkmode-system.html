@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dark Mode mit System</title>
+    <style>
+      body {
+        background: white;
+        color: black;
+        transition: 0.3s;
+        font-family: sans-serif;
+        padding: 40px;
+      }
+      body.dark {
+        background: #222;
+        color: white;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hallo!</h1>
+    <button id="toggleButton">Modus wechseln</button>
+
+    <script>
+      const toggleButton = document.querySelector("#toggleButton");
+      const systemDunkel = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // 1. Beim Laden: System-Einstellung prüfen
+      if (systemDunkel.matches) {
+        document.body.classList.add("dark");
+      }
+
+      // 2. Live auf System-Änderungen hören
+      systemDunkel.addEventListener("change", function (event) {
+        if (event.matches) {
+          document.body.classList.add("dark");
+        } else {
+          document.body.classList.remove("dark");
+        }
+      });
+
+      // 3. Manueller Button-Toggle
+      toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

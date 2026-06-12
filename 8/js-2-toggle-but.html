@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Übung</title>
+  </head>
+  <body>
+    <h1 id="ueberschrift">Hallo!</h1>
+    <button id="meinButton">Klick mich</button>
+
+    <script>
+      const ueberschrift = document.querySelector("#ueberschrift");
+      const button = document.querySelector("#meinButton");
+
+      function textAendern() {
+        if(ueberschrift.textContent === "Hallo!")
+        {
+            ueberschrift.textContent = "Du hast gecklapt!";
+        } else {
+            ueberschrift.textContent = "Hallo!";
+        }
+      }
+
+      
+      button.addEventListener("click", textAendern);
+      
+
+    </script>
+  </body>
+</html>
