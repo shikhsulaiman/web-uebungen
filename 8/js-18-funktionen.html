@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funktionen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Funktionen mit Parametern</h1>
+    </div>
+
+    <script>
+      // 1. Begrüßung mit Namen
+      function begruessen(name) {
+        return "Hallo " + name + "!";
+      }
+
+      console.log(begruessen("Mehmet"));
+      console.log(begruessen("Bia"));
+
+      // 2. Quadrat einer Zahl
+      function quadrat(zahl) {
+        return zahl * zahl;
+      }
+
+      console.log(quadrat(5)); // 25
+      console.log(quadrat(10)); // 100
+
+      // 3. Maximum von zwei Zahlen
+      function maximum(a, b) {
+        if (a > b) {
+          return a;
+        } else {
+          return b;
+        }
+      }
+
+      // 4. verdoppelt einer Zahl
+      function verdopple(zahl) {
+        return zahl * 2;
+      }
+
+      // 5. ist Erwachsen
+      function istErwachsen(alter) {
+        return alter >= 18;
+      }
+
+      console.log(maximum(7, 3)); // 7
+      console.log(maximum(2, 9)); // 9
+
+      console.log(verdopple(5));
+      console.log(verdopple(20));
+
+      console.log(istErwachsen(15));
+      console.log(istErwachsen(18));
+      console.log(istErwachsen(25));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todos-Liste</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meine Liste</h1>
+
+      <div class="eingabeZeile">
+        <input type="text" id="eingabe" placeholder="Name eingeben" />
+        <button id="hinzuButton">Hinzufügen</button>
+      </div>
+
+      <button id="alleLoeschen">Alle löschen</button>
+      <button id="exportButton">Als Datei speichern</button>
+
+      <ul id="liste"></ul>
+    </div>
+
+    <script>
+      const eingabe = document.querySelector("#eingabe");
+      const hinzuButton = document.querySelector("#hinzuButton");
+      const alleLoeschen = document.querySelector("#alleLoeschen");
+      const liste = document.querySelector("#liste");
+
+      // Variable umbenannt: "todos" statt "namen"
+      let todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+      function speichern() {
+        localStorage.setItem("todos", JSON.stringify(todos));
+      }
+
+      function anzeigen() {
+        liste.innerHTML = "";
+        todos.forEach(function (todo, index) {
+          const li = document.createElement("li");
+          li.textContent = todo.text;
+
+          // Wenn erledigt: durchstreichen
+          if (todo.erledigt) {
+            li.style.textDecoration = "line-through";
+            li.style.opacity = "0.5";
+          }
+
+          // Klick auf li = erledigt umschalten
+          li.addEventListener("click", function () {
+            todos[index].erledigt = !todos[index].erledigt;
+            speichern();
+            anzeigen();
+          });
+
+          // Lösch-Button
+          const xButton = document.createElement("button");
+          xButton.textContent = "❌";
+          xButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            todos.splice(index, 1);
+            speichern();
+            anzeigen();
+          });
+
+          li.appendChild(xButton);
+          liste.appendChild(li);
+        });
+      }
+
+      function hinzufuegen() {
+        const text = eingabe.value;
+        if (text === "") return;
+
+        // Neues Objekt erstellen
+        todos.push({ text: text, erledigt: false });
+
+        speichern();
+        eingabe.value = "";
+        anzeigen();
+      }
+
+      hinzuButton.addEventListener("click", hinzufuegen);
+      eingabe.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") hinzufuegen();
+      });
+
+      alleLoeschen.addEventListener("click", function () {
+        todos = [];
+        speichern();
+        anzeigen();
+      });
+
+      anzeigen();
+    </script>
+  </body>
+</html>

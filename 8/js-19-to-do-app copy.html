@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funktionen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Funktionen mit Parametern</h1>
+    </div>
+
+    <script>
+        function loeschen(index) {
+            todo.splice(index, 1);
+            speichern();
+            anzeigen();
+        }
+
+        function bearbeiten (index, neuerText) {
+            todo[index].text = neuerText;
+            speichern();
+            anzeigen();
+        }
+
+        function togglerErledigt(index) {
+            todo[index].erldigt = !todos[index].erledigt;
+            speichern();
+            anzeigen();
+        }
+
+
+
+
+        xButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            loeschen(index);
+        });
+
+        li.addEventListener("click", function() {
+            togglerErledigt(index);
+        });
+
+        const neuerText = prompt("Neuer Text:", todo.text);
+        if (neuerText) {
+            bearbeiten(index, neuerText);
+        }
+
+    </script>
+  </body>
+</html>
+F
