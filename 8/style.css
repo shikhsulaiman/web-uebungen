@@ -89,6 +89,16 @@ li {
   gap: 10px;                 /* ← NEU: Abstand zwischen Text und Buttons */
 }
 
+.editInput {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #0171f9;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+}
+
 /* Container für die Buttons im li */
 .actions {
   display: flex;

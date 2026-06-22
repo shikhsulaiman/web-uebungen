@@ -211,3 +211,37 @@ Eine echte To-Do-App mit:
 ✅ Sauberes App-Design
 
 
+API = Application Programming Interface.
+
+
+Open-Meteo (kostenlos, kein Login)
+Wetter-API: kostenlos, kein Account, kein API-Key nötig.
+https://api.open-meteo.com/v1/forecast?latitude=50.11&longitude=8.68&current=temperature_2m
+
+
+
+const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(stadt)}&count=1&language=de&format=json`;
+const geoUrl = "https://geocoding-api.open-meteo.com/v1/search?name=" + encodeURIComponent(stadt) + "&count=1&language=de&format=json";
+
+const wetterUrl = `https://api.open-meteo.com/v1/forecast?latitude=${geoDaten.lat}&longitude=${geoDaten.lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+
+
+const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(stadtText)}&count=1&language=de&format=json`;
+const wetterUrl = `https://api.open-meteo.com/v1/forecast?latitude=${geoDaten.latitude}&longitude=${geoDaten.longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+
+
+Bei Backticks gehört das $ zur Syntax (${...}). Bei der Verkettung mit + brauchst du
+kein $ – du setzt die Variable ja direkt mit + dazwischen. Beide Versionen liefern
+(ohne das überflüssige $) exakt dasselbe Ergebnis.
+
+
+
+Was wir verbessern
+
+Hintergrund + zentriertes Layout
+Schöneres Eingabefeld
+Buttons mit Farbe und Hover
+Listen-Einträge als „Karten"
+Etwas Abstand und Atmung
+
+

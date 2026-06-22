@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wetter Suche (Präzise)</title>
+    <style>
+      body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+      input, button, select { padding: 8px; font-size: 16px; margin-right: 5px; }
+      .versteckt { display: none; }
+      #auswahlContainer { margin-top: 15px; background: #f0f0f0; padding: 15px; border-radius: 5px; }
+    </style>
+  </head>
+  <body>
+    <h1>Wetter-Suche mit Stadtauswahl</h1>
+    
+    <!-- 1. Suchfeld -->
+    <input type="text" id="stadtInput" value="Frankfurt" placeholder="Stadt eingeben...">
+    <button id="suchButton">Suchen</button>
+
+    <!-- 2. Dynamische Auswahlliste bei gleichen Namen (wird via JS eingeblendet) -->
+    <div id="auswahlContainer" class="versteckt">
+      <label for="stadtAuswahl">Welche Stadt meinen Sie?</label><br>
+      <select id="stadtAuswahl"></select>
+      <button id="wetterBestaetigenButton">Wetter anzeigen</button>
+    </div>
+
+    <!-- 3. Wetteranzeige -->
+    <h2 id="stadtName">Wetter</h2>
+    <p id="anzeige">Geben Sie eine Stadt ein und klicken Sie auf Suchen.</p>
+
+    <script>
+      const stadtInput = document.querySelector("#stadtInput");
+      const suchButton = document.querySelector("#suchButton");
+      const auswahlContainer = document.querySelector("#auswahlContainer");
+      const stadtAuswahl = document.querySelector("#stadtAuswahl");
+      const wetterBestaetigenButton = document.querySelector("#wetterBestaetigenButton");
+      const stadtNameAnzeige = document.querySelector("#stadtName");
+      const anzeige = document.querySelector("#anzeige");
+
+      // Globale Variable, um die Suchtreffer zwischenzuspeichern
+      let gefundeneStaedte = [];
+
+      // Schritt 1: Alle passenden Städte suchen (erhöht auf count=10 für mehr Auswahl)
+      async function sucheStaedte() {
+        const stadtText = stadtInput.value.trim();
+        if (!stadtText) return;
+
+        anzeige.innerHTML = "Städte werden gesucht...";
+        auswahlContainer.classList.add("versteckt"); // Vorherige Auswahl ausblenden
+        stadtAuswahl.innerHTML = "";
+
+        try {
+          // Wir fordern bis zu 10 Treffer an (count=10)
+          const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(stadtText)}&count=1&language=de&format=json`;
+          const response = await fetch(geoUrl);
+          const daten = await response.json();
+          
+          if (!daten.results || daten.results.length === 0) {
+            throw new Error("Keine Stadt mit diesem Namen gefunden.");
+          }
+
+          gefundeneStaedte = daten.results;
+
+          // Dropdown-Optionen befüllen
+          gefundeneStaedte.forEach((stadt, index) => {
+            const option = document.createElement("option");
+            option.value = index; // Wir merken uns den Listenplatz als ID
+            
+            // Zusatzinfos wie Bundesland (admin1) oder Land (country) hinzufügen
+            const region = stadt.admin1 ? `, ${stadt.admin1}` : "";
+            const land = stadt.country ? ` (${stadt.country})` : "";
+            
+            option.textContent = `${stadt.name}${region}${land}`;
+            stadtAuswahl.appendChild(option);
+          });
+
+          // Auswahl anzeigen
+          auswahlContainer.classList.remove("versteckt");
+          anzeige.innerHTML = "Bitte wählen Sie die genaue Stadt aus der Liste aus.";
+
+        } catch (fehler) {
+          anzeige.innerHTML = `❌ Fehler: ${fehler.message}`;
+        }
+      }
+
+      // Schritt 2: Wetter für die ausgewählte Stadt laden
+      async function ladeWetterFuerAuswahl() {
+        const gewaehlterIndex = stadtAuswahl.value;
+        const geoDaten = gefundeneStaedte[gewaehlterIndex];
+
+        if (!geoDaten) return;
+
+        anzeige.innerHTML = "Wetterdaten werden geladen...";
+        
+        const region = geoDaten.admin1 ? `, ${geoDaten.admin1}` : "";
+        stadtNameAnzeige.innerHTML = `Wetter in ${geoDaten.name}${region} (${geoDaten.country})`;
+
+        try {
+          const wetterUrl = `https://api.open-meteo.com/v1/forecast?latitude=${geoDaten.latitude}&longitude=${geoDaten.longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+          
+          const response = await fetch(wetterUrl);
+          const daten = await response.json();
+          
+          const temperatur = daten.current.temperature_2m;
+          const luftfeuchte = daten.current.relative_humidity_2m;
+          const wind = daten.current.wind_speed_10m;
+          const code = daten.current.weather_code;
+
+          anzeige.innerHTML = `
+            🌡️ Temperatur: ${temperatur} °C<br>
+            💧 Luftfeuchte: ${luftfeuchte} %<br>
+            💨 Wind: ${wind} km/h<br>
+            ☁️ Wetter-Code: ${code}
+          `;
+        } catch (fehler) {
+          anzeige.innerHTML = `❌ Fehler beim Wetter-Laden: ${fehler.message}`;
+        }
+      }
+
+      // Event-Listeners
+      suchButton.addEventListener("click", sucheStaedte);
+      wetterBestaetigenButton.addEventListener("click", ladeWetterFuerAuswahl);
+      
+      stadtInput.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") sucheStaedte();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wetter</title>
+    </head>
+    <body>
+        <h1>Wetter in Frankfurt</h1>
+        <p id="anzeige">Lädt...</p>
+
+        <script>
+            const anzeige = document.querySelector("#anzeige");
+
+            const url = "https://api.open-meteo.com/v1/forecast?latitude=50.11&longitude=8.68&current=temperature_2m";
+
+            fetch(url)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (daten) {
+                console.log(daten);
+                const temperatur = daten.current.temperature_2m;
+                anzeige.textContent = "Es sind " + temperatur + " °C";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funktionen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meine Liste</h1>
+
+      <div class="eingabeZeile">
+        <input type="text" id="eingabe" placeholder="Name eingeben" />
+        <button id="hinzuButton">Hinzufügen</button>
+      </div>
+
+      <button id="alleLoeschen">Alle löschen</button>
+      <button id="exportButton">Als Datei speichern</button>
+
+      <ul id="liste"></ul>
+    </div>
+
+    <script>
+      const eingabe = document.querySelector("#eingabe");
+      const hinzuButton = document.querySelector("#hinzuButton");
+      const alleLoeschen = document.querySelector("#alleLoeschen");
+      const exportButton = document.querySelector("#exportButton");
+      const liste = document.querySelector("#liste");
+
+      let todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+      // === HILFSFUNKTIONEN ===
+
+      function speichern() {
+        localStorage.setItem("todos", JSON.stringify(todos));
+      }
+
+      function aktualisieren() {
+        speichern();
+        anzeigen();
+      }
+
+      function hinzufuegen(text) {
+        if (text === "") return;
+        todos.push({ text: text, erledigt: false });
+        aktualisieren();
+      }
+
+      function loeschen(index) {
+        todos.splice(index, 1);
+        aktualisieren();
+      }
+
+      function alleEntfernen() {
+        todos = [];
+        aktualisieren();
+      }
+
+      function bearbeiten(index, neuerText) {
+        todos[index].text = neuerText;
+        aktualisieren();
+      }
+
+      function toggleErledigt(index) {
+        todos[index].erledigt = !todos[index].erledigt;
+        aktualisieren();
+      }
+
+      function nachOben(index) {
+        if (index > 0) {
+          [todos[index - 1], todos[index]] = [todos[index], todos[index - 1]];
+          aktualisieren();
+        }
+      }
+
+      // === ANZEIGE ===
+
+      function anzeigen() {
+        liste.innerHTML = "";
+        todos.forEach(function (todo, index) {
+          const li = document.createElement("li");
+
+          const textSpan = document.createElement("span");
+          textSpan.textContent = todo.text;
+          li.appendChild(textSpan);
+
+          if (todo.erledigt) {
+            textSpan.style.textDecoration = "line-through";
+            textSpan.style.opacity = "0.5";
+          }
+
+          li.addEventListener("click", function () {
+            toggleErledigt(index);
+          });
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const editButton = document.createElement("button");
+          editButton.textContent = "✏️";
+          editButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+
+            // Input-Feld erstellen
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = todo.text;
+            input.className = "editInput";
+
+            // Span durch Input ersetzen
+            li.replaceChild(input, textSpan);
+            input.focus(); // Cursor reinsetzen
+            input.select(); // ganzen Text markieren
+
+            // NEU: Klicks im Input nicht zum li durchblubbern lassen
+            input.addEventListener("click", function (e) {
+              e.stopPropagation();
+            });
+
+            let abgebrochen = false;   // ← NEU: Merker
+
+            // Speichern-Funktion
+            function speichernUndZurueck() {
+              if (abgebrochen) return;   // ← NEU: Abbruch ignorieren
+              
+              const neuerText = input.value.trim();
+              if (neuerText !== "" && neuerText !== todo.text) {
+                bearbeiten(index, neuerText);
+              } else {
+                anzeigen(); // unverändert – einfach neu anzeigen
+              }
+            }
+
+            // Enter = speichern
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                speichernUndZurueck();
+              }
+              if (e.key === "Escape") {
+                abgebrochen = true;   // ← NEU: Flag setzen
+                anzeigen(); // abbrechen
+              }
+            });
+
+            // Klick außerhalb = speichern
+            input.addEventListener("blur", speichernUndZurueck);
+          });
+
+          const upButton = document.createElement("button");
+          upButton.textContent = "⬆️";
+          upButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            nachOben(index);
+          });
+
+          const xButton = document.createElement("button");
+          xButton.textContent = "❌";
+          xButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            loeschen(index);
+          });
+
+          actions.appendChild(editButton);
+          actions.appendChild(upButton);
+          actions.appendChild(xButton);
+          li.appendChild(actions);
+
+          liste.appendChild(li);
+        });
+      }
+
+      // === EVENT LISTENER ===
+
+      hinzuButton.addEventListener("click", function () {
+        hinzufuegen(eingabe.value);
+        eingabe.value = "";
+      });
+
+      eingabe.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          hinzufuegen(eingabe.value);
+          eingabe.value = "";
+        }
+      });
+
+      alleLoeschen.addEventListener("click", alleEntfernen);
+
+      exportButton.addEventListener("click", function () {
+        const text = JSON.stringify(todos, null, 2);
+        const blob = new Blob([text], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "todos.json";
+        link.click();
+
+        URL.revokeObjectURL(url);
+      });
+
+      anzeigen();
+    </script>
+  </body>
+</html>

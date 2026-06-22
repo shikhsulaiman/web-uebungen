@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wetter Suche</title>
+    <style>
+      body { font-family: sans-serif; margin: 20px; }
+      input, button { padding: 8px; font-size: 16px; }
+    </style>
+  </head>
+  <body>
+    <h1>Wetter-Suche</h1>
+    
+    <input type="text" id="stadtInput" value="Berlin" placeholder="Stadt eingeben...">
+    <button id="suchButton">Wetter laden</button>
+
+    <h2 id="stadtName">Wetter</h2>
+    <p id="anzeige">Geben Sie eine Stadt ein und klicken Sie auf Suchen.</p>
+
+    <script>
+      const stadtInput = document.querySelector("#stadtInput");
+      const suchButton = document.querySelector("#suchButton");
+      const stadtNameAnzeige = document.querySelector("#stadtName");
+      const anzeige = document.querySelector("#anzeige");
+
+      async function sucheStadtKoordinaten(stadt) {
+        // 1. KORREKTUR: Richtige Geocoding-Domain und Parameter-Struktur
+        const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(stadt)}&count=1&language=de&format=json`;
+        
+        const response = await fetch(geoUrl);
+        const daten = await response.json();
+        
+        if (!daten.results || daten.results.length === 0) {
+          throw new Error("Stadt nicht gefunden");
+        }
+        
+        // Wichtig: Da 'results' ein Array ist, nehmen wir den ersten Treffer [0]
+        return {
+          lat: daten.results[0].latitude,
+          lon: daten.results[0].longitude,
+          name: daten.results[0].name,
+          land: daten.results[0].country
+        };
+      }
+
+      async function ladeWetter() {
+        const stadtText = stadtInput.value.trim();
+        if (!stadtText) return;
+
+        anzeige.innerHTML = "Lädt...";
+
+        try {
+          const geoDaten = await sucheStadtKoordinaten(stadtText);
+          stadtNameAnzeige.innerHTML = `Wetter in ${geoDaten.name} (${geoDaten.land})`;
+
+          // 2. KORREKTUR: Richtige Wetter-Domain, API-Pfad und korrekte Template-Interpolation mit $
+          const wetterUrl = `https://api.open-meteo.com/v1/forecast?latitude=${geoDaten.lat}&longitude=${geoDaten.lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+          
+          const response = await fetch(wetterUrl);
+          const daten = await response.json();
+          
+          const temperatur = daten.current.temperature_2m;
+          const luftfeuchte = daten.current.relative_humidity_2m;
+          const wind = daten.current.wind_speed_10m;
+          const code = daten.current.weather_code;
+
+          anzeige.innerHTML = `
+            🌡️ Temperatur: ${temperatur} °C<br>
+            💧 Luftfeuchte: ${luftfeuchte} %<br>
+            💨 Wind: ${wind} km/h<br>
+            ☁️ Wetter-Code: ${code}
+          `;
+        } catch (fehler) {
+          anzeige.innerHTML = `❌ Fehler: ${fehler.message}`;
+        }
+      }
+
+      suchButton.addEventListener("click", ladeWetter);
+      stadtInput.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") ladeWetter();
+      });
+    </script>
+  </body>
+</html>
