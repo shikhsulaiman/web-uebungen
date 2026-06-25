@@ -244,4 +244,46 @@ Buttons mit Farbe und Hover
 Listen-Einträge als „Karten"
 Etwas Abstand und Atmung
 
+function wetterText(code) {
+  if (code === 0) return "Klarer Himmel ";
+  if (code <= 3) return "Bewölkt ";
+  if(code >=51 && code <= 77) return "Schnee ";
+  return "Unbekant"
+}
+
+
+Was du heute gelernt hast 🏆
+✅ APIs als „Kellner" verstanden
+✅ fetch() und .then()
+✅ Template Strings mit ${}
+✅ JSON-Daten aus dem Internet lesen
+✅ URL dynamisch aus Variablen bauen
+✅ Code in Funktionen packen und bei Klick ausführen
+
+
+
+Nächste sinnvolle Schritte für die Wetter-App:
+1) Fehlerbehandlung – Was wenn falsche Koordinaten? Internet weg?
+2) Stadt-Name statt Koordinaten – Mit zweitem API-Aufruf (Geocoding). Hier kommen wir dann zu Themen wie verkettete .then().
+3) Wetter-Code in Text umwandeln – Aus „0" wird „☀️ Klarer Himmel".
+4) CSS hinzufügen – Wetter-App schöner machen.
+
+
+
+console.log("klick!");   // ← zum Testen
+
+
+Was als Nächstes?
+B) CSS für die Wetter-App – sie sieht noch nackt aus. Schönes Design? Karten-Look wie die To-Do-App?
+C) Fehlerbehandlung – wenn die Stadt nicht existiert (z. B. „Schwafelhausen"), kommt aktuell ein hässlicher Fehler. Wir lernen try/catch und .catch().
+D) Neues Projekt – z. B. Taschenrechner, Quiz, Notiz-App.
+Oder Pause? Du hast wieder viel gemacht. 💪
+Sag, was du willst.
+
+Was als Nächstes?
+C) Fehlerbehandlung – wenn die Stadt nicht existiert (kommt aktuell ein Crash)
+D) Neues Projekt – Taschenrechner, Quiz, etwas Eigenes
+E) Wetter-App auf GitHub hochladen + Live über GitHub Pages
+Pause – auch okay 😊
+Sag, was du willst. 💪
 

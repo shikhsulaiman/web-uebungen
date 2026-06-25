@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🌤️ Wetter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌤️ Wetter</h1>
+
+      <div class="eingabeZeile">
+        <input
+          type="text"
+          id="stadtInput"
+          value="Berlin"
+          placeholder="Stadt..."
+        />
+        <button id="ladenButton">Wetter laden</button>
+      </div>
+
+      <h2 id="stadtName"></h2>
+      <p id="anzeige">Lädt...</p>
+    </div>
+
+    <script>
+      const stadtInput = document.querySelector("#stadtInput");
+      const ladenButton = document.querySelector("#ladenButton");
+      const stadtName = document.querySelector("#stadtName");
+      const anzeige = document.querySelector("#anzeige");
+
+      function wetterText(code) {
+        if (code === 0) return "Klarer Himmel ☀️";
+        else if (code >= 1 && code <= 3) return "Teilweise bewölkt ⛅";
+        else if (code === 45 || code === 48) return "Nebel 🌫️";
+        else if (code === 51 || code === 53 || code === 55)
+          return "Nieselregen 🌦️";
+        else if (code === 61 || code === 63 || code === 65) return "Regen 🌧️";
+        else if (code === 71 || code === 73 || code === 75) return "Schnee ❄️";
+        else if (code >= 80 && code <= 82) return "Schauer 🌦️";
+        else if (code === 95) return "Gewitter ⛈️";
+        else if (code === 96 || code === 99) return "Gewitter mit Hagel ⛈️";
+
+        return "Unbekannt";
+      }
+
+      function ladeWetter() {
+        const stadt = stadtInput.value.trim();
+
+        // Leere Eingabe abfangen
+        if (stadt === "") {
+          anzeige.textContent = "⚠️ Bitte eine Stadt eingeben!";
+          return;
+        }
+
+        anzeige.textContent = "Lädt...";
+        stadtName.textContent = "";
+
+        const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${stadt}&count=1&language=de`;
+
+        fetch(geoUrl)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (geoDaten) {
+            // Stadt nicht gefunden?
+            if (!geoDaten.results || geoDaten.results.length === 0) {
+              anzeige.textContent = `❌ Stadt "${stadt}" nicht gefunden`;
+              return; // beendet die Funktion
+            }
+
+            const lat = geoDaten.results[0].latitude;
+            const lon = geoDaten.results[0].longitude;
+            const name = geoDaten.results[0].name;
+
+            stadtName.textContent = name;
+
+            const wetterUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+
+            fetch(wetterUrl)
+              .then(function (response) {
+                return response.json();
+              })
+              .then(function (wetterDaten) {
+                const temperatur = wetterDaten.current.temperature_2m;
+                const luftfeuchte = wetterDaten.current.relative_humidity_2m;
+                const wind = wetterDaten.current.wind_speed_10m;
+                const code = wetterDaten.current.weather_code;
+
+                anzeige.innerHTML = `
+            🌡️ Temperatur: ${temperatur} °C<br>
+            💧 Luftfeuchte: ${luftfeuchte} %<br>
+            💨 Wind: ${wind} km/h<br>
+            ${wetterText(code)}
+          `;
+              });
+          })
+          .catch(function (fehler) {
+            console.log("CATCH wurde aufgerufen!", fehler);
+            anzeige.textContent = "❌ Netzwerk-Fehler. Internet prüfen.";
+            console.error(fehler);
+          });
+      }
+      ladenButton.addEventListener("click", ladeWetter);
+
+      stadtInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          ladeWetter();
+        }
+      })
+    </script>
+  </body>
+</html>

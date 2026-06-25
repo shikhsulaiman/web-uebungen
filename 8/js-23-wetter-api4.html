@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wetter</title>
+  </head>
+  <body>
+    <h1>Wetter - Code in eine Funktion packen</h1>
+
+    <input type="text" id="latInput" value="50.11" />
+    <input type="text" id="lonInput" value="8.68" />
+    <button id="ladenButton">Wetter laden</button>
+    <p id="anzeige">Lädt...</p>
+
+    <script>
+      const latInput = document.querySelector("#latInput");
+      const lonInput = document.querySelector("#lonInput");
+      const ladenButton = document.querySelector("#ladenButton");
+      const anzeige = document.querySelector("#anzeige");
+
+      function ladeWetter() {
+        const lat = latInput.value;
+        const lon = lonInput.value;
+
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`;
+
+        fetch(url)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (daten) {
+            const temperatur = daten.current.temperature_2m;
+            const luftfeuchte = daten.current.relative_humidity_2m;
+            const wind = daten.current.wind_speed_10m;
+            const code = daten.current.weather_code;
+
+            anzeige.innerHTML = `
+             🌡️ Temperatur: ${temperatur} °C<br>
+             💧 Luftfeuchte: ${luftfeuchte} %<br>
+             💨 Wind: ${wind} km/h<br>
+             ☁️ Wetter-Code: ${code}
+            `;
+          });
+      }
+      ladenButton.addEventListener("click", ladeWetter);
+    </script>
+  </body>
+</html>

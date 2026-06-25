@@ -1,29 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <title>JavScrit</title>
-    </head>
-    <body>
-        <h1>Hallo!</h1>
-        <button id="meinButton">Klick mich</button>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavScrit</title>
+  </head>
+  <body>
+    <h1>Hallo!</h1>
+    <button id="meinButton">Klick mich</button>
 
-        <script>
-            let button = document.querySelector("#meinButton");
+    <script>
+      let button = document.querySelector("#meinButton");
 
-            function begruessen() {
-                alert("Hallo Mohamed! Dein Javascript funktioniert! 🎉");
-            }
+      function begruessen() {
+        alert("Hallo Mohamed! Dein Javascript funktioniert! 🎉");
+      }
 
-            button.addEventListener("click", begruessen);
+      button.addEventListener("click", begruessen);
 
-            const ueberschrift = document.querySelector("h1");
+      const ueberschrift = document.querySelector("h1");
 
-            ueberschrift.textContent = "Neuer Text!";
-            
-
-
-
-        </script>
-    </body>
+      ueberschrift.textContent = "Neuer Text!";
+    </script>
+  </body>
 </html>
