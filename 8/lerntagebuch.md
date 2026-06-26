@@ -287,3 +287,10 @@ E) Wetter-App auf GitHub hochladen + Live über GitHub Pages
 Pause – auch okay 😊
 Sag, was du willst. 💪
 
+🟢 Neues Projekt – Taschenrechner, Quiz, Notiz-App
+
+🟢 Wetter-App erweitern – 7-Tage-Vorhersage, Lieblings-Städte speichern
+
+🟢 Neues Thema – z. B. Funktionen tiefer, Arrays mit .filter()/.map()
+
+🟢 Eigene Portfolio-Seite bauen, die alle Projekte zeigt
