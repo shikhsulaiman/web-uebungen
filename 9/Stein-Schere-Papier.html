@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Magier, Krieger, Schurke</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #222; color: white; padding: 20px; }
+    .choice-btn { font-size: 40px; padding: 20px; margin: 10px; cursor: pointer; background: #333; border: 2px solid #55px; border-radius: 10px; transition: 0.2s; }
+    .choice-btn:hover { background: #555; transform: scale(1.1); }
+    #ergebnis { font-size: 24px; margin-top: 20px; font-weight: bold; color: #ffd700; }
+    .display-box { font-size: 20px; margin: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>🧙‍♂️ Magier, ⚔️ Krieger, 🏹 Schurke</h1>
+  <p>Wähle deine Klasse:</p>
+
+  <button class="choice-btn" onclick="spielen('🧙‍♂️')">🧙‍♂️</button>
+  <button class="choice-btn" onclick="spielen('⚔️')">⚔️</button>
+  <button class="choice-btn" onclick="spielen('🏹')">🏹</button>
+
+  <div class="display-box">
+    Deine Wahl: <span id="spieler-wahl">-</span> | 
+    Computer: <span id="computer-wahl">-</span>
+  </div>
+
+  <div id="ergebnis">Klicke auf ein Icon, um zu starten!</div>
+
+  <script>
+    const optionen = ['🧙‍♂️', '⚔️', '🏹'];
+
+    // Wer schlägt wen? (Das clevere Objekt-Mapping)
+    const regeln = {
+      '🧙‍♂️': '🏹', // Magier schlägt Schurke
+      '🏹': '⚔️', // Schurke schlägt Krieger
+      '⚔️': '🧙‍♂️'  // Krieger schlägt Magier
+    };
+
+    function spielen(spielerWahl) {
+      // Computer wählt zufällig
+      const zufallsIndex = Math.floor(Math.random() * optionen.length);
+      const computerWahl = optionen[zufallsIndex];
+
+      document.getElementById('spieler-wahl').textContent = spielerWahl;
+      document.getElementById('computer-wahl').textContent = computerWahl;
+
+      const ergebnisText = document.getElementById('ergebnis');
+
+      // Auswertung der Logik
+      if (spielerWahl === computerWahl) {
+        ergebnisText.textContent = "Unentschieden! 🤝";
+      } else if (regeln[spielerWahl] === computerWahl) {
+        ergebnisText.textContent = "Du gewinnst! 🎉";
+      } else {
+        ergebnisText.textContent = "Computer gewinnt! 🤖";
+      }
+    }
+  </script>
+</body>
+</html>

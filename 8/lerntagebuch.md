@@ -294,3 +294,9 @@ Sag, was du willst. 💪
 🟢 Neues Thema – z. B. Funktionen tiefer, Arrays mit .filter()/.map()
 
 🟢 Eigene Portfolio-Seite bauen, die alle Projekte zeigt
+
+
+
+more concise
+prägnantere
+

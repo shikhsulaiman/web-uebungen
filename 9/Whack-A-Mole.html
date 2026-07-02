@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Hau den Maulwurf</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #e0e6ed; padding: 20px; user-select: none; }
+    .grid { display: grid; grid-template-columns: repeat(3, 100px); gap: 15px; justify-content: center; margin: 20px auto; }
+    .hole { width: 100px; height: 100px; background: #8b5a2b; border-radius: 50%; position: relative; cursor: pointer; border: 3px solid #5c3a1a; box-shadow: inset 0 10px 10px rgba(0,0,0,0.3); }
+    .mole { width: 80px; height: 80px; font-size: 50px; line-height: 80px; position: absolute; top: 10px; left: 10px; display: none; text-align: center; }
+    .hole.active .mole { display: block; }
+    #score-board, #timer-board { font-size: 22px; font-weight: bold; margin: 10px; }
+    #start-btn { padding: 10px 20px; font-size: 18px; cursor: pointer; background: #2f3542; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>🔨 Hau den Maulwurf!</h1>
+  <button id="start-btn" onclick="spielStarten()">Spiel Starten</button>
+  
+  <div>
+    <span id="score-board">Punkte: 0</span> | 
+    <span id="timer-board">Zeit: 15s</span>
+  </div>
+
+  <div class="grid">
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+    <div class="hole" onclick="treffer(this)"><div class="mole">🐹</div></div>
+  </div>
+
+  <script>
+    const löcher = document.querySelectorAll('.hole');
+    let punkte = 0;
+    let restZeit = 15;
+    let spielAktiv = false;
+    let maulwurfIntervall, timerIntervall, aktuellesLoch;
+
+    function spielStarten() {
+      if (spielAktiv) return;
+      
+      spielAktiv = true;
+      punkte = 0;
+      restZeit = 15;
+      document.getElementById('score-board').textContent = "Punkte: 0";
+      document.getElementById('timer-board').textContent = "Zeit: 15s";
+      document.getElementById('start-btn').disabled = true;
+
+      // Timer läuft jede Sekunde runter
+      timerIntervall = setInterval(() => {
+        restZeit--;
+        document.getElementById('timer-board').textContent = `Zeit: ${restZeit}s`;
+        if (restZeit <= 0) spielBeenden();
+      }, 1000);
+
+      // Alle 800ms springt der Maulwurf in ein neues Loch
+      maulwurfIntervall = setInterval(maulwurfSpawnen, 800);
+    }
+
+    function maulwurfSpawnen() {
+      löcher.forEach(loch => loch.classList.remove('active')); // Alle verstecken
+      
+      const zufallsIndex = Math.floor(Math.random() * löcher.length);
+      aktuellesLoch = löcher[zufallsIndex];
+      aktuellesLoch.classList.add('active');
+    }
+
+    function treffer(loch) {
+      if (!spielAktiv) return;
+      
+      // Nur Punkte geben, wenn das Loch gerade aktiv ist
+      if (loch.classList.contains('active')) {
+        punkte++;
+        document.getElementById('score-board').textContent = `Punkte: ${punkte}`;
+        loch.classList.remove('active'); // Sofort verstecken nach Treffer
+      }
+    }
+
+    function spielBeenden() {
+      spielAktiv = false;
+      clearInterval(timerIntervall);
+      clearInterval(maulwurfIntervall);
+      löcher.forEach(loch => loch.classList.remove('active'));
+      document.getElementById('start-btn').disabled = false;
+      alert(`Spiel vorbei! Dein Highscore: ${punkte} Punkte! 🏆`);
+    }
+  </script>
+</body>
+</html>

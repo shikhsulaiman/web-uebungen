@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Wasser-Tracker</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f0f8ff; padding: 20px; }
+    .tracker-card { background: white; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .glass-container { width: 120px; height: 250px; border: 5px solid #333; border-top: none; border-radius: 0 0 15px 15px; margin: 20px auto; position: relative; background: #eee; overflow: hidden; }
+    .water { width: 100%; height: 0%; background: #3498db; position: absolute; bottom: 0; transition: height 0.5s ease; }
+    button { font-size: 16px; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px; border: none; background: #2ecc71; color: white; font-weight: bold; }
+    button.reset { background: #e74c3c; }
+    #status { font-size: 18px; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="tracker-card">
+    <h2>💧 Täglicher Wasser-Tracker</h2>
+    <p>Ziel: 2000 ml (2 Liter)</p>
+    
+    <div class="glass-container">
+      <div id="water-level" class="water"></div>
+    </div>
+
+    <div id="status">0 / 2000 ml</div>
+    
+    <button onclick="trinken(250)">+ 250 ml</button>
+    <button onclick="trinken(500)">+ 500 ml</button>
+    <br>
+    <button class="reset" onclick="reset()">Zurücksetzen</button>
+  </div>
+
+  <script>
+    // Lädt gespeicherte Daten oder startet bei 0
+    let menge = parseInt(localStorage.getItem('wasserMenge')) || 0;
+    uiAktualisieren();
+
+    function trinken(ml) {
+      menge = Math.min(2000, menge + ml); // Maximal bis zum Ziel
+      localStorage.setItem('wasserMenge', menge); // Im Browser speichern
+      uiAktualisieren();
+    }
+
+    function reset() {
+      menge = 0;
+      localStorage.removeItem('wasserMenge');
+      uiAktualisieren();
+    }
+
+    function uiAktualisieren() {
+      document.getElementById('status').textContent = `${menge} / 2000 ml`;
+      
+      // Prozentuale Höhe für das blaue CSS-Wasser berechnen
+      const prozent = (menge / 2000) * 100;
+      document.getElementById('water-level').style.height = prozent + '%';
+      
+      if (menge >= 2000) {
+        document.getElementById('status').textContent = "Ziel erreicht! 🎉 Stand hydriert!";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <title>Passwort Generator</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #2f3640;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .box {
+        background: #353b48;
+        padding: 25px;
+        border-radius: 10px;
+        display: inline-block;
+        text-align: left;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        width: 320px;
+      }
+      .output-field {
+        background: #1e222b;
+        padding: 12px;
+        border-radius: 5px;
+        font-family: monospace;
+        font-size: 18px;
+        text-align: center;
+        word-break: break-all;
+        margin-bottom: 15px;
+        color: #4cd137;
+        min-height: 22px;
+      }
+      .setting {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .strength-bar {
+        height: 10px;
+        width: 100%;
+        background: #718093;
+        border-radius: 5px;
+        margin-top: 15px;
+        transition: 0.3s;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        background: #4cd137;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔐 Passwort-Tool</h1>
+    <div class="box">
+      <div id="passwort-display" class="output-field">
+        Klicke auf Generieren
+      </div>
+
+      <div class="setting">
+        <label>Länge: <span id="laenge-wert">12</span></label>
+        <input
+          type="range"
+          id="laenge-slider"
+          min="6"
+          max="25"
+          value="12"
+          oninput="
+            document.getElementById('laenge-wert').textContent = this.value
+          "
+        />
+      </div>
+
+      <div class="setting">
+        <label>Zahlen einbauen</label>
+        <input type="checkbox" id="check-zahlen" checked />
+      </div>
+
+      <div class="setting">
+        <label>Symbole einbauen</label>
+        <input type="checkbox" id="check-symbole" />
+      </div>
+
+      <div class="strength-bar" id="staerke-balken"></div>
+      <div
+        id="staerke-text"
+        style="text-align: center; margin-top: 5px; font-size: 14px"
+      >
+        Stärke: -
+      </div>
+
+      <button onclick="generieren()">Passwort erstellen</button>
+    </div>
+
+    <script>
+      function generieren() {
+        const laenge = document.getElementById("laenge-slider").value;
+        const mitZahlen = document.getElementById("check-zahlen").checked;
+        const mitSymbole = document.getElementById("check-symbole").checked;
+
+        let buchstaben = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const zahlen = "0123456789";
+        const symbole = "!@#$%^&*()_+~|}{[]:;?><,./-=";
+
+        if (mitZahlen) buchstaben += zahlen;
+        if (mitSymbole) buchstaben += symbole;
+
+        let passwort = "";
+        for (let i = 0; i < laenge; i++) {
+          const zufallsIndex = Math.floor(Math.random() * buchstaben.length);
+          passwort += buchstaben[zufallsIndex];
+        }
+
+        document.getElementById("passwort-display").textContent = passwort;
+        staerkePruefen(passwort, laenge, mitZahlen, mitSymbole);
+      }
+      function staerkePruefen(pw, laenge, zahlen, symbole) {
+        let punkte = 0;
+
+        // Logische Bewertung der Kriterien
+        if (laenge >= 8) punkte++;
+        if (laenge >= 14) punkte++;
+        if (zahlen) punkte++;
+        if (symbole) punkte++;
+        const balken = document.getElementById("staerke-balken");
+        text = document.getElementById("staerke-text");
+        if (punkte <= 1) {
+          balken.style.background = "#e74c3c"; // Rot
+          text.textContent = "Stärke: Unsicher 🛑";
+        } else if (punkte <= 3) {
+          balken.style.background = "#f1c40f"; // Gelb
+          text.textContent = "Stärke: Mittelmäßig ⚠️";
+        } else {
+          balken.style.background = "#2ecc71"; // Grün
+          text.textContent = "Stärke: Extrem Sicher! 💪";
+        }
+      }
+    </script>
+  </body>
+</html>

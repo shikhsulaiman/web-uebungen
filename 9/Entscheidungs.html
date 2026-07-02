@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Glücksrad</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #fafafa; padding: 20px; }
+    #rad { width: 200px; height: 200px; border-radius: 50%; border: 10px solid #333; display: inline-block; font-size: 80px; line-height: 200px; transition: transform 3s ease-out; background: conic-gradient(#ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff); }
+    .controls { margin: 20px; }
+    input, button { padding: 10px; font-size: 16px; margin: 5px; }
+    #ergebnis { font-size: 24px; color: #28a745; margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>🔮 Das Entscheidungs-Rad</h1>
+  
+  <div class="controls">
+    <input type="text" id="eingabe" placeholder="z. B. Pizza, Burger...">
+    <button onclick="hinzufügen()">Hinzufügen</button>
+  </div>
+
+  <p>Optionen: <span id="liste">Keine</span></p>
+
+  <div id="rad">🎯</div>
+  <br>
+  <button id="dreh-btn" onclick="drehen()" style="background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 18px; cursor: pointer; border-radius: 5px;">DREHEN!</button>
+
+  <div id="ergebnis"></div>
+
+  <script>
+    let optionen = [];
+    let aktuelleRotation = 0;
+
+    function hinzufügen() {
+      const input = document.getElementById('eingabe');
+      const text = input.value.trim();
+      
+      if (text !== "") {
+        optionen.push(text);
+        document.getElementById('liste').textContent = optionen.join(", ");
+        input.value = ""; // Feld leeren
+      }
+    }
+
+    function drehen() {
+      if (optionen.length === 0) {
+        alert("Bitte füge zuerst mindestens eine Option hinzu!");
+        return;
+      }
+
+      // Zufällige Auswahl treffen
+      const zufallsIndex = Math.floor(Math.random() * optionen.length);
+      const gewinner = optionen[zufallsIndex];
+
+      // Visuelle Drehung berechnen (mindestens 5 volle Drehungen + Extra)
+      aktuelleRotation += 1800 + Math.floor(Math.random() * 360);
+      document.getElementById('rad').style.transform = `rotate(${aktuelleRotation}deg)`;
+
+      // Warten bis die CSS-Animation (3s) vorbei ist
+      document.getElementById('dreh-btn').disabled = true;
+      document.getElementById('ergebnis').textContent = "Das Rad dreht sich...";
+
+      setTimeout(() => {
+        document.getElementById('ergebnis').textContent = `Die Entscheidung steht fest: ${gewinner}! 🎉`;
+        document.getElementById('dreh-btn').disabled = false;
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

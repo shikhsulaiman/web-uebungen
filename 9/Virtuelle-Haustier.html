@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Tamagotchi</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f0f2f5; padding: 20px; }
+    .pet-card { background: white; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    #pet-emoji { font-size: 80px; margin: 20px 0; }
+    .stat { margin: 15px 0; font-weight: bold; }
+    progress { width: 200px; height: 20px; }
+    button { font-size: 16px; padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 5px; border: none; background: #007bff; color: white; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+  <div class="pet-card">
+    <h2>Mein Tamagotchi</h2>
+    <div id="pet-emoji">🐱</div>
+    <div id="status-text">Mir geht es super!</div>
+
+    <div class="stat">Futter: <progress id="food-bar" value="100" max="100"></progress></div>
+    <div class="stat">Energie: <progress id="energy-bar" value="100" max="100"></progress></div>
+
+    <button onclick="füttern()">🍖 Füttern</button>
+    <button onclick="schlafen()">💤 Schlafen</button>
+  </div>
+
+  <script>
+    let futter = 100;
+    let energie = 100;
+    let spielAktiv = true;
+
+    // Der Ticker: Jede Sekunde (1000ms) verlieren wir Werte
+    const gameLoop = setInterval(() => {
+      if (!spielAktiv) return;
+
+      futter -= 3;
+      energie -= 2;
+
+      // Werte dürfen nicht unter 0 fallen
+      if (futter < 0) futter = 0;
+      if (energie < 0) energie = 0;
+
+      uiAktualisieren();
+      prüfeZustand();
+    }, 1000);
+
+    function uiAktualisieren() {
+      document.getElementById('food-bar').value = futter;
+      document.getElementById('energy-bar').value = energie;
+    }
+
+    function prüfeZustand() {
+      const emoji = document.getElementById('pet-emoji');
+      const status = document.getElementById('status-text');
+
+      if (futter === 0 || energie === 0) {
+        emoji.textContent = "🪦";
+        status.textContent = "Oh nein! Dein Haustier ist eingeschlafen.";
+        spielAktiv = false;
+        clearInterval(gameLoop);
+      } else if (futter < 30 || energie < 30) {
+        emoji.textContent = "😭";
+        status.textContent = "Ich brauche Hilfe!";
+      } else {
+        emoji.textContent = "🐱";
+        status.textContent = "Mir geht es super!";
+      }
+    }
+
+    function füttern() {
+      if (!spielAktiv) return;
+      futter = Math.min(100, futter + 15); // Erhöhen, aber maximal bis 100
+      uiAktualisieren();
+    }
+
+    function schlafen() {
+      if (!spielAktiv) return;
+      energie = Math.min(100, energie + 25);
+      uiAktualisieren();
+    }
+  </script>
+</body>
+</html>
